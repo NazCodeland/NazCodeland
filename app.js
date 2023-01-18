@@ -29,7 +29,7 @@ const liveReloadServer = livereload.createServer();
 liveReloadServer.server.once('connection', () => {
   setTimeout(() => {
     liveReloadServer.refresh('/');
-  }, 10);
+  }, 5);
 });
 
 // -----------------------------------------------------
