@@ -1,15 +1,10 @@
-const logo = document.querySelector('.jump');
+/* eslint-disable import/extensions */
+import './utils/spanWord.js';
 
-const logoText = logo.textContent;
+const menuLinks = document.querySelectorAll('.menu li');
 
-function spanWord(word) {
-  const wordArray = [...word];
-  return wordArray.map((letter) =>
-    letter === 'N'
-      ? `<span class="first-letter">${letter}</span>`
-      : `<span>${letter}</span>`
-  );
+function handleClick(event) {
+  // event.preventDefault();
 }
 
-const spannedWord = spanWord(logoText);
-logo.innerHTML = spannedWord.join('');
+menuLinks.forEach((link) => link.addEventListener('click', handleClick));

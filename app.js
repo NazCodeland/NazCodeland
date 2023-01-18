@@ -15,8 +15,13 @@ import { engine } from 'express-handlebars';
 import livereload from 'livereload';
 import connectLiveReload from 'connect-livereload';
 import favicon from 'serve-favicon';
-import homePageRoutes from './src/routes/homePageRoute.js';
-
+import homePageRoute from './src/routes/homePageRoute.js';
+import aboutMeRoute from './src/routes/aboutMeRoute.js';
+// import portfolioRoutes from './src/routes/portfolioRoutes.js';
+import contactRoute from './src/routes/contactRoute.js';
+import blogRoute from './src/routes/blogRoute.js';
+import signUpRoute from './src/routes/signUpRoute.js';
+import signInRoute from './src/routes/signInRoute.js';
 // -----------------------------------------------------
 // hot module reload for browser
 // -----------------------------------------------------
@@ -56,4 +61,10 @@ app.use(express.static('src/public', { extensions: ['.js'] }));
 
 app.use(favicon('src/public/images/favicon.png'));
 
-app.use(homePageRoutes);
+app.use(homePageRoute);
+app.use(aboutMeRoute);
+// app.use(portfolioRoutes);
+app.use(contactRoute);
+app.use(blogRoute);
+app.use(signUpRoute);
+app.use(signInRoute);
