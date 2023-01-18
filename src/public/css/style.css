@@ -1,3 +1,4 @@
+/* reset styles */
 *,
 **::before,
 **::after {
@@ -5,8 +6,14 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   background-color: cornflowerblue;
+  line-height: 1.4;
 }
 
 .profile {
@@ -16,15 +23,42 @@ body {
   padding: 24px;
 }
 
+/* button styles */
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  inline-size: 90px;
+  text-align: center;
+  white-space: nowrap;
+  outline: 1px solid #666;
+}
+
+.btn:hover {
+  outline: 2px solid cornflowerblue;
+}
+
+.btn-primary {
+  color: rgb(27, 62, 128);
+  /* background-color: cornflowerblue; */
+  outline: 2px solid cornflowerblue;
+}
+
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: cornflowerblue;
+  outline: 1px solid cornflowerblue;
+}
+
+/* header styles */
 header {
   display: flex;
   justify-content: space-between;
   white-space: nowrap;
 }
 
-.logo a {
-  text-decoration: none;
-}
+/* logo styles */
 
 .logo .first-letter {
   font-family: 'Courier New', Courier, monospace;
@@ -49,6 +83,7 @@ header {
   transform: translateY(-20px) scale(2) rotate(20deg);
 }
 
+/* navigation styles */
 .menu {
   display: flex;
   font-size: 1.2rem;
@@ -72,9 +107,48 @@ header {
 
 .menu a {
   color: #666;
-  text-decoration: none;
 }
 
 .nested-menu {
   display: none;
+}
+
+/* profile-card styles */
+
+.card {
+  display: flex;
+  gap: 3rem;
+
+  inline-size: 720px;
+  margin: 72px auto 0 auto;
+  place-items: center;
+}
+
+.card * + * {
+  margin: 0;
+  margin-block-end: 1.5rem;
+}
+
+.card__footer {
+  margin-block-end: 0;
+}
+
+.card__image {
+  min-inline-size: 250px;
+  max-inline-size: 250px;
+  min-block-size: 250px;
+  max-block-size: 250px;
+  border: 12px solid #ffffff;
+  border-radius: 50%;
+
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card__title {
+  font-size: 1.5rem;
+  margin-block-end: 0;
+}
+.card__subtitle {
+  color: #666;
+  font-size: 0.9rem;
 }
