@@ -1,0 +1,27 @@
+.link {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  transition: ease-in color 0.3s;
+  transition-delay: 0.1s; /* delay before transition starts  */
+}
+
+.link:hover {
+  color: #ffffff;
+}
+
+.link::before {
+  content: '';
+  background-color: cornflowerblue;
+  position: absolute;
+  inline-size: 100%;
+  block-size: 2px;
+  inset-block-end: 0;
+  transition: height 0.2s;
+}
+
+.link:hover::before {
+  background-color: cornflowerblue;
+  block-size: 100%;
+  z-index: -1;
+}

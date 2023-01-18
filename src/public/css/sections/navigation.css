@@ -1,0 +1,24 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.menu li {
+  inline-size: 110px;
+}
+
+.menu a {
+  color: #666;
+  outline: none;
+}
+
+.menu a:hover {
+  background-color: cornflowerblue;
+  color: #ffffff;
+}
+
+.nested-menu {
+  display: none;
+}

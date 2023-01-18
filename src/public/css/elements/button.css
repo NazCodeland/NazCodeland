@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  min-inline-size: 110px;
+  text-align: center;
+  white-space: nowrap;
+  outline: 1px solid #666;
+}
+
+.btn:hover {
+  outline: 2px solid cornflowerblue;
+}
+
+.btn-primary {
+  color: rgb(27, 62, 128);
+  /* background-color: cornflowerblue; */
+  outline: 2px solid cornflowerblue;
+}
+
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: cornflowerblue;
+  outline: 1px solid cornflowerblue;
+}
