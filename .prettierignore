@@ -1,0 +1,6 @@
+# this prettierignore is not needed with the
+# current settings because only STAGED files are formatted.
+# it will be needed if prettier is ran without lint-staged
+node_modules
+package-lock.json
+
