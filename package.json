@@ -29,17 +29,20 @@
     "express": "^5.0.0-beta.1",
     "express-handlebars": "^6.0.6",
     "morgan": "^1.10.0",
+    "serve-favicon": "^2.5.0",
     "vitest": "^0.27.2",
     "winston": "^3.8.2",
     "winston-daily-rotate-file": "^4.7.1"
   },
   "devDependencies": {
+    "connect-livereload": "^0.6.1",
     "eslint": "^8.32.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.6.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
+    "livereload": "^0.9.3",
     "nodemon": "^2.0.20",
     "prettier": "2.8.3"
   },
