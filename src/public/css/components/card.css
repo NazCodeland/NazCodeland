@@ -2,12 +2,14 @@
   display: inline-flex;
   gap: 3rem;
   place-items: center;
+  font-size: 1.25rem;
   margin: 72px auto auto auto;
-  border: 1px solid red;
 }
 
-.card__info * + * {
-  margin-block-end: 1rem;
+.card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .card__copy {
@@ -15,10 +17,10 @@
 }
 
 .card__image {
-  min-inline-size: 250px;
-  max-inline-size: 250px;
-  min-block-size: 250px;
-  max-block-size: 250px;
+  min-inline-size: 300px;
+  max-inline-size: 300px;
+  min-block-size: 300px;
+  max-block-size: 300px;
 
   border: 12px solid #ffffff;
   border-radius: 50%;
@@ -33,7 +35,7 @@
 
 .card__subtitle {
   color: #666;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .card__footer {
