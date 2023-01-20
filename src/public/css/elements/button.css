@@ -13,13 +13,13 @@
 }
 
 .btn-primary {
-  color: rgb(27, 62, 128);
-  /* background-color: cornflowerblue; */
-  outline: 2px solid cornflowerblue;
+  color: #ffffff;
+  background-color: cornflowerblue;
+  outline: 1px solid cornflowerblue;
 }
 
 .btn-primary:hover {
   color: #ffffff;
   background-color: cornflowerblue;
-  outline: 1px solid cornflowerblue;
+  outline: 2px solid cornflowerblue;
 }
