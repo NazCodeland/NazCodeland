@@ -1,0 +1,4 @@
+.clicked {
+  box-shadow: 3px 3px 6px 2px inset rgba(204, 219, 232, 1),
+    -3px -3px 6px 6px 2px inset rgba(255, 255, 255, 1);
+}
