@@ -3,7 +3,7 @@
   position: relative;
   z-index: 1;
   transition: ease-in color 0.3s;
-  transition-delay: 0.1s; /* delay before transition starts  */
+  /* transition-delay: 0.1s; */ /*delay before transition starts  */
 }
 
 .link:hover {

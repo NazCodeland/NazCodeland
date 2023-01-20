@@ -1,6 +1,6 @@
 .menu {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 1rem;
   font-size: 1.2rem;
 }
@@ -22,3 +22,5 @@
 .nested-menu {
   display: none;
 }
+
+/* related styles located in elements/button.css */

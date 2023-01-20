@@ -5,7 +5,7 @@
   min-inline-size: 110px;
   text-align: center;
   white-space: nowrap;
-  outline: 1px solid #666;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .btn:hover {
