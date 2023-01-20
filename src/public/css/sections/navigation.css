@@ -1,6 +1,6 @@
 .menu {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   gap: 1rem;
   font-size: 1.2rem;
 }
@@ -11,6 +11,9 @@
 
 .menu a {
   color: #666;
+}
+.menu a.btn {
+  outline: none;
 }
 
 .nested-menu {
