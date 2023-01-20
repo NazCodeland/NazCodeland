@@ -5,13 +5,18 @@
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
-  transition: ease-in-out box-shadow 0.15s;
+  transition: ease-in-out box-shadow 0.15s, ease-in-out transform 0.15s;
 }
 
 .skill-card:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   cursor: pointer;
+  transform: scale(1.01);
+}
+
+.skill-card:active {
+  transform: scale(0.99);
 }
 
 .skill-card__info {
@@ -58,4 +63,8 @@
 
 .svelte-svg-leg-fill {
   fill: #ff3e00;
+}
+
+.github-svg-monitor-fill {
+  fill: #161614;
 }

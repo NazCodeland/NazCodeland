@@ -1,3 +1,7 @@
+/*  base btn turns into secondary upon :hover
+    secondary turns into primary upon :hover
+*/
+
 .btn {
   display: inline-block;
   padding: 8px 16px;
@@ -12,13 +16,21 @@
   outline: 2px solid cornflowerblue;
 }
 
-.btn-primary {
+.btn.btn-primary {
   color: #ffffff;
   background-color: cornflowerblue;
   outline: 1px solid cornflowerblue;
 }
 
-.btn-primary:hover {
+.btn.btn-primary:hover {
+  outline: 2px solid cornflowerblue;
+}
+
+.btn.btn-secondary {
+  outline: 2px solid cornflowerblue;
+}
+
+.btn.btn-secondary:hover {
   color: #ffffff;
   background-color: cornflowerblue;
   outline: 2px solid cornflowerblue;

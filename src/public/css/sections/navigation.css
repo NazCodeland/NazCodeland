@@ -11,12 +11,6 @@
 
 .menu a {
   color: #666;
-  outline: none;
-}
-
-.menu a:hover {
-  background-color: cornflowerblue;
-  color: #ffffff;
 }
 
 .nested-menu {
