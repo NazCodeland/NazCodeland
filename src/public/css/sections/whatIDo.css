@@ -1,6 +1,7 @@
 .what-I-do {
   margin-block-end: 3rem;
-  text-decoration: 2px double underline cornflowerblue;
+  text-decoration: 2px double underline var(--primary-color);
+  font-size: var(--fs-l);
 }
 
 .grid {

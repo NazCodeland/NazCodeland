@@ -20,8 +20,6 @@ import aboutMeRoute from './src/routes/aboutMeRoute.js';
 // import portfolioRoutes from './src/routes/portfolioRoutes.js';
 import contactRoute from './src/routes/contactRoute.js';
 import blogRoute from './src/routes/blogRoute.js';
-import signUpRoute from './src/routes/signUpRoute.js';
-import signInRoute from './src/routes/signInRoute.js';
 // -----------------------------------------------------
 // hot module reload for browser
 // -----------------------------------------------------
@@ -66,5 +64,3 @@ app.use(aboutMeRoute);
 // app.use(portfolioRoutes);
 app.use(contactRoute);
 app.use(blogRoute);
-app.use(signUpRoute);
-app.use(signInRoute);

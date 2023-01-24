@@ -1,6 +1,103 @@
+@import 'https://fonts.googleapis.com/css?family=Suez+One';
+
+/* prettier-ignore */
+:root {
+  --ff-logo-first-letter: 'Suez one', serif;
+  --ff-logo-excluding-first-letter: Arial Black, sans-serif;
+  --ff: 'Times New Roman', Times, serif;
+
+  --fs-xs: 0.875rem;
+  --fs-sm: 1rem;
+  --fs-base: 1.25rem;
+  --fs-m: 1.5rem;
+  --fs-l: 1.875rem;
+  --fs-xl: 2.5rem;
+  --fs-logo-first-letter: 3rem;
+  --fs-logo-remaining-letters: 2rem;
+
+  --fw-100: 100;
+  --fw-400: 400;
+  --fw-700: 700;
+  --fw-900: 900;
+
+  /* Spacing */
+  --spacer-2: 0.125rem;
+  --spacer-4: 0.25rem;
+  --spacer-8: 0.5rem;
+  --spacer-16: 1rem;
+  --spacer-20: 1.25rem;
+  --spacer-24: 1.5rem;
+  --spacer-32: 2rem;
+
+  /* Border-radius */
+  --radius-2: 0.125rem;
+  --radius-4: 0.25rem;
+  --radius-8: 0.5rem;
+  --radius-16: 1rem;
+
+  --grey-000: #ffffff;
+  --grey-025: ;
+  --grey-050: #EFEFEF;
+  --grey-100: #E7E7E7;
+  --grey-200: #BABABA;
+  --grey-300: #999999;
+  --grey-400: #777777;
+  --grey-500: #565656;
+  --grey-600: #353535;
+  --grey-700: #141414;
+  --grey-800: #0A0A0A;
+  --grey-900: #050505;
+
+  /* Theming */
+
+  /* Shared Between Light & Dark Theme */
+  --html-color: var(--primary-color);
+  
+  /* Light Theme */
+  --body-background-light: #fbfcff;
+  --main-background: var(--body-background-light);
+  
+  
+  /* Dark Theme */
+  --body-background-dark: #121212;
+
+  --logo-remaining-letters-color: #282a36;
+
+  --nav-link-text-color: #555555;
+  --btn-text-color: var(--grey-900);
+
+
+  --primary-color: #6495ED;
+  --primary-color-text: var(--grey-000);
+
+  --secondary-color: #145883;
+  --secondary-text: var(--grey-000);
+
+
+
+  --box-shadow-default: rgba(204, 219, 232, 0.5) 3px 3px 6px 2px, rgba(255, 255, 255, 0.5) -3px -3px 6px 2px;
+  --box-shadow-hover: rgba(204, 219, 232, 1) 0px 14px 28px, rgba(255, 255, 255, 1) 0px 10px 10px;
+  --box-shadow-active: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+  --scale-hover: scale(1.03);
+  --scale-active: scale(0.99);
+
+}
+
+html {
+  background-color: var(--primary-color);
+}
+
 body {
-  background-color: cornflowerblue;
-  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--ff);
+  line-height: 1.5;
+  font-size: 20px;
+  background-color: var(--main-background);
+  border-radius: 16px;
+  margin: 32px;
+  padding: 40px;
 }
 
 /* header styles */
@@ -12,5 +109,5 @@ header {
 }
 
 section {
-  margin-block-start: 136px;
+  margin-block-end: 136px;
 }
