@@ -1,0 +1,102 @@
+.theme {
+  margin: 0 0 0 auto;
+  display: grid;
+  place-items: center;
+
+  min-inline-size: 50px;
+  min-block-size: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: cornflowerblue;
+  overflow: hidden;
+}
+
+/* dark mode icon */
+
+.star01 {
+  fill: #ffffff;
+  animation: blink-animation 1s steps(2, start) infinite;
+}
+.star02 {
+  fill: var(--primary-color);
+  animation: blink-animation 2s steps(5, start) infinite;
+}
+
+.star03 {
+  fill: #ffffff;
+  animation: blink-animation 3s steps(8, start) infinite;
+}
+.star04 {
+  fill: var(--primary-color);
+  animation: blink-animation 4s steps(10, start) infinite;
+}
+
+.star05 {
+  fill: #ffffff;
+  animation: blink-animation 7s steps(10, start) infinite;
+}
+.star06,
+.star09 {
+  fill: var(--primary-color);
+  animation: blink-animation 6s steps(12, start) infinite;
+}
+.star07,
+.star08 {
+  fill: var(--primary-color);
+  animation: blink-animation 2s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* light mode icon  */
+
+.small-cloud {
+  animation: flyFast 10s infinite linear;
+}
+
+@keyframes flyFast {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(45px);
+  }
+}
+
+.big-cloud {
+  animation: flySlow 15s infinite linear;
+}
+
+@keyframes flySlow {
+  from {
+    transform: translate(-40px);
+  }
+  to {
+    transform: translate(30px);
+  }
+}
+
+/* light mode and dark mode  */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --main-background: var(--body-background-dark);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-background: var(--body-background-light);
+  }
+} */
+
+[color-scheme='dark'] {
+  --main-background: var(--body-background-dark);
+}
+[color-scheme='light'] {
+  --main-background: var(--body-background-light);
+}

@@ -2,17 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  font-size: 1.2rem;
 }
 
 .menu li {
   inline-size: 110px;
+  --btn-text-color: var(--nav-link-text-color);
 }
 
 .menu a {
-  color: #666;
-}
-.menu a.btn {
   outline: none;
 }
 
@@ -21,3 +18,9 @@
 }
 
 /* related styles located in elements/button.css */
+
+@media (max-width: 1100px) {
+  .menu {
+    display: none;
+  }
+}
