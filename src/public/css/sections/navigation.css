@@ -1,7 +1,7 @@
 .menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: var(--spacer-16);
 }
 
 .menu li {

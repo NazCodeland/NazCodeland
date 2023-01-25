@@ -1,5 +1,5 @@
 .what-I-do {
-  margin-block-end: 3rem;
+  margin-block-end: var(--spacer-48);
   text-decoration: 2px double underline var(--primary-color);
   font-size: var(--fs-l);
 }
@@ -7,5 +7,5 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
+  gap: var(--spacer-48);
 }

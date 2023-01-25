@@ -28,6 +28,8 @@
   --spacer-20: 1.25rem;
   --spacer-24: 1.5rem;
   --spacer-32: 2rem;
+  --spacer-40: 2.5rem;
+  --spacer-48: 3rem;
 
   /* Border-radius */
   --radius-2: 0.125rem;
@@ -81,7 +83,18 @@
 
   --scale-hover: scale(1.03);
   --scale-active: scale(0.99);
+  
+  
+  /* making the assumption the user prefers light mode */
+  --svg-background-color: skyblue;
+  --day-svg-angle: 0deg;
+  --night-svg-angle: 90deg;
 
+    /* without this variable, day/night icons show up at once when the page is loaded/refreshed since, both icons are inline-svg*/
+  --svg-transition-duration: 0s;
+  
+  /* when user toggles light mode, this variable value is reduced */
+  --body-margin-top: 32px;
 }
 
 html {
@@ -93,11 +106,16 @@ body {
   flex-direction: column;
   font-family: var(--ff);
   line-height: 1.5;
-  font-size: 20px;
+  font-size: var(--fs-base);
+
   background-color: var(--main-background);
-  border-radius: 16px;
-  margin: 32px;
-  padding: 40px;
+  border-radius: var(--radius-16);
+
+  margin: 0 var(--spacer-32) var(--spacer-32) var(--spacer-32);
+  margin-block-start: var(--body-margin-top);
+  padding: var(--spacer-40);
+
+  transition: background-color 3s, margin-block-start 3s;
 }
 
 /* header styles */

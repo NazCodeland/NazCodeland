@@ -1,17 +1,102 @@
 .theme {
-  margin: 0 0 0 auto;
-  display: grid;
-  place-items: center;
-
-  min-inline-size: 50px;
-  min-block-size: 50px;
   border-radius: 50%;
+  margin: 0 0 0 auto;
+
   cursor: pointer;
-  background-color: cornflowerblue;
   overflow: hidden;
 }
 
-/* dark mode icon */
+.day-and-night-svg-container {
+  position: relative;
+  min-inline-size: 50px;
+  min-block-size: 50px;
+
+  background-color: var(--svg-background-color);
+  transition: background-color 2s;
+}
+
+.common-svg-styles {
+  position: absolute;
+
+  transform-origin: 50% 100px;
+
+  /* prettier-ignore */
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  /* prettier-ignore */
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  /* prettier-ignore */
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--svg-transition-duration);
+}
+
+.day-svg {
+  transform: rotate(var(--day-svg-angle));
+}
+
+.night-svg {
+  transform: rotate(var(--night-svg-angle));
+}
+
+/* called from  prefers-color-scheme: light */
+@keyframes sunRise {
+  0% {
+    --svg-background-color: black;
+  }
+  40% {
+    --svg-background-color: #e67451;
+    /* --svg-background-color: #f7cd5d; */
+  }
+  80% {
+    --svg-background-color: skyblue;
+  }
+}
+
+/* called from  prefers-color-scheme: dark */
+@keyframes sunSet {
+  0% {
+    --svg-background-color: skyblue;
+  }
+  30% {
+    --svg-background-color: #e67451;
+  }
+
+  80% {
+    --svg-background-color: black;
+  }
+}
+
+/* ------------------------------------------------------------------------------ */
+/* day svg icon  */
+
+.small-cloud {
+  animation: fastCloud 10s infinite linear;
+}
+
+@keyframes fastCloud {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(45px);
+  }
+}
+
+.big-cloud {
+  animation: slowCloud 15s infinite linear;
+}
+
+@keyframes slowCloud {
+  from {
+    transform: translate(-40px);
+  }
+  to {
+    transform: translate(30px);
+  }
+}
+
+/* ------------------------------------------------------------------------------ */
+/* night svg icon */
 
 .star01 {
   fill: #ffffff;
@@ -52,39 +137,14 @@
   }
 }
 
-/* light mode icon  */
+/* ------------------------------------------------------------------------------ */
+/* site-wide light mode and dark mode theme */
 
-.small-cloud {
-  animation: flyFast 10s infinite linear;
-}
-
-@keyframes flyFast {
-  from {
-    transform: translateX(-10px);
-  }
-  to {
-    transform: translateX(45px);
-  }
-}
-
-.big-cloud {
-  animation: flySlow 15s infinite linear;
-}
-
-@keyframes flySlow {
-  from {
-    transform: translate(-40px);
-  }
-  to {
-    transform: translate(30px);
-  }
-}
-
-/* light mode and dark mode  */
-
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --main-background: var(--body-background-dark);
+    --day-svg-angle: 0deg;
+    --night-svg-angle: 90deg;
   }
 }
 
@@ -92,11 +152,25 @@
   :root {
     --main-background: var(--body-background-light);
   }
-} */
+}
 
 [color-scheme='dark'] {
   --main-background: var(--body-background-dark);
+  --day-svg-angle: -90deg;
+  --night-svg-angle: 0deg;
+  --svg-background-color: #000;
+  animation: sunSet 2s;
+
+  --svg-transition-duration: 2s;
+
+  --body-margin-top: 48px;
 }
+
 [color-scheme='light'] {
   --main-background: var(--body-background-light);
+  --day-svg-angle: 0deg;
+  --night-svg-angle: 90deg;
+  animation: sunRise 2s;
+
+  --svg-transition-duration: 2s;
 }

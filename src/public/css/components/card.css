@@ -1,6 +1,6 @@
 .card {
   display: inline-flex;
-  gap: 3rem;
+  gap: var(--spacer-48);
   place-items: center;
 }
 .card__image {
@@ -18,7 +18,7 @@
 .card__info {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--spacer-16);
 }
 
 .card__title {
@@ -37,6 +37,6 @@
 
 .card__footer {
   display: flex;
-  gap: 1rem;
-  margin-block-start: 1rem;
+  gap: var(--spacer-16);
+  margin-block-start: var(--spacer-16);
 }
