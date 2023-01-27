@@ -7,7 +7,10 @@ secondary turns into primary upon :hover
   text-align: center;
   white-space: nowrap;
 
+  /* --btn-text-color is not defined so it will fallback to inheriting the color in this situation */
   color: var(--btn-text-color);
+
+  background-color: rgba(var(--grey-000), var(--dp-01-dark));
   outline-width: 0.125rem;
   outline-style: solid;
   outline-color: transparent;
@@ -16,7 +19,7 @@ secondary turns into primary upon :hover
   min-inline-size: 110px;
   padding: var(--spacer-8) var(--spacer-16);
 
-  box-shadow: var(--box-shadow-default);
+  box-shadow: var(--box-shadow-rest);
   transition: ease-in-out transform 0.15s;
 }
 
@@ -33,20 +36,20 @@ secondary turns into primary upon :hover
 }
 
 .btn-filled-primary {
-  --btn-text-color: var(--primary-color-text);
+  --btn-text-color: rgb(var(--btn-primary-text-color));
   background-color: var(--primary-color);
 }
 
-.btn-filled-primary:is(:hover, :focus) {
-  outline-color: var(--outline-default);
-}
+/* .btn-filled-primary:is(:hover, :focus) {
+} */
 
 .btn-outlined-primary {
+  background-color: rgba(var(--grey-000), var(--dp-02-dark));
   outline-color: var(--primary-color);
 }
 
 .btn-outlined-primary:is(:hover, :focus) {
-  --btn-text-color: var(--primary-color-text);
+  --btn-text-color: rgb(var(--btn-primary-text-color));
   background-color: var(--primary-color);
 }
 
