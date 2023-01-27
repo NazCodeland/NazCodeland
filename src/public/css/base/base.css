@@ -3,8 +3,6 @@
 /* prettier-ignore */
 :root {
   --ff-logo-first-letter: 'Suez one', serif;
-  --ff-logo-excluding-first-letter: Arial Black, sans-serif;
-  --ff: 'Times New Roman', Times, serif;
 
   --fs-xs: 0.875rem;
   --fs-sm: 1rem;
@@ -12,8 +10,6 @@
   --fs-m: 1.5rem;
   --fs-l: 1.875rem;
   --fs-xl: 2.5rem;
-  --fs-logo-first-letter: 3rem;
-  --fs-logo-remaining-letters: 2rem;
 
   --fw-100: 100;
   --fw-400: 400;
@@ -37,71 +33,56 @@
   --radius-8: 0.5rem;
   --radius-16: 1rem;
 
-  --grey-000: #ffffff;
-  --grey-025: ;
-  --grey-050: #EFEFEF;
-  --grey-100: #E7E7E7;
-  --grey-200: #BABABA;
-  --grey-300: #999999;
-  --grey-400: #777777;
-  --grey-500: #565656;
-  --grey-600: #353535;
-  --grey-700: #141414;
-  --grey-800: #0A0A0A;
-  --grey-900: #050505;
+  /* the values are ##,##,## format so that I can give these variables opacity when using them: example; rgba(var(--grey-100, .50) */
+  --grey-000: 255,255,255;
+  --grey-025: 251,252,255;
+  --grey-050: 239,239,239;
+  --grey-100: 231,231,231;
+  --grey-200: 186,186,186;
+  --grey-300: 153,153,153;
+  --grey-400: 119,119,119;
+  --grey-500: 86,86,86;
+  --grey-600: 53,53,53;
+  --grey-700: 20,20,20;
+  --grey-800: 10,10,10;
+  --grey-900: 5,5,5;
+  --grey-1000: 0,0,0;
 
-  /* Theming */
-
-  /* Shared Between Light & Dark Theme */
-  --html-color: var(--primary-color);
-  
-  /* Light Theme */
-  --body-background-light: #fbfcff;
-  --main-background: var(--body-background-light);
-  
-  
-  /* Dark Theme */
-  --body-background-dark: #121212;
-
-  --logo-remaining-letters-color: #282a36;
-
-  --nav-link-text-color: #555555;
-  --btn-text-color: var(--grey-900);
-
-
-  --primary-color: #6495ED;
-  --primary-color-text: var(--grey-000);
-
-  --secondary-color: #145883;
-  --secondary-text: var(--grey-000);
-
-
-
-  --box-shadow-default: rgba(204, 219, 232, 0.5) 3px 3px 6px 2px, rgba(255, 255, 255, 0.5) -3px -3px 6px 2px;
-  --box-shadow-hover: rgba(204, 219, 232, 1) 0px 14px 28px, rgba(255, 255, 255, 1) 0px 10px 10px;
-  --box-shadow-active: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
   --scale-hover: scale(1.03);
   --scale-active: scale(0.99);
-  
-  
-  /* making the assumption the user prefers light mode */
-  --svg-background-color: skyblue;
-  --day-svg-angle: 0deg;
-  --night-svg-angle: 90deg;
 
-    /* without this variable, day/night icons show up at once when the page is loaded/refreshed since, both icons are inline-svg*/
+  /* ------------------------------------------------------------------------------- */
+  /* Theming */
+  /* ------------------------------------------------------------------------------- */
+
+  /* Shared Between Light & Dark Theme */
+  --ff-logo-excluding-first-letter: Arial Black, sans-serif;
+  --ff: 'Times New Roman', Times, serif;
+
+  --fs-logo-first-letter: 3rem;
+  --fs-logo-remaining-letters: 2rem;
+
+
+  --html-color: var(--primary-color);
+
+  --primary-color: #6495ED;
+  --secondary-color: #145883;
+
+    /* without this variable:value, when the page is loaded/refreshed, day & night icons show up together since, both icons are inline-svg */
   --svg-transition-duration: 0s;
   
-  /* when user toggles light mode, this variable value is reduced */
-  --body-margin-top: 32px;
 }
 
 html {
-  background-color: var(--primary-color);
+  background-color: var(--html-color);
 }
 
+/* prettier-ignore */
 body {
+  background-color: --body;
+  color: rgb(var(--text-color));
+  position: relative;
   display: flex;
   flex-direction: column;
   font-family: var(--ff);
@@ -111,8 +92,7 @@ body {
   background-color: var(--main-background);
   border-radius: var(--radius-16);
 
-  margin: 0 var(--spacer-32) var(--spacer-32) var(--spacer-32);
-  margin-block-start: var(--body-margin-top);
+  margin: var(--body-margin-top) var(--spacer-32) var(--spacer-32) var(--spacer-32);
   padding: var(--spacer-40);
 
   transition: background-color 3s, margin-block-start 3s;

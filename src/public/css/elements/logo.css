@@ -16,9 +16,8 @@
   letter-spacing: 4;
   font-size: var(--fs-logo-remaining-letters);
   font-weight: var(--fw-900);
-  color: var(--logo-remaining-letters-color);
-
-  box-shadow: var(--box-shadow-default);
+  color: rgba(var(--logo-remaining-letters-color));
+  box-shadow: var(--box-shadow-rest);
   transition: transform 0.2s;
 }
 

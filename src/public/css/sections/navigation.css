@@ -6,7 +6,7 @@
 
 .menu li {
   inline-size: 110px;
-  --btn-text-color: var(--nav-link-text-color);
+  --btn-text-color: rgb(var(--nav-link-text-color));
 }
 
 .menu a {

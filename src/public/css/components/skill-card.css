@@ -3,7 +3,7 @@
   gap: var(--spacer-16);
   padding: var(--spacer-16);
   border-radius: var(--spacer-8);
-  box-shadow: var(--box-shadow-default);
+  box-shadow: var(--box-shadow-rest);
   transition: ease-in-out box-shadow 0.15s, ease-in-out transform 0.15s;
 }
 
