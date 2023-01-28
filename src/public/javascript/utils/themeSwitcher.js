@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-expressions */
-const themeBtn = document.querySelector('.theme');
+const themeSwitcherBtn = document.querySelector('.theme-switcher');
 const root = document.querySelector(':root');
 
 function getCurrentTheme() {
@@ -17,11 +17,11 @@ function getCurrentTheme() {
 function setTheme(theme) {
   switch (theme) {
     case 'dark':
-      // themeBtn.innerHTML = ``;
+      // themeSwitcherBtn.innerHTML = ``;
       break;
 
     case 'light':
-      // themeBtn.innerHTML = ``;
+      // themeSwitcherBtn.innerHTML = ``;
       break;
 
     default:
@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
   setTheme(getCurrentTheme());
 });
 
-themeBtn.addEventListener('click', () => {
+themeSwitcherBtn.addEventListener('click', () => {
   let theme = getCurrentTheme();
   theme === 'dark' ? (theme = 'light') : (theme = 'dark');
   localStorage.setItem('NazCodeland.theme', `${theme}`);
