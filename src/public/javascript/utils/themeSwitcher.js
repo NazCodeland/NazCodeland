@@ -15,18 +15,6 @@ function getCurrentTheme() {
 }
 
 function setTheme(theme) {
-  switch (theme) {
-    case 'dark':
-      // themeSwitcherBtn.innerHTML = ``;
-      break;
-
-    case 'light':
-      // themeSwitcherBtn.innerHTML = ``;
-      break;
-
-    default:
-      break;
-  }
   root.setAttribute('color-scheme', `${theme}`);
 }
 

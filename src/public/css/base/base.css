@@ -80,6 +80,7 @@ html {
 
 /* prettier-ignore */
 body {
+  color-scheme: only light;
   background-color: --body;
   color: rgb(var(--text-color));
   position: relative;

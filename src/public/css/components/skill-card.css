@@ -32,7 +32,12 @@
   max-inline-size: 60ch;
 }
 
+/* ------------------------------------------------- */
 /* svg fill styles */
+.vsc-svg-all-fill {
+  fill: #3c99d4;
+}
+
 .html-svg-monitor-fill {
   fill: #e44d26;
 }
@@ -41,26 +46,22 @@
   fill: #264de4;
 }
 
+.tailwind-svg-monitor-fill {
+  fill: #06b6d4;
+}
+
 .javascript-svg-monitor-fill {
   fill: #f0db4f;
 }
 
-.python-svg-monitor-fill {
+.python-svg-body-fill {
   fill: #37a2d2;
 }
 .python-svg-leg-fill {
   fill: #eee33f;
 }
 
-.svelte-svg-monitor-fill {
-  fill: #ff3e00;
-}
-
-.svelte-svg-body-fill {
-  fill: #ff3e00;
-}
-
-.svelte-svg-leg-fill {
+.svelte-svg-all-fill {
   fill: #ff3e00;
 }
 
