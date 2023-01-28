@@ -9,12 +9,17 @@ const monitorLeg = document.querySelector('.monitor-leg');
 const languageIcon = document.querySelector('.language-icon');
 
 const languageIcons = [
-  'html icon.svg',
-  'css icon.svg',
-  'javascript icon.svg',
-  'python icon.svg',
-  'svelte icon.svg',
-  'github icon.svg',
+  'vsc.svg',
+  'html.svg',
+  'css.svg',
+  'tailwind.svg',
+  'javascript.svg',
+  'git.svg',
+  'github.svg',
+  'nodejs.svg',
+  'expressjs.svg',
+  'python.svg',
+  'svelte.svg',
 ];
 
 async function rotateIcons(icons) {
@@ -23,37 +28,47 @@ async function rotateIcons(icons) {
       icon = 0;
     }
 
-    languageIcon.href.baseVal = `/images/${languageIcons[icon]}`;
+    languageIcon.href.baseVal = `/images/icons/${languageIcons[icon]}`;
 
     removeUnusedClasses(monitor, monitor.classList.value);
     removeUnusedClasses(monitorBody, monitorBody.classList.value);
     removeUnusedClasses(monitorLeg, monitorLeg.classList.value);
 
     switch (languageIcons[icon]) {
-      case 'html icon.svg':
+      case 'vsc.svg':
+        monitor.classList.add('vsc-svg-all-fill');
+        monitorBody.classList.add('vsc-svg-all-fill');
+        monitorLeg.classList.add('vsc-svg-all-fill');
+        break;
+
+      case 'html.svg':
         monitor.classList.add('html-svg-monitor-fill');
         break;
 
-      case 'css icon.svg':
+      case 'css.svg':
         monitor.classList.add('css-svg-monitor-fill');
         break;
 
-      case 'javascript icon.svg':
+      case 'tailwind.svg':
+        monitor.classList.add('tailwind-svg-monitor-fill');
+        break;
+
+      case 'javascript.svg':
         monitor.classList.add('javascript-svg-monitor-fill');
         break;
 
-      case 'python icon.svg':
-        monitor.classList.add('python-svg-monitor-fill');
+      case 'python.svg':
+        monitorBody.classList.add('python-svg-body-fill');
         monitorLeg.classList.add('python-svg-leg-fill');
         break;
 
-      case 'svelte icon.svg':
-        monitor.classList.add('svelte-svg-monitor-fill');
-        monitorBody.classList.add('svelte-svg-body-fill');
-        monitorLeg.classList.add('svelte-svg-leg-fill');
+      case 'svelte.svg':
+        monitor.classList.add('svelte-svg-all-fill');
+        monitorBody.classList.add('svelte-svg-all-fill');
+        monitorLeg.classList.add('svelte-svg-all-fill');
         break;
 
-      case 'github icon.svg':
+      case 'github.svg':
         monitor.classList.add('github-svg-monitor-fill');
         break;
 

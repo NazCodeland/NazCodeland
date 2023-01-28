@@ -80,9 +80,6 @@ html {
 
 /* prettier-ignore */
 body {
-  background-color: --body;
-  color: rgb(var(--text-color));
-  position: relative;
   display: flex;
   flex-direction: column;
   font-family: var(--ff);

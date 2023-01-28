@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------------------ */
-/* site-wide light mode and dark mode theme variables */
+/* site-wide light and dark mode theme variables */
 
 /* prettier-ignore */
 @media (prefers-color-scheme: light) {
@@ -19,6 +19,8 @@
 
 /* prettier-ignore */
 [color-scheme='light'] {
+  color-scheme: light;
+
 
   --body-margin-top: var(--spacer-32);
   --main-background: #fbfcff;
@@ -38,8 +40,8 @@
 
 
 
-  /* light / dark icon variables */
-  /* making the assumption the user prefers light mode */
+  /* light / dark mode icon variables */
+  /* making the assumption the user visits site using light mode */
   --svg-background-color: skyblue;
   --svg-angle-day: 0deg;
   --svg-angle-night: 90deg;
@@ -56,6 +58,7 @@
 
 /* prettier-ignore */
 [color-scheme='dark'] {
+  color-scheme: dark;
   
   /* Light text opacity on dark backgrounds from material design guidelines */
   --high-emphasis-text-dark: 0.87;
