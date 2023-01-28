@@ -1,0 +1,233 @@
+.theme-switcher {
+  border-radius: 50%;
+  margin: 0 0 0 auto;
+
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.day-and-night-svg-container {
+  position: relative;
+  min-inline-size: 50px;
+  min-block-size: 50px;
+
+  background-color: var(--svg-background-color);
+  transition: background-color 2s;
+}
+
+.common-svg-styles {
+  position: absolute;
+
+  transform-origin: 50% 100px;
+
+  /* prettier-ignore */
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  /* prettier-ignore */
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  /* prettier-ignore */
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--svg-transition-duration);
+}
+
+.day-svg {
+  transform: rotate(var(--svg-angle-day));
+}
+
+.night-svg {
+  transform: rotate(var(--svg-angle-night));
+}
+
+/* called from  prefers-color-scheme: light */
+@keyframes sunRise {
+  40% {
+    --svg-background-color: #e67451;
+    /* --svg-background-color: #f7cd5d; */
+  }
+  80% {
+    --svg-background-color: skyblue;
+  }
+}
+
+/* called from  prefers-color-scheme: dark */
+@keyframes sunSet {
+  5% {
+    --svg-background-color: #e67451;
+  }
+}
+
+/* ------------------------------------------------------------------------------ */
+/* day svg icon  */
+
+.small-cloud {
+  animation: fastCloud 10s infinite linear;
+}
+
+@keyframes fastCloud {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(45px);
+  }
+}
+
+.big-cloud {
+  animation: slowCloud 15s infinite linear;
+}
+
+@keyframes slowCloud {
+  from {
+    transform: translate(-40px);
+  }
+  to {
+    transform: translate(30px);
+  }
+}
+
+/* ------------------------------------------------------------------------------ */
+/* night svg icon */
+
+.star01 {
+  fill: #ffffff;
+  animation: blink-animation 1s steps(2, start) infinite;
+}
+.star02 {
+  fill: var(--primary-color);
+  animation: blink-animation 2s steps(5, start) infinite;
+}
+
+.star03 {
+  fill: #ffffff;
+  animation: blink-animation 3s steps(8, start) infinite;
+}
+.star04 {
+  fill: var(--primary-color);
+  animation: blink-animation 4s steps(10, start) infinite;
+}
+
+.star05 {
+  fill: #ffffff;
+  animation: blink-animation 7s steps(10, start) infinite;
+}
+.star06,
+.star09 {
+  fill: var(--primary-color);
+  animation: blink-animation 6s steps(12, start) infinite;
+}
+.star07,
+.star08 {
+  fill: var(--primary-color);
+  animation: blink-animation 2s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+<<<<<<< HEAD:src/public/css/sections/theme.css
+
+/* ------------------------------------------------------------------------------ */
+/* site-wide light mode and dark mode theme variables */
+
+/* prettier-ignore */
+@media (prefers-color-scheme: light) {
+  :root{
+    /* css theming variables can be placed here for a css fallback implementation for light/dark mode incase javascript fails */
+    --i-will-leave-it-empty: 0;
+  }
+}
+
+/* prettier-ignore */
+@media (prefers-color-scheme: dark) {
+  :root{
+    /* css theming variables can be placed here for a css fallback implementation for light/dark mode incase javascript fails */
+    --i-will-leave-it-empty: 0;
+  }
+}
+
+/* prettier-ignore */
+[color-scheme='light'] {
+
+  --body-margin-top: var(--spacer-32);
+  --main-background: #fbfcff;
+
+  --logo-remaining-letters-color: 40,42,54;
+  --nav-link-text-color: var(--grey-500);
+
+  --text-color: var(--grey-1000);
+
+  --btn-primary-text-color: var(--grey-000);
+
+  
+    /* --btn-text-opacity-light: 1;
+  --btn-text-opacity: var(--btn-text-opacity-light); */
+  
+
+
+
+
+  /* light / dark icon variables */
+  /* making the assumption the user prefers light mode */
+  --svg-background-color: skyblue;
+  --svg-angle-day: 0deg;
+  --svg-angle-night: 90deg;
+  --svg-transition-duration: 2s;
+  animation: sunRise 2s;
+
+
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  --box-shadow-rest:  3px 3px 6px 2px rgba(204, 219, 232, 0.5), -3px -3px 6px 2px rgba(255, 255, 255, 0.5);
+  --box-shadow-hover:  0px 14px 28px rgba(204, 219, 232, 1), 0px 10px 10px rgba(255, 255, 255, 1);
+  --box-shadow-active: 1px 1px 3px rgba(0, 0, 0, 0.12), 1px 1px 2px rgba(0, 0, 0, 0.24);
+  
+}
+
+/* prettier-ignore */
+[color-scheme='dark'] {
+  
+  /* Light text opacity on dark backgrounds from material design guidelines */
+  --high-emphasis-text-dark: 0.87;
+  --medium-emphasis-text-dark: 0.60;
+  --low-emphasis-text-dark: 0.38;
+
+  --dp-00-dark: 0%;
+  --dp-01-dark: 5%;
+  --dp-02-dark: 7%;
+  --dp-03-dark: 8%;
+  --dp-04-dark: 9%;
+  --dp-05-dark: 11%;
+  --dp-06-dark: 12%;
+  --dp-07-dark: 14%;
+  --dp-08-dark: 15%;
+  --dp-09-dark: 16%;
+  
+  --body-margin-top: var(--spacer-48);
+  --main-background: #121212;
+
+  --logo-remaining-letters-color: var(--grey-025), var(--high-emphasis-text-dark);
+  --nav-link-text-color: var(--grey-000), var(--low-emphasis-text-dark);
+
+  --text-color: var(--grey-000), var(--medium-emphasis-text-dark);
+  
+
+  --btn-primary-text-color: var(--grey-900);
+
+
+
+  /* light / dark icon variables */
+  --svg-angle-day: -90deg;
+  --svg-angle-night: 0deg;
+  --svg-background-color: #000;
+  --svg-transition-duration: 2s;
+  animation: sunSet 2s;
+
+
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  --box-shadow-rest: none;
+  --box-shadow-hover: none;
+  --box-shadow-active: rgba(0, 0, 0, 1) 1px 1px 3px, rgba(0, 0, 0, 1) 1px 1px 2px;
+}
+=======
+>>>>>>> theming:src/public/css/sections/theme-swticher.css
