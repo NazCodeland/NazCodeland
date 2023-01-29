@@ -24,7 +24,7 @@ secondary turns into primary upon :hover
 
 .btn:is(:hover, :focus) {
   --btn-bg-opacity: var(--opacity-20-dark);
-  outline-color: var(--primary-color);
+  outline-color: rgba(var(--primary-color));
   box-shadow: var(--box-shadow-hover);
   transform: var(--scale-hover);
 }
@@ -34,12 +34,11 @@ secondary turns into primary upon :hover
   box-shadow: var(--box-shadow-active);
   transform: var(--scale-active);
   outline: none;
-  /* color: #121212; */
 }
 
 .btn-filled-primary {
-  --btn-text-color: rgb(var(--btn-primary-color-text));
-  background-color: var(--primary-color);
+  --btn-text-color: var(--primary-color-text);
+  background-color: rgba(var(--primary-color));
 }
 
 /* .btn-filled-primary:is(:hover, :focus) {
@@ -47,12 +46,12 @@ secondary turns into primary upon :hover
 
 .btn-outlined-primary {
   background-color: rgba(var(--grey-000), var(--opacity-02-dark));
-  outline-color: var(--primary-color);
+  outline-color: rgba(var(--primary-color));
 }
 
 .btn-outlined-primary:is(:hover, :focus) {
-  --btn-text-color: rgb(var(--btn-primary-color-text));
-  background-color: var(--primary-color);
+  --btn-text-color: var(--primary-color-text);
+  background-color: rgba(var(--primary-color));
 }
 
 .btn-disabled {

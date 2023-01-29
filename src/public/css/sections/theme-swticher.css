@@ -11,7 +11,7 @@
   min-inline-size: 50px;
   min-block-size: 50px;
 
-  background-color: var(--svg-background-color);
+  background-color: rgba(var(--svg-background-color));
   transition: background-color 2s;
 }
 
@@ -32,18 +32,17 @@
 /* called from  prefers-color-scheme: light */
 @keyframes sunRise {
   40% {
-    --svg-background-color: #e67451;
-    /* --svg-background-color: #f7cd5d; */
+    --svg-background-color: 230, 116, 81;
   }
   80% {
-    --svg-background-color: skyblue;
+    --svg-background-color: 135, 206, 235;
   }
 }
 
 /* called from  prefers-color-scheme: dark */
 @keyframes sunSet {
   5% {
-    --svg-background-color: #e67451;
+    --svg-background-color: 230, 116, 81;
   }
 }
 
@@ -80,7 +79,7 @@
 /* night svg icon */
 
 .star01 {
-  fill: #ffffff;
+  fill: rgba(var(--grey-000));
   animation: blink-animation 1s steps(2, start) infinite;
 }
 .star02 {
@@ -89,7 +88,7 @@
 }
 
 .star03 {
-  fill: #ffffff;
+  fill: rgba(var(--grey-000));
   animation: blink-animation 3s steps(8, start) infinite;
 }
 .star04 {
@@ -98,7 +97,7 @@
 }
 
 .star05 {
-  fill: #ffffff;
+  fill: rgba(var(--grey-000));
   animation: blink-animation 7s steps(10, start) infinite;
 }
 .star06,

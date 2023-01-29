@@ -28,6 +28,7 @@
   gap: var(--spacer-16);
 }
 .skill-card__title {
+  color: rgba(var(--grey-000), var(--high-emphasis-text-dark));
   font-size: var(--fs-m);
   margin-block-end: 0;
 }
@@ -39,47 +40,47 @@
 /* ------------------------------------------------- */
 /* svg fill styles */
 .vsc-svg-all-fill {
-  fill: #3c99d4;
+  fill: rgba(60, 153, 212, 1);
 }
 
 .html-svg-monitor-fill {
-  fill: #e44d26;
+  fill: rgba(228, 77, 38, 1);
 }
 
 .css-svg-monitor-fill {
-  fill: #264de4;
+  fill: rgba(38, 77, 228, 1);
 }
 
 .tailwind-svg-monitor-fill {
-  fill: #06b6d4;
+  fill: rgba(6, 182, 212, 1);
 }
 
 .javascript-svg-monitor-fill {
-  fill: #f0db4f;
+  fill: rgba(240, 219, 79, 1);
 }
 
 .git-svg-all-fill {
-  fill: #f05033;
+  fill: rgba(240, 80, 51, 1);
 }
 
 .github-svg-all-fill {
-  fill: #161614;
+  fill: rgba(22, 22, 20, 1);
 }
 
 .nodejs-svg-monitor-fill {
-  fill: #68a063;
+  fill: rgba(104, 160, 99, 1);
 }
 .nodejs-svg-all-fill {
-  fill: #333333;
+  fill: rgba(51, 51, 51, 1);
 }
 
 .python-svg-body-fill {
-  fill: #37a2d2;
+  fill: rgba(55, 162, 210, 1);
 }
 .python-svg-leg-fill {
-  fill: #eee33f;
+  fill: rgba(238, 227, 63, 1);
 }
 
 .svelte-svg-all-fill {
-  fill: #ff3e00;
+  fill: rgba(255, 62, 0, 1);
 }

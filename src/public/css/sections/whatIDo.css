@@ -1,7 +1,8 @@
 .what-I-do {
-  margin-block-end: var(--spacer-48);
-  text-decoration: 2px double underline var(--primary-color);
+  color: rgba(var(--grey-000), var(--high-emphasis-text-dark));
   font-size: var(--fs-l);
+  text-decoration: 2px double underline rgba(var(--primary-color));
+  margin-block-end: var(--spacer-48);
 }
 
 .grid {

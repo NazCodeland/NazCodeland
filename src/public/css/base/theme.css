@@ -23,14 +23,14 @@
 
 
   --body-margin-top: var(--spacer-32);
-  --main-background: #fbfcff;
+  --main-background: 251,252,255;
 
   --logo-remaining-letters-color: 40,42,54;
   --nav-link-text-color: var(--grey-500);
 
   --text-color: var(--grey-1000);
 
-  --btn-primary-color-text: var(--grey-000);
+  --primary-color-text: var(--grey-000);
 
   
     /* --btn-text-opacity-light: 1;
@@ -42,7 +42,7 @@
 
   /* light / dark mode icon variables */
   /* making the assumption the user visits site using light mode */
-  --svg-background-color: skyblue;
+  --svg-background-color: 135, 206, 235;
   --svg-angle-day: 0deg;
   --svg-angle-night: 90deg;
   --svg-inset-light: 90;
@@ -64,7 +64,8 @@
   /* Light text opacity on dark backgrounds from material design guidelines */
   --high-emphasis-text-dark: 0.87;
   --medium-emphasis-text-dark: 0.60;
-  --low-emphasis-text-dark: 0.38;
+  --low-emphasis-text-dark: 0.45;
+  --very-low-emphasis-text-dark: 0.38;
   
   --opacity-00-dark: 0%;
   --opacity-01-dark: 5%;
@@ -81,7 +82,7 @@
   --opacity-30-dark: 30%;
   
   --body-margin-top: var(--spacer-48);
-  --main-background: #121212;
+  --main-background: 18,18,18;
   
   --logo-remaining-letters-color: var(--grey-025), var(--high-emphasis-text-dark);
   --nav-link-text-color: var(--grey-000), var(--medium-emphasis-text-dark);
@@ -89,14 +90,14 @@
   --text-color: var(--grey-000), var(--medium-emphasis-text-dark);
   
   --btn-text-color: var(--grey-000), var(--medium-emphasis-text-dark);
-  --btn-primary-color-text: var(--grey-900);
+  --primary-color-text: var(--grey-900);
   
   
   
   /* light / dark icon variables */
   --svg-angle-day: -90deg;
   --svg-angle-night: 0deg;
-  --svg-background-color: #000;
+  --svg-background-color: 00,00,00;
   animation: sunSet 2s;
   
   

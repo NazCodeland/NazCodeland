@@ -7,12 +7,12 @@
 }
 
 .link:is(:hover, :focus) {
-  color: var(--primary-color-text);
+  color: rgba(var(--primary-color-text));
 }
 
 .link::before {
   content: '';
-  background-color: var(--primary-color);
+  background-color: rgba(var(--primary-color));
   position: absolute;
   inline-size: 100%;
   block-size: 2px;
@@ -21,7 +21,7 @@
 }
 
 .link:is(:hover, :focus)::before {
-  background-color: var(--primary-color);
+  background-color: rgba(var(--primary-color));
   block-size: 100%;
   z-index: -1;
 }

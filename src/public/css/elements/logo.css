@@ -5,7 +5,7 @@
 
 .logo .first-letter {
   font-family: var(--ff-logo-first-letter);
-  color: var(--primary-color);
+  color: rgba();
   font-size: var(--fs-logo-first-letter);
   line-height: 2;
 }

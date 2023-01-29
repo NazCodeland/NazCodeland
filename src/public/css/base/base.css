@@ -66,15 +66,14 @@
 
   --html-color: var(--primary-color);
 
-  --primary-color: #6495ED;
-  --secondary-color: #145883;
+  --primary-color: 100,149,237;
 
   --svg-transition-duration: 2s;
   
 }
 
 html {
-  background-color: var(--html-color);
+  background-color: rgba(var(--html-color));
 }
 
 /* prettier-ignore */
@@ -84,13 +83,11 @@ body {
   font-family: var(--ff);
   line-height: 1.5;
   font-size: var(--fs-base);
-
-  background-color: var(--main-background);
+  color: rgba(var(--grey-000), var(--medium-emphasis-text-dark));
+  background-color: rgba(var(--main-background));
   border-radius: var(--radius-16);
-
   margin: var(--body-margin-top) var(--spacer-32) var(--spacer-32) var(--spacer-32);
   padding: var(--spacer-40);
-
   transition: margin-block-start 3s;
 }
 

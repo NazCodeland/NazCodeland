@@ -6,7 +6,7 @@
 .profile-page {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: rgba(var(--grey-000));
   margin: var(--spacer-32);
   border-radius: var(--spacer-16);
   padding: var(--spacer-40);
