@@ -8,8 +8,8 @@
 
 .day-and-night-svg-container {
   position: relative;
-  min-inline-size: 50px;
-  min-block-size: 50px;
+  min-inline-size: 25px;
+  min-block-size: 25px;
 
   background-color: rgba(var(--svg-background-color));
   transition: background-color 2s;
@@ -42,7 +42,7 @@
 /* called from  prefers-color-scheme: dark */
 @keyframes sunSet {
   5% {
-    --svg-background-color: 230, 116, 81;
+    --svg-background-color: #e67451;
   }
 }
 

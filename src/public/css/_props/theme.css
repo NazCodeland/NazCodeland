@@ -1,5 +1,24 @@
-/* ------------------------------------------------------------------------------ */
 /* site-wide light and dark mode theme variables */
+
+:root {
+  /* Shared Between Light & Dark Theme */
+  --ff-logo-excluding-first-letter: Arial Black, sans-serif;
+  --ff: 'Times New Roman', Times, serif;
+
+  --fs-logo-first-letter: 1.5rem;
+  /* desktop */
+  /* --fs-logo-first-letter: 3rem; */
+
+  --fs-logo-remaining-letters: 1.25rem;
+  /* desktop */
+  /* --fs-logo-remaining-letters: 2rem; */
+
+  --html-color: var(--primary-color);
+
+  --primary-color: 100, 149, 237;
+
+  --svg-transition-duration: 2s;
+}
 
 /* prettier-ignore */
 @media (prefers-color-scheme: light) {
@@ -21,8 +40,11 @@
 [color-scheme='light'] {
   color-scheme: light;
 
+  --hamburger-stroke-color: var(--grey-900);
 
-  --body-margin-top: var(--spacer-32);
+  --body-margin-top: var(--spacer-4);
+  /* desktop */
+  /* --body-margin-top: var(--spacer-32); */
   --main-background: 251,252,255;
 
   --logo-remaining-letters-color: 40,42,54;
@@ -31,13 +53,6 @@
   --text-color: var(--grey-1000);
 
   --primary-color-text: var(--grey-000);
-
-  
-    /* --btn-text-opacity-light: 1;
-  --btn-text-opacity: var(--btn-text-opacity-light); */
-  
-
-
 
 
   /* light / dark mode icon variables */
@@ -60,7 +75,7 @@
 [color-scheme='dark'] {
   color-scheme: dark;
   
-  
+  --hamburger-stroke-color: var(--grey-000);
   /* Light text opacity on dark backgrounds from material design guidelines */
   --high-emphasis-text-dark: 0.87;
   --medium-emphasis-text-dark: 0.60;
@@ -81,9 +96,12 @@
   --opacity-25-dark: 25%;
   --opacity-30-dark: 30%;
   
-  --body-margin-top: var(--spacer-48);
+  --body-margin-top: var(--spacer-8);
+  /* desktop */
+  /* --body-margin-top: var(--spacer-48); */
   --main-background: 18,18,18;
-  
+
+
   --logo-remaining-letters-color: var(--grey-025), var(--high-emphasis-text-dark);
   --nav-link-text-color: var(--grey-000), var(--medium-emphasis-text-dark);
   
@@ -92,8 +110,7 @@
   --btn-text-color: var(--grey-000), var(--medium-emphasis-text-dark);
   --primary-color-text: var(--grey-900);
   
-  
-  
+
   /* light / dark icon variables */
   --svg-angle-day: -90deg;
   --svg-angle-night: 0deg;
