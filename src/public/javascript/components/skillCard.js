@@ -57,6 +57,24 @@ async function rotateIcons(icons) {
         monitor.classList.add('javascript-svg-monitor-fill');
         break;
 
+      case 'git.svg':
+        monitor.classList.add('git-svg-all-fill');
+        monitorBody.classList.add('git-svg-all-fill');
+        monitorLeg.classList.add('git-svg-all-fill');
+        break;
+
+      case 'github.svg':
+        monitor.classList.add('github-svg-all-fill');
+        monitorBody.classList.add('github-svg-all-fill');
+        monitorLeg.classList.add('github-svg-all-fill');
+        break;
+
+      case 'nodejs.svg':
+        monitor.classList.add('nodejs-svg-monitor-fill');
+        monitorBody.classList.add('nodejs-svg-all-fill');
+        monitorLeg.classList.add('nodejs-svg-all-fill');
+        break;
+
       case 'python.svg':
         monitorBody.classList.add('python-svg-body-fill');
         monitorLeg.classList.add('python-svg-leg-fill');
@@ -66,10 +84,6 @@ async function rotateIcons(icons) {
         monitor.classList.add('svelte-svg-all-fill');
         monitorBody.classList.add('svelte-svg-all-fill');
         monitorLeg.classList.add('svelte-svg-all-fill');
-        break;
-
-      case 'github.svg':
-        monitor.classList.add('github-svg-monitor-fill');
         break;
 
       default:

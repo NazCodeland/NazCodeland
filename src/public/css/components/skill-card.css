@@ -5,15 +5,19 @@
   border-radius: var(--spacer-8);
   box-shadow: var(--box-shadow-rest);
   transition: ease-in-out box-shadow 0.15s, ease-in-out transform 0.15s;
+  --btn-bg-opacity: var(--opacity-04-dark);
+  background-color: rgba(var(--grey-000), var(--btn-bg-opacity));
 }
 
 .skill-card:is(:hover, :focus) {
+  --btn-bg-opacity: var(--opacity-20-dark);
   box-shadow: var(--box-shadow-hover);
   cursor: pointer;
   transform: scale(1.01);
 }
 
 .skill-card:active {
+  --btn-bg-opacity: var(--opacity-09-dark);
   transform: var(--scale-active);
   box-shadow: var(--box-shadow-active);
 }
@@ -54,6 +58,21 @@
   fill: #f0db4f;
 }
 
+.git-svg-all-fill {
+  fill: #f05033;
+}
+
+.github-svg-all-fill {
+  fill: #161614;
+}
+
+.nodejs-svg-monitor-fill {
+  fill: #68a063;
+}
+.nodejs-svg-all-fill {
+  fill: #333333;
+}
+
 .python-svg-body-fill {
   fill: #37a2d2;
 }
@@ -63,8 +82,4 @@
 
 .svelte-svg-all-fill {
   fill: #ff3e00;
-}
-
-.github-svg-monitor-fill {
-  fill: #161614;
 }

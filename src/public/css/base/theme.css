@@ -30,7 +30,7 @@
 
   --text-color: var(--grey-1000);
 
-  --btn-primary-text-color: var(--grey-000);
+  --btn-primary-color-text: var(--grey-000);
 
   
     /* --btn-text-opacity-light: 1;
@@ -45,10 +45,10 @@
   --svg-background-color: skyblue;
   --svg-angle-day: 0deg;
   --svg-angle-night: 90deg;
-  --svg-transition-duration: 2s;
+  --svg-inset-light: 90;
   animation: sunRise 2s;
-
-
+  
+  
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   --box-shadow-rest:  3px 3px 6px 2px rgba(204, 219, 232, 0.5), -3px -3px 6px 2px rgba(255, 255, 255, 0.5);
   --box-shadow-hover:  0px 14px 28px rgba(204, 219, 232, 1), 0px 10px 10px rgba(255, 255, 255, 1);
@@ -60,43 +60,46 @@
 [color-scheme='dark'] {
   color-scheme: dark;
   
+  
   /* Light text opacity on dark backgrounds from material design guidelines */
   --high-emphasis-text-dark: 0.87;
   --medium-emphasis-text-dark: 0.60;
   --low-emphasis-text-dark: 0.38;
-
-  --dp-00-dark: 0%;
-  --dp-01-dark: 5%;
-  --dp-02-dark: 7%;
-  --dp-03-dark: 8%;
-  --dp-04-dark: 9%;
-  --dp-05-dark: 11%;
-  --dp-06-dark: 12%;
-  --dp-07-dark: 14%;
-  --dp-08-dark: 15%;
-  --dp-09-dark: 16%;
+  
+  --opacity-00-dark: 0%;
+  --opacity-01-dark: 5%;
+  --opacity-02-dark: 7%;
+  --opacity-03-dark: 8%;
+  --opacity-04-dark: 9%;
+  --opacity-05-dark: 11%;
+  --opacity-06-dark: 12%;
+  --opacity-07-dark: 14%;
+  --opacity-08-dark: 15%;
+  --opacity-09-dark: 16%;
+  --opacity-20-dark: 20%;
+  --opacity-25-dark: 25%;
+  --opacity-30-dark: 30%;
   
   --body-margin-top: var(--spacer-48);
   --main-background: #121212;
-
+  
   --logo-remaining-letters-color: var(--grey-025), var(--high-emphasis-text-dark);
-  --nav-link-text-color: var(--grey-000), var(--low-emphasis-text-dark);
-
+  --nav-link-text-color: var(--grey-000), var(--medium-emphasis-text-dark);
+  
   --text-color: var(--grey-000), var(--medium-emphasis-text-dark);
   
-
-  --btn-primary-text-color: var(--grey-900);
-
-
-
+  --btn-text-color: var(--grey-000), var(--medium-emphasis-text-dark);
+  --btn-primary-color-text: var(--grey-900);
+  
+  
+  
   /* light / dark icon variables */
   --svg-angle-day: -90deg;
   --svg-angle-night: 0deg;
   --svg-background-color: #000;
-  --svg-transition-duration: 2s;
   animation: sunSet 2s;
-
-
+  
+  
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   --box-shadow-rest: none;
   --box-shadow-hover: none;

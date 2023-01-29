@@ -69,8 +69,7 @@
   --primary-color: #6495ED;
   --secondary-color: #145883;
 
-    /* without this variable:value, when the page is loaded/refreshed, day & night icons show up together since, both icons are inline-svg */
-  --svg-transition-duration: 0s;
+  --svg-transition-duration: 2s;
   
 }
 
@@ -92,7 +91,7 @@ body {
   margin: var(--body-margin-top) var(--spacer-32) var(--spacer-32) var(--spacer-32);
   padding: var(--spacer-40);
 
-  transition: background-color 3s, margin-block-start 3s;
+  transition: margin-block-start 3s;
 }
 
 /* header styles */

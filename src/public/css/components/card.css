@@ -30,7 +30,7 @@
 .card__subtitle {
   color: var(--secondary-color-text);
   font-size: var(--fs-sm);
-  opacity: var(--low-emphasis-text-dark);
+  opacity: var(--medium-emphasis-text-dark);
 }
 
 .card__copy {
@@ -41,4 +41,8 @@
   display: flex;
   gap: var(--spacer-16);
   margin-block-start: var(--spacer-16);
+}
+
+[color-scheme='dark'] .card__image {
+  border: 12px solid rgb(var(--grey-600));
 }
