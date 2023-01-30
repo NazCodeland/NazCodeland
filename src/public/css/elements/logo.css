@@ -1,7 +1,6 @@
-/* @font-face {
-  font-family: 'Vollkorn';
-  src: url('../fonts/Vollkorn//Something.ttf') format('truetype');
-} */
+.logo {
+  white-space: nowrap;
+}
 
 .logo .first-letter {
   font-family: var(--ff-logo-first-letter);

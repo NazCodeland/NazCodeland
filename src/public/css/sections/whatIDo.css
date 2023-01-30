@@ -1,6 +1,6 @@
 .what-I-do {
   color: rgba(var(--grey-000), var(--high-emphasis-text-dark));
-  font-size: var(--fs-b);
+  font-size: var(--fs-base);
   text-decoration: 2px double underline rgba(var(--primary-color));
   margin-block-end: var(--spacer-16);
 }

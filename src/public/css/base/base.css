@@ -9,8 +9,6 @@ body {
   display: flex;
   flex-direction: column;
   font-family: var(--ff);
-  
-  
   line-height: 1.3;
   
   /* desktop */
@@ -32,25 +30,15 @@ body {
   
   
   preferredValue = yAxisIntersection[rem] + (slope * 100)[vw] */
-  
-
-
-
-
-
   font-size: var(--fs-sm);
   color: rgba(var(--grey-000), var(--medium-emphasis-text-dark));
   background-color: rgba(var(--main-background));
   border-radius: var(--radius-16);
-
   margin: var(--body-margin-top) var(--spacer-4) var(--spacer-4) var(--spacer-4);
 
   /* desktop */
   /* margin: var(--body-margin-top) var(--spacer-32) var(--spacer-32) var(--spacer-32); */
-  
-  
-  
-  padding: var(--spacer-8);
+  padding: var(--spacer-16);
 
   /* desktop */
   /* padding: var(--spacer-40); */
@@ -61,15 +49,11 @@ body {
 header {
   display: flex;
   gap: 1rem;
-
-  /* desktop */
-  /* justify-content: space-between; */
-  align-items: center;
-  white-space: nowrap;
+  justify-content: space-between;
 }
 
 section {
-  margin-block-end: 56px;
+  margin-block-end: 104px;
   /* margin-block-end: 136px; */
 }
 

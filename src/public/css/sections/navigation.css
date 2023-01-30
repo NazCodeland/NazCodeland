@@ -1,6 +1,16 @@
+.hamburger-and-logo,
+.menu-and-theme-switcher {
+  display: flex;
+  place-items: center;
+  gap: 1rem;
+}
+
+.menu-and-theme-switcher {
+  gap: 3rem;
+}
+
 .menu {
   display: flex;
-  flex-wrap: wrap;
   gap: var(--spacer-16);
 }
 
