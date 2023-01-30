@@ -1,0 +1,58 @@
+/* prettier-ignore */
+:root {
+  --ff-logo-first-letter: 'Suez one', serif;
+
+
+  --fs-xs1: 0.75rem;
+  --fs-xs: 0.875rem;
+  --fs-sm: 1rem;
+  --fs-base: 1.25rem;
+  --fs-m: 1.5rem;
+  --fs-l: 1.875rem;
+  --fs-xl: 2.5rem;
+
+  --fw-100: 100;
+  --fw-400: 400;
+  --fw-700: 700;
+  --fw-900: 900;
+
+  /* Spacing */
+  --spacer-2: 0.125em;
+  --spacer-4: 0.25em;
+  --spacer-8: 0.5em;
+  --spacer-16: 1em;
+  --spacer-20: 1.25em;
+  --spacer-24: 1.5em;
+  --spacer-32: 2em;
+  --spacer-40: 2.5em;
+  --spacer-48: 3em;
+
+  /* Border-radius */
+  --radius-2: 0.125rem;
+  --radius-4: 0.25rem;
+  --radius-8: 0.5rem;
+  --radius-16: 1rem;
+
+  /* the values are ##,##,## format so that I can give these variables opacity when using them: example; rgba(var(--grey-100, .50) */
+  --grey-000: 255,255,255;
+  --grey-025: 251,252,255;
+  --grey-050: 239,239,239;
+  --grey-100: 231,231,231;
+  --grey-200: 186,186,186;
+  --grey-300: 153,153,153;
+  --grey-400: 119,119,119;
+  --grey-500: 86,86,86;
+  --grey-600: 53,53,53;
+  --grey-700: 20,20,20;
+  --grey-800: 10,10,10;
+  --grey-900: 5,5,5;
+  --grey-1000: 0,0,0;
+
+
+  --scale-hover: scale(1.03);
+  --scale-active: scale(0.99);
+
+
+  --breakpoint-phone: 320px;
+
+}

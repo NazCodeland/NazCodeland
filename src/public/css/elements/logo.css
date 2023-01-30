@@ -1,22 +1,29 @@
-/* @font-face {
-  font-family: 'Vollkorn';
-  src: url('../fonts/Vollkorn//Something.ttf') format('truetype');
-} */
+.logo {
+  white-space: nowrap;
+}
 
 .logo .first-letter {
   font-family: var(--ff-logo-first-letter);
-  color: rgba();
   font-size: var(--fs-logo-first-letter);
-  line-height: 2;
+
+  /* desktop */
+  /* line-height: 2; */
+
+  color: rgba(var(--primary-color));
 }
 
 .logo span {
   display: inline-block;
+
   font-family: var(--ff-logo-excluding-first-letter);
-  letter-spacing: 4;
   font-size: var(--fs-logo-remaining-letters);
   font-weight: var(--fw-900);
+
+  /* desktop */
+  /* letter-spacing: 4; */
+
   color: rgba(var(--logo-remaining-letters-color));
+
   box-shadow: var(--box-shadow-rest);
   transition: transform 0.2s;
 }

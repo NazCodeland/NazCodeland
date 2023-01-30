@@ -1,4 +1,5 @@
 .theme-switcher {
+  display: inline-block;
   border-radius: 50%;
   margin: 0 0 0 auto;
 
@@ -8,8 +9,8 @@
 
 .day-and-night-svg-container {
   position: relative;
-  min-inline-size: 50px;
-  min-block-size: 50px;
+  min-inline-size: 36px;
+  min-block-size: 36px;
 
   background-color: rgba(var(--svg-background-color));
   transition: background-color 2s;
