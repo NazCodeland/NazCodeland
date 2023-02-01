@@ -1,5 +1,5 @@
 .footer-section {
   margin-block-end: 0;
-  font-size: var(--fs-xs);
+  font-size: var(--fs--2);
   opacity: var(--very-low-emphasis-text-dark);
 }

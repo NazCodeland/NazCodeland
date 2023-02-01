@@ -1,24 +1,32 @@
-.theme-switcher {
-  display: inline-block;
-  border-radius: 50%;
-  margin: 0 0 0 auto;
+/* TODO: both icons show on page load/refresh since they are inline, fix that */
 
-  cursor: pointer;
+.theme-switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  min-inline-size: 36px;
+  min-block-size: 36px;
   overflow: hidden;
+}
+
+.svg-size {
+  min-inline-size: clamp(2.25rem, calc(2.18rem + 0.36vw), 2.5rem);
+  min-block-size: clamp(2.25rem, calc(2.18rem + 0.36vw), 2.5rem);
 }
 
 .day-and-night-svg-container {
   position: relative;
-  min-inline-size: 36px;
-  min-block-size: 36px;
-
   background-color: rgba(var(--svg-background-color));
   transition: background-color 2s;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .common-svg-styles {
   position: absolute;
-
   transform-origin: 50% 100px;
   transition-duration: var(--svg-transition-duration);
 }
@@ -80,35 +88,32 @@
 /* night svg icon */
 
 .star01 {
-  fill: rgba(var(--grey-000));
   animation: blink-animation 1s steps(2, start) infinite;
 }
 .star02 {
-  fill: var(--primary-color);
   animation: blink-animation 2s steps(5, start) infinite;
 }
 
 .star03 {
-  fill: rgba(var(--grey-000));
   animation: blink-animation 3s steps(8, start) infinite;
 }
 .star04 {
-  fill: var(--primary-color);
-  animation: blink-animation 4s steps(10, start) infinite;
+  animation: blink-animation 2s steps(5, start) infinite;
 }
 
 .star05 {
-  fill: rgba(var(--grey-000));
-  animation: blink-animation 7s steps(10, start) infinite;
+  animation: blink-animation 2s steps(5, start) infinite;
 }
-.star06,
+
+.star06 {
+  animation: blink-animation 6s steps(2, start) infinite;
+}
+
 .star09 {
-  fill: var(--primary-color);
   animation: blink-animation 6s steps(12, start) infinite;
 }
 .star07,
 .star08 {
-  fill: var(--primary-color);
   animation: blink-animation 2s steps(5, start) infinite;
 }
 

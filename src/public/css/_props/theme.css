@@ -5,13 +5,9 @@
   --ff-logo-excluding-first-letter: Arial Black, sans-serif;
   --ff: 'Times New Roman', Times, serif;
 
-  --fs-logo-first-letter: 1.5rem;
-  /* desktop */
-  /* --fs-logo-first-letter: 3rem; */
+  --fs-logo-first-letter: clamp();
 
-  --fs-logo-remaining-letters: 1.25rem;
-  /* desktop */
-  /* --fs-logo-remaining-letters: 2rem; */
+  --fs-logo-remaining-letters: clamp();
 
   --html-color: var(--primary-color);
 
@@ -42,7 +38,8 @@
 
   --hamburger-stroke-color: var(--grey-900);
 
-  --body-margin-top: var(--spacer-4);
+  --body-margin-top:  clamp(0.25rem, calc(-0.39rem + 3.21vw), 2rem);
+
   /* desktop */
   /* --body-margin-top: var(--spacer-32); */
   --main-background: 251,252,255;
@@ -96,9 +93,8 @@
   --opacity-25-dark: 25%;
   --opacity-30-dark: 30%;
   
-  --body-margin-top: var(--spacer-8);
-  /* desktop */
-  /* --body-margin-top: var(--spacer-48); */
+  --body-margin-top:  clamp(0.50rem, calc(-0.07rem + 2.86vw), 3rem);
+
   --main-background: 18,18,18;
 
 
