@@ -1,12 +1,7 @@
 .what-I-do {
   color: rgba(var(--grey-000), var(--high-emphasis-text-dark));
-  font-size: var(--fs-base);
-  text-decoration: 2px double underline rgba(var(--primary-color));
-  margin-block-end: var(--spacer-16);
-}
+  font-size: var(--fs-fluid-2);
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacer-48);
+  text-decoration: 2px double underline rgba(var(--primary-color));
+  margin-block-end: clamp(1.5rem, calc(1.36rem + 0.71vw), 2rem);
 }

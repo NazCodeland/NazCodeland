@@ -1,16 +1,19 @@
 .hamburger-and-logo,
 .menu-and-theme-switcher {
   display: flex;
-  place-items: center;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacer-fluid-16-32);
 }
 
 .menu-and-theme-switcher {
-  gap: 3rem;
+  gap: clamp(1rem, calc(-6.47rem + 9.41vw), 2rem);
 }
 
 .menu {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   gap: var(--spacer-16);
 }
 
@@ -19,7 +22,6 @@
 }
 
 .menu li {
-  inline-size: 110px;
   --btn-text-color: var(--nav-link-text-color);
 }
 
@@ -33,7 +35,7 @@
 
 /* related styles located in elements/button.css */
 
-@media (max-width: 1100px) {
+@media (max-width: 1131px) {
   .menu {
     display: none;
   }
