@@ -34,7 +34,7 @@
   transform: translateY(-20px) scale(2) rotate(20deg);
 }
 
-[color-scheme='dark'] .logo span {
+[color-scheme='dark'] .logo * {
   --logo-box-shadow: none;
   outline: 0.1rem solid rgba(255, 255, 255, 0.06);
 }
