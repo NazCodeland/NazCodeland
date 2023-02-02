@@ -4,7 +4,6 @@ secondary turns into primary upon :hover
 
 .btn {
   display: inline-block;
-  text-align: center;
   white-space: nowrap;
   min-inline-size: 110px;
   padding: var(--spacer-8) var(--spacer-16);

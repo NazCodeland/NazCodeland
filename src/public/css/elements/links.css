@@ -12,16 +12,18 @@
 
 .link::before {
   content: '';
-  background-color: rgba(var(--primary-color));
   position: absolute;
+  inset-block-end: 0;
+
   inline-size: 100%;
   block-size: 2px;
-  inset-block-end: 0;
-  transition: height 0.2s;
+
+  background-color: rgba(var(--primary-color));
+  transition: block-size 0.2s;
 }
 
 .link:is(:hover, :focus)::before {
-  background-color: rgba(var(--primary-color));
   block-size: 100%;
+  background-color: rgba(var(--primary-color));
   z-index: -1;
 }
