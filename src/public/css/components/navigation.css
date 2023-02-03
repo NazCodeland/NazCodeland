@@ -1,0 +1,98 @@
+.theme-switcher-and-logo,
+.menu {
+  display: flex;
+  align-items: center;
+  gap: var(--spacer-fluid-16-32-24x);
+}
+
+.menu {
+  position: absolute;
+  inset-inline: calc(clamp(1rem, calc(0.57rem + 2.14vw), 2.5rem) * -1);
+  inset-block-start: clamp(3rem, calc(1.96rem + 6vw), 6rem);
+
+  border-block-end: 1px solid rgba(var(--primary-color));
+
+  /* unable to transition when using clamp for block-size */
+  /* transition: padding-block 1s; */
+  overflow: hidden;
+}
+
+.menu__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  gap: var(--spacer-fluid-16-32);
+
+  block-size: 0;
+  inline-size: 100%;
+  padding-inline: var(--spacer-fluid-16-40);
+
+  background-color: rgba(var(--main-background));
+
+  /* unable to transition when using clamp for block-size */
+  /* transition: block-size 1; */
+}
+
+.menu__links a {
+  color: rgba(var(--nav-link-text-color));
+}
+
+.open {
+  padding-block: 0.5rem;
+}
+
+.open .menu__links {
+  /* able to transition if I use 4rem alone */
+  block-size: clamp(1rem, 50%, 4rem);
+  overflow: visible;
+}
+
+.menu__links li {
+  position: relative;
+}
+
+.menu__links li a::before {
+  content: '';
+  position: absolute;
+  inset-inline-start: 50%;
+  inset-block-end: 0;
+
+  inline-size: 0;
+  block-size: 2px;
+  background-color: rgba(var(--primary-color));
+  transition: inline-size 0.3s, left 0.3s;
+}
+
+.menu__links li a:is(:hover, :focus)::before {
+  inline-size: 100%;
+  inset-inline-start: 0;
+}
+
+.nested-menu {
+  display: none;
+}
+
+.hamburger {
+  stroke: rgba(var(--hamburger-stroke-color));
+  min-inline-size: 24px;
+  min-block-size: 24px;
+}
+
+@media (min-width: 860px) {
+  .menu {
+    all: unset;
+  }
+
+  .menu__links {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: var(--spacer-fluid-16-32);
+    block-size: initial;
+    padding-inline: 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

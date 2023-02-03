@@ -7,7 +7,7 @@ function spanWord(word) {
   return wordArray.map((letter) =>
     letter === 'N'
       ? `<a href="/" class="first-letter">${letter}</a>`
-      : `<span>${letter}</span>`
+      : `<span tabindex="0">${letter}</span>`
   );
 }
 

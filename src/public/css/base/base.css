@@ -16,12 +16,12 @@ body {
   background-color: rgba(var(--main-background));
   border-radius: var(--radius-16);
 
-  margin: var(--body-margin-top) var(--space-fluid-4-32) var(--space-fluid-4-32)
-    var(--space-fluid-4-32);
+  margin: var(--body-margin-top) var(--spacer-fluid-4-32)
+    var(--spacer-fluid-4-32) var(--spacer-fluid-4-32);
 
-  padding: clamp(1rem, calc(0.57rem + 2.14vw), 2.5rem);
+  padding: var(--spacer-fluid-16-40);
 
-  transition: margin-block-start 3s;
+  transition: margin-block-start 1s;
 }
 
 /* header styles */
@@ -30,8 +30,10 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: var(--spacer-16);
+
+  position: relative;
 }
 
 section {
-  margin-block-end: clamp(4rem, calc(2.71rem + 6.43vw), 8.5rem);
+  margin-block-end: clamp(5.5rem, calc(4.64rem + 4.29vw), 8.5rem);
 }

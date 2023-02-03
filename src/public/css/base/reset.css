@@ -5,12 +5,26 @@
   box-sizing: border-box;
 }
 
+div {
+  outline: none;
+}
+
 a {
   white-space: nowrap;
   display: block;
   text-decoration: none;
   text-align: center;
   color: inherit;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+}
+
+span {
+  outline: none;
 }
 
 ul {
@@ -19,8 +33,4 @@ ul {
 
 li {
   list-style-type: none;
-}
-
-button {
-  cursor: pointer;
 }

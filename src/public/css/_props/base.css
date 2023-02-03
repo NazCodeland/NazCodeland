@@ -37,10 +37,14 @@
   --spacer-48: 3rem;
 
 
-  --spacer-fluid-0-32: clamp(0rem, calc(-0.86rem + 4.29vw), 2rem);
-  --space-fluid-4-32: clamp(0.25rem, calc(-0.25rem + 2.50vw), 2rem);
+  --spacer-fluid-0-32-: clamp(0rem, calc(-0.86rem + 4.29vw), 2rem);
+  --spacer-fluid-4-32: clamp(0.25rem, calc(-0.25rem + 2.50vw), 2rem);
   --spacer-fluid-8-16: clamp(0.5rem, calc(0.36rem + 0.71vw), 1rem);
   --spacer-fluid-16-32: clamp(1rem, calc(0.71rem + 1.43vw), 2rem);
+  --spacer-fluid-16-40: clamp(1rem, calc(0.57rem + 2.14vw), 2.5rem);
+
+  /* for this one, the space remaining will 'grow' and 'shrink' 2.4x because it's preferred value is based on a viewport width of 1100-1440  */
+  --spacer-fluid-16-32-24x: clamp(1rem, calc(-6.47rem + 9.41vw), 2rem);
   
 
   /* Border-radius */

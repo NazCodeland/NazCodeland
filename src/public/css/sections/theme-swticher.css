@@ -1,4 +1,5 @@
 /* TODO: both icons show on page load/refresh since they are inline, fix that */
+/* TODO: make sure website is tabbable */
 
 .theme-switcher {
   display: flex;

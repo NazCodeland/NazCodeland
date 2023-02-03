@@ -1,3 +1,7 @@
+.cards-grid a {
+  all: unset;
+}
+
 .cards-grid {
   display: grid;
   gap: 1rem;
@@ -17,6 +21,8 @@
 
   box-shadow: var(--box-shadow-rest);
   transition: ease-in-out transform 0.15s;
+
+  block-size: 100%;
 }
 
 .skill-card:is(:hover, :focus) {

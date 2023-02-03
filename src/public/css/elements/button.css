@@ -48,10 +48,5 @@ secondary turns into primary upon :hover
   outline-color: rgba(var(--primary-color));
 }
 
-.btn-outlined-primary:is(:hover, :focus) {
-  --btn-text-color: var(--primary-color-text);
-  background-color: rgba(var(--primary-color));
-}
-
 .btn-disabled {
 }
