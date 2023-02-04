@@ -1,5 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Suez+One';
 
+/* TODO: make sure website is tabbable */
+
 html {
   background-color: rgba(var(--html-color));
 }

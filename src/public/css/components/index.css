@@ -1,3 +1,7 @@
-@import 'card.css';
+/* home page */
 @import 'navigation.css';
+@import 'card.css';
 @import 'skill-card.css';
+
+/* blog page */
+@import 'blog.css';

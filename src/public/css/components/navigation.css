@@ -31,7 +31,7 @@
   background-color: rgba(var(--main-background));
 
   /* unable to transition when using clamp for block-size */
-  /* transition: block-size 1; */
+  /* transition: block-size 1s; */
 }
 
 .menu__links a {
