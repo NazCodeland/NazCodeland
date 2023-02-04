@@ -10,6 +10,11 @@ body {
   display: flex;
   flex-direction: column;
 
+  margin: var(--body-margin-top) var(--spacer-fluid-4-32)
+    var(--spacer-fluid-4-32) var(--spacer-fluid-4-32);
+
+  padding: var(--spacer-fluid-16-40);
+
   font-family: var(--ff);
   font-size: var(--fs-fluid-0);
   line-height: clamp(1.5rem, calc(1.36rem + 0.71vw), 2rem);
@@ -18,12 +23,24 @@ body {
   background-color: rgba(var(--main-background));
   border-radius: var(--radius-16);
 
-  margin: var(--body-margin-top) var(--spacer-fluid-4-32)
-    var(--spacer-fluid-4-32) var(--spacer-fluid-4-32);
-
-  padding: var(--spacer-fluid-16-40);
-
   transition: margin-block-start 1s;
+}
+
+h1 {
+  font-size: var(--fs-fluid-3);
+}
+h2 {
+  font-size: var(--fs-fluid-2);
+}
+h3 {
+  font-size: var(--fs-fluid-1);
+}
+
+h5 {
+  font-size: var(--fs-fluid--1);
+}
+h6 {
+  font-size: var(--fs-fluid--2);
 }
 
 /* header styles */

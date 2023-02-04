@@ -18,7 +18,7 @@
   --fs-fluid-1: clamp(1.20rem, calc(1.07rem + 0.67vw), 1.67rem);
   --fs-fluid-2: clamp(1.44rem, calc(1.22rem + 1.12vw), 2rem);
   --fs-fluid-3: clamp(2rem, calc(1.38rem + 1.76vw), 2.96rem);
-  --fs-fluid-4: clamp(2.07rem, calc(1.54rem + 2.68vw), 3.95rem);
+  /* --fs-fluid-4: clamp(2.07rem, calc(1.54rem + 2.68vw), 3.95rem); */
 
   --fw-100: 100;
   --fw-400: 400;
@@ -29,6 +29,7 @@
   --spacer-2: 0.125rem;
   --spacer-4: 0.25rem;
   --spacer-8: 0.5rem;
+  --spacer-10: 0.75rem;
   --spacer-16: 1rem;
   --spacer-20: 1.25rem;
   --spacer-24: 1.5rem;

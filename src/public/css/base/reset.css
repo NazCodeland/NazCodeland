@@ -5,9 +5,24 @@
   box-sizing: border-box;
 }
 
+/* block elements */
 div {
   outline: none;
 }
+
+ul {
+  padding-inline-start: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+h5,
+h6 {
+  font-weight: normal;
+}
+/* inline elements */
 
 a {
   white-space: nowrap;
@@ -25,12 +40,4 @@ button {
 
 span {
   outline: none;
-}
-
-ul {
-  padding-inline-start: 0;
-}
-
-li {
-  list-style-type: none;
 }

@@ -1,18 +1,18 @@
-.cards-grid a {
-  all: unset;
+.cards-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  inline-size: 100%;
 }
 
-.cards-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+.cards-flex a {
+  all: unset;
+  flex: 1 1 30ch;
 }
 
 .skill-card {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--spacer-fluid-8-16);
+  block-size: 100%;
+
   padding: var(--spacer-16);
   border-radius: var(--spacer-8);
 
@@ -21,8 +21,6 @@
 
   box-shadow: var(--box-shadow-rest);
   transition: ease-in-out transform 0.15s;
-
-  block-size: 100%;
 }
 
 .skill-card:is(:hover, :focus) {
@@ -42,6 +40,7 @@
   display: flex;
   gap: 1rem;
   align-items: flex-end;
+  margin-block-end: var(--spacer-fluid-8-16);
 }
 
 .skill-card__content {
@@ -51,7 +50,6 @@
 }
 .skill-card__title {
   color: rgba(var(--grey-000), var(--high-emphasis-text-dark));
-  font-size: var(--fs-fluid-1);
   margin-block-end: 0;
 }
 

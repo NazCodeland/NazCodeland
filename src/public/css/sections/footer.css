@@ -1,7 +1,9 @@
 .footer-section {
+  display: flex;
+  justify-content: end;
+
   margin-block-end: 0;
   border-block-start: 1px solid rgba(var(--primary-color));
 
-  font-size: var(--fs--2);
-  opacity: var(--very-low-emphasis-text-dark);
+  opacity: var(--high-emphasis-text-dark);
 }
