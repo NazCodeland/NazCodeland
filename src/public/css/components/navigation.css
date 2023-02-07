@@ -15,12 +15,6 @@
   overflow: hidden;
 }
 
-.open .menu__links {
-  /* able to transition if I use 4rem alone */
-  block-size: clamp(1rem, 50%, 4rem);
-  padding-block: 0.5rem;
-}
-
 .menu__links {
   display: flex;
   flex-wrap: wrap;
@@ -35,13 +29,17 @@
 
   background-color: rgba(var(--main-background));
 
+  visibility: hidden;
+
   /* unable to transition when using clamp for block-size */
   /* transition: block-size 1s, padding-block 1s; */
 }
 
-.menu__links a {
-  color: rgba(var(--nav-link-text-color));
-  outline: none;
+.open .menu__links {
+  /* able to transition if I use 4rem alone */
+  block-size: clamp(1rem, 50%, 4rem);
+  padding-block: 0.5rem;
+  visibility: visible;
 }
 
 .menu__links li {
@@ -60,6 +58,12 @@
   transition: inline-size 0.3s, left 0.3s;
 }
 
+.menu__links a {
+  white-space: nowrap;
+  color: rgba(var(--nav-link-text-color));
+  outline: none;
+}
+
 .menu__links li a:is(:hover, :focus)::before {
   inline-size: 100%;
   inset-inline-start: 0;
@@ -75,7 +79,7 @@
   min-block-size: 28px;
 }
 
-@media (width >= 52rem) {
+@media (width >= 53rem) {
   .menu {
     all: unset;
   }
@@ -84,8 +88,11 @@
     display: flex;
     flex-wrap: nowrap;
     gap: var(--spacer-fluid-16-32);
+
     block-size: initial;
     padding-inline: 0;
+
+    visibility: visible;
   }
 
   .hamburger {

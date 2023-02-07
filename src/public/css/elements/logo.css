@@ -13,6 +13,10 @@
   color: rgba(var(--primary-color));
 }
 
+.jump .first-letter:focus-visible {
+  outline-color: rgba(var(--text-color));
+}
+
 .jump * {
   display: inline-block;
 
