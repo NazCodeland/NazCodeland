@@ -2,7 +2,7 @@
   white-space: nowrap;
 }
 
-.jump .first-letter {
+.logo .first-letter {
   position: relative;
 
   font-family: var(--ff-logo-first-letter);
@@ -13,11 +13,11 @@
   color: rgba(var(--primary-color));
 }
 
-.jump .first-letter:focus-visible {
+.logo .first-letter:focus-visible {
   outline-color: rgba(var(--text-color));
 }
 
-.jump * {
+.logo * {
   display: inline-block;
 
   font-family: var(--ff-logo-excluding-first-letter);
@@ -37,12 +37,17 @@
   transition: transform 0.2s;
 }
 
-.jump *:is(:hover) {
+.logo *:is(:hover) {
   text-transform: uppercase;
   transform: translateY(-20px) scale(2) rotate(20deg);
 }
 
-[color-scheme='dark'] .jump * {
+.logo > span,
+.logo > span:hover {
+  all: unset;
+}
+
+[color-scheme='dark'] .logo * {
   --logo-box-shadow: none;
   outline: 0.1rem solid rgba(255, 255, 255, 0.05);
 }
