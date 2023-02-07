@@ -6,8 +6,8 @@ function spanWord(word) {
   const wordArray = [...word];
   return wordArray.map((letter) =>
     letter === 'N'
-      ? `<a href="/" class="first-letter">${letter}</a>`
-      : `<span tabindex="0">${letter}</span>`
+      ? `<a href="/" class="first-letter" tabindex="-1">${letter}</a>`
+      : `<span >${letter}</span>`
   );
 }
 

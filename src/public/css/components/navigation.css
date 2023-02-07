@@ -12,9 +12,13 @@
 
   border-block-end: 1px solid rgba(var(--primary-color));
 
-  /* unable to transition when using clamp for block-size */
-  /* transition: padding-block 1s; */
   overflow: hidden;
+}
+
+.open .menu__links {
+  /* able to transition if I use 4rem alone */
+  block-size: clamp(1rem, 50%, 4rem);
+  padding-block: 0.5rem;
 }
 
 .menu__links {
@@ -24,28 +28,20 @@
   align-items: start;
   gap: var(--spacer-fluid-16-32);
 
-  block-size: 0;
   inline-size: 100%;
+  block-size: 0;
+
   padding-inline: var(--spacer-fluid-16-40);
 
   background-color: rgba(var(--main-background));
 
   /* unable to transition when using clamp for block-size */
-  /* transition: block-size 1s; */
+  /* transition: block-size 1s, padding-block 1s; */
 }
 
 .menu__links a {
   color: rgba(var(--nav-link-text-color));
-}
-
-.open {
-  padding-block: 0.5rem;
-}
-
-.open .menu__links {
-  /* able to transition if I use 4rem alone */
-  block-size: clamp(1rem, 50%, 4rem);
-  overflow: visible;
+  outline: none;
 }
 
 .menu__links li {
@@ -75,11 +71,11 @@
 
 .hamburger {
   stroke: rgba(var(--hamburger-stroke-color));
-  min-inline-size: 24px;
-  min-block-size: 24px;
+  min-inline-size: 28px;
+  min-block-size: 28px;
 }
 
-@media (min-width: 860px) {
+@media (width >= 52rem) {
   .menu {
     all: unset;
   }

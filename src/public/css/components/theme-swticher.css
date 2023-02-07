@@ -11,7 +11,9 @@ decide if you want to register the clicks and do another 360deg rotation or turn
   border: none;
   border-radius: 50%;
   min-inline-size: 36px;
+  max-inline-size: 50px;
   min-block-size: 36px;
+  max-block-size: 50px;
   overflow: hidden;
 }
 

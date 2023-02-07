@@ -1,13 +1,16 @@
-.cards-flex {
+.skill-cards-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  inline-size: 100%;
 }
 
-.cards-flex a {
-  all: unset;
+.skill-cards-container a {
+  /* all: unset; */
   flex: 1 1 30ch;
+}
+
+.skill-cards-container a:focus-visible {
+  outline-color: rgba(var(--text-color));
 }
 
 .skill-card {

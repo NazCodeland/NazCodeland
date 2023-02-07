@@ -1,24 +1,15 @@
 /* prettier-ignore */
+/* TODO: move all these props to /props/base */
+
 :root {
-  --ff-logo-first-letter: 'Suez one', serif;
+  --ff-logo-first-letter: 'Suez one', Georgia, 'Times New Roman', Times, serif;
 
-
-  --fs--2: 0.75rem;
-  --fs--1: 0.875rem;
-  --fs-0: 1rem;
-  --fs-1: 1.25rem;
-  --fs-2: 1.5rem;
-  --fs-3: 1.875rem;
-  --fs-4: 2.5rem;
-
-  /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1440,20,1.333,4,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-  --fs-fluid--2: clamp(0.69rem, calc(0.69rem + 0.01vw), 0.70rem);
-  --fs-fluid--1: clamp(0.83rem, calc(0.80rem + 0.15vw), 0.94rem);
-  --fs-fluid-0: clamp(1.00rem, calc(0.93rem + 0.36vw), 1.25rem);
-  --fs-fluid-1: clamp(1.20rem, calc(1.07rem + 0.67vw), 1.67rem);
-  --fs-fluid-2: clamp(1.44rem, calc(1.22rem + 1.12vw), 2rem);
-  --fs-fluid-3: clamp(2rem, calc(1.38rem + 1.76vw), 2.96rem);
-  /* --fs-fluid-4: clamp(2.07rem, calc(1.54rem + 2.68vw), 3.95rem); */
+  --fs-fluid-1: clamp(1.22rem, calc(0.55rem + 3.31vw), 2.75rem);
+  --fs-fluid-2: clamp(1.14rem, calc(0.75rem + 1.94vw), 2.25rem);
+  --fs-fluid-3: clamp(1.07rem, calc(0.87rem + 1vw), 1.77rem);
+  --fs-fluid-4: clamp(1rem, calc(0.93rem + 0.36vw), 1.25rem);
+  --fs-fluid-5: clamp(0.88rem, calc(0.84rem + 0.18vw), 1rem);
+  --fs-fluid-6: clamp(0.63rem, calc(0.95rem + -0.36vw), 0.88rem);
 
   --fw-100: 100;
   --fw-400: 400;
@@ -37,16 +28,15 @@
   --spacer-40: 2.5rem;
   --spacer-48: 3rem;
 
-
   --spacer-fluid-0-32-: clamp(0rem, calc(-0.86rem + 4.29vw), 2rem);
-  --spacer-fluid-4-32: clamp(0.25rem, calc(-0.25rem + 2.50vw), 2rem);
+  --spacer-fluid-4-32: clamp(0.25rem, calc(-0.25rem + 2.5vw), 2rem);
   --spacer-fluid-8-16: clamp(0.5rem, calc(0.36rem + 0.71vw), 1rem);
   --spacer-fluid-16-32: clamp(1rem, calc(0.71rem + 1.43vw), 2rem);
   --spacer-fluid-16-40: clamp(1rem, calc(0.57rem + 2.14vw), 2.5rem);
 
   /* for this one, the space remaining will 'grow' and 'shrink' 2.4x because it's preferred value is based on a viewport width of 1100-1440  */
-  --spacer-fluid-16-32-24x: clamp(1rem, calc(-6.47rem + 9.41vw), 2rem);
-  
+  /* doesn't grow when the root font size is increased by the user, needed for where it's being used */
+  --spacer-fluid-16-32-24x: clamp(16px, calc(-103.52px + 9.41vw), 32px);
 
   /* Border-radius */
   --radius-2: 0.125rem;
@@ -55,26 +45,22 @@
   --radius-16: 1rem;
 
   /* the values are ##,##,## format so that I can give these variables opacity when using them: example; rgba(var(--grey-100, .50) */
-  --grey-000: 255,255,255;
-  --grey-025: 251,252,255;
-  --grey-050: 239,239,239;
-  --grey-100: 231,231,231;
-  --grey-200: 186,186,186;
-  --grey-300: 153,153,153;
-  --grey-400: 119,119,119;
-  --grey-500: 86,86,86;
-  --grey-600: 53,53,53;
-  --grey-700: 20,20,20;
-  --grey-800: 10,10,10;
-  --grey-900: 5,5,5;
-  --grey-1000: 0,0,0;
-
+  --grey-000: 255, 255, 255;
+  --grey-025: 251, 252, 255;
+  --grey-050: 239, 239, 239;
+  --grey-100: 231, 231, 231;
+  --grey-200: 186, 186, 186;
+  --grey-300: 153, 153, 153;
+  --grey-400: 119, 119, 119;
+  --grey-500: 86, 86, 86;
+  --grey-600: 53, 53, 53;
+  --grey-700: 20, 20, 20;
+  --grey-800: 10, 10, 10;
+  --grey-900: 5, 5, 5;
+  --grey-1000: 0, 0, 0;
 
   --scale-hover: scale(1.03);
   --scale-active: scale(0.99);
 
-
   --breakpoint-phone: 320px;
-
-
 }

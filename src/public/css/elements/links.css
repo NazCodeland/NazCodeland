@@ -2,8 +2,7 @@
   display: inline-block;
   position: relative;
   z-index: 1;
-  transition: ease-in color 0.3s;
-  /* transition-delay: 0.1s; */ /*delay before transition starts  */
+  outline: none;
 }
 
 .link:is(:hover, :focus) {

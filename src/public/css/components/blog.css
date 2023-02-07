@@ -1,7 +1,24 @@
+.page-title {
+  margin-block-end: 6rem;
+  color: rgba(var(--grey-000), var(--high-emphasis-text-dark));
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
 .article {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.article__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacer-4);
 }
 
 .article__content {
@@ -17,7 +34,7 @@
 
 .tag {
   padding: var(--spacer-2) var(--spacer-4);
-  outline: none;
+  outline-color: transparent;
   /* color: ; */
 }
 

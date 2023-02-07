@@ -7,7 +7,7 @@
 
 /* block elements */
 div {
-  outline: none;
+  outline-color: transparent;
 }
 
 ul {
@@ -18,19 +18,11 @@ li {
   list-style-type: none;
 }
 
-h5,
-h6 {
-  font-weight: normal;
-}
 /* inline elements */
 
 a {
-  white-space: nowrap;
-  display: block;
   text-decoration: none;
-  text-align: center;
   color: inherit;
-  outline: none;
 }
 
 button {
@@ -39,5 +31,5 @@ button {
 }
 
 span {
-  outline: none;
+  outline-color: transparent;
 }

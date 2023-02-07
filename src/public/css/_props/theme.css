@@ -5,10 +5,9 @@
   --ff-logo-excluding-first-letter: Arial Black, sans-serif;
   --ff: 'Times New Roman', Times, serif;
 
-  --fs-logo-first-letter: clamp();
+  --fs-logo-first-letter: clamp(24px, calc(17.12px + 2.14vw), 3rem);
 
-  --fs-logo-remaining-letters: clamp();
-
+  /*  */
   --html-color: var(--primary-color);
 
   --primary-color: 100, 149, 237;
@@ -101,7 +100,7 @@
   --logo-remaining-letters-color: var(--grey-025), var(--high-emphasis-text-dark);
   --nav-link-text-color: var(--grey-000), var(--medium-emphasis-text-dark);
   
-  --text-color: var(--grey-000), var(--medium-emphasis-text-dark);
+  --text-color: var(--grey-000);
   
   --btn-text-color: var(--grey-000), var(--medium-emphasis-text-dark);
   --primary-color-text: var(--grey-900);

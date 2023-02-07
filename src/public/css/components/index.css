@@ -1,6 +1,7 @@
 /* home page */
 @import 'navigation.css';
-@import 'card.css';
+@import 'theme-swticher.css';
+@import 'profile-card.css';
 @import 'skill-card.css';
 
 /* blog page */

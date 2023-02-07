@@ -3,9 +3,11 @@
 }
 
 .jump .first-letter {
+  position: relative;
+
   font-family: var(--ff-logo-first-letter);
-  font-size: var(--fs-fluid-3);
-  line-height: clamp(3rem, calc(1.96rem + 5.22vw), 6rem);
+  font-size: var(--fs-logo-first-letter);
+  line-height: clamp(48px, calc(31.36px + 5.22vw), 96px);
   cursor: pointer;
 
   color: rgba(var(--primary-color));
@@ -15,21 +17,23 @@
   display: inline-block;
 
   font-family: var(--ff-logo-excluding-first-letter);
-  font-size: var(--fs-fluid-2);
+  font-size: clamp(18.24px, calc(12px + 1.94vw), 36px);
   font-weight: var(--fw-900);
   letter-spacing: clamp(0rem, calc(-0.07rem + 0.36vw), 0.5rem);
   line-height: clamp(1.5rem, calc(0.98rem + 2.61vw), 3rem);
   cursor: default;
 
+  padding-inline: 0.05rem;
+
   color: rgba(var(--logo-remaining-letters-color));
 
-  --logo-box-shadow: 0.05rem 0.05rem 0.05rem 0.05rem rgba(204, 219, 232, 1),
-    -0.05rem -0.05rem 0.05rem 0.05rem rgba(255, 255, 255, 1);
+  --logo-box-shadow: 0.8px 0.8px 0.8px 0.8px rgba(204, 219, 232, 1),
+    -0.8px -0.8px 0.8px 0.8px rgba(255, 255, 255, 1);
   box-shadow: var(--logo-box-shadow);
   transition: transform 0.2s;
 }
 
-.jump *:is(:hover, :focus) {
+.jump *:is(:hover) {
   text-transform: uppercase;
   transform: translateY(-20px) scale(2) rotate(20deg);
 }

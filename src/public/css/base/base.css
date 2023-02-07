@@ -1,6 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Suez+One';
 
-/* TODO: make sure website is tabbable */
+/* TODO: make sure website is tabbableit is as of 2023-02-06 */
 
 html {
   background-color: rgba(var(--html-color));
@@ -16,7 +16,7 @@ body {
   padding: var(--spacer-fluid-16-40);
 
   font-family: var(--ff);
-  font-size: var(--fs-fluid-0);
+  font-size: var(--fs-fluid-4);
   line-height: clamp(1.5rem, calc(1.36rem + 0.71vw), 2rem);
 
   color: rgba(var(--grey-000), var(--medium-emphasis-text-dark));
@@ -26,33 +26,74 @@ body {
   transition: margin-block-start 1s;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  /* doesn't grow based on root font-size set by the user, needed in 'px' for where it's being used */
+  gap: 16px;
+}
+
+header,
+body,
+section,
+footer {
+  margin-block-end: clamp(5.5rem, calc(4.64rem + 4.29vw), 8.5rem);
+}
+
+.skip {
+  position: absolute;
+  inset-inline-start: -10000px;
+  inset-block-start: -15px;
+
+  padding-inline: 1rem;
+  border-radius: var(--spacer-4);
+
+  color: rgba(var(--grey-900));
+  background-color: rgba(var(--primary-color));
+
+  /* for cases where user has 'absolute positioning' turned off */
+  overflow: hidden;
+
+  z-index: 10;
+}
+
+.skip:focus {
+  inset-inline-start: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: end;
+  border-block-start: 1px solid rgba(var(--primary-color));
+  margin-block-end: 0;
+  font-size: --fs;
+
+  opacity: var(--high-emphasis-text-dark);
+}
+
+/* ------------------------------------- */
 h1 {
-  font-size: var(--fs-fluid-3);
-}
-h2 {
-  font-size: var(--fs-fluid-2);
-}
-h3 {
   font-size: var(--fs-fluid-1);
 }
 
+h2 {
+  font-size: var(--fs-fluid-2);
+}
+
+h3 {
+  font-size: var(--fs-fluid-3);
+}
+
+h4 {
+  font-size: var(--fs-fluid-4);
+}
+
 h5 {
-  font-size: var(--fs-fluid--1);
+  font-size: var(--fs-fluid-5);
 }
+
 h6 {
-  font-size: var(--fs-fluid--2);
-}
-
-/* header styles */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: var(--spacer-16);
-
-  position: relative;
-}
-
-section {
-  margin-block-end: clamp(5.5rem, calc(4.64rem + 4.29vw), 8.5rem);
+  font-size: var(--fs-fluid-6);
 }

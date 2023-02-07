@@ -1,4 +1,4 @@
-@import 'theme-swticher.css';
+/* TODO organize the 'sections' folder better, I don't think 'whatIDo.css' should be in here? */
+
 @import 'sections.css';
 @import 'whatIDo.css';
-@import 'footer.css';
