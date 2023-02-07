@@ -1,4 +1,5 @@
 /* TODO organize the 'sections' folder better, I don't think 'whatIDo.css' should be in here? */
 
+@import 'header.css';
 @import 'sections.css';
 @import 'whatIDo.css';

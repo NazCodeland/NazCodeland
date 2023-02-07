@@ -39,14 +39,12 @@
 
   --body-margin-top:  clamp(0.25rem, calc(-0.39rem + 3.21vw), 2rem);
 
-  /* desktop */
-  /* --body-margin-top: var(--spacer-32); */
   --main-background: 251,252,255;
 
-  --logo-remaining-letters-color: 40,42,54;
+  --logo-remaining-letters-color: var(--grey-900);
   --nav-link-text-color: var(--grey-500);
 
-  --text-color: var(--grey-1000);
+  --text-color: var(--grey-900);
 
   --primary-color-text: var(--grey-000);
 
@@ -102,7 +100,6 @@
   
   --text-color: var(--grey-000);
   
-  --btn-text-color: var(--grey-000), var(--medium-emphasis-text-dark);
   --primary-color-text: var(--grey-900);
   
 

@@ -9,7 +9,7 @@ secondary turns into primary upon :hover
   padding: clamp(0.5rem, calc(0.66rem + -0.18vw), 0.63rem) var(--spacer-16);
 
   /* --btn-text-color is not defined so it will fallback to inheriting the color in this situation */
-  color: rgba(var(--btn-text-color), 1);
+  color: rgba(var(--btn-text-color));
 
   --btn-bg-opacity: var(--opacity-04-dark);
   background-color: rgba(var(--grey-000), var(--btn-bg-opacity));

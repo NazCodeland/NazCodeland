@@ -52,7 +52,6 @@
   gap: var(--spacer-fluid-8-16);
 }
 .skill-card__title {
-  color: rgba(var(--grey-000), var(--high-emphasis-text-dark));
   margin-block-end: 0;
 }
 

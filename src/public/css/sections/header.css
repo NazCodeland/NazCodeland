@@ -1,1 +1,20 @@
+.skip {
+  position: absolute;
+  inset-inline-start: -10000px;
+  inset-block-start: -15px;
 
+  padding-inline: 1rem;
+  border-radius: var(--spacer-4);
+
+  color: rgba(var(--grey-900));
+  background-color: rgba(var(--primary-color));
+
+  /* for cases where user has 'absolute positioning' turned off */
+  overflow: hidden;
+
+  z-index: 10;
+}
+
+.skip:focus {
+  inset-inline-start: 0;
+}

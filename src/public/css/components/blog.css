@@ -1,6 +1,6 @@
 .page-title {
   margin-block-end: 6rem;
-  color: rgba(var(--grey-000), var(--high-emphasis-text-dark));
+  color: rgba(var(--text-color), var(--high-emphasis-text-dark));
 }
 
 .articles {
@@ -27,7 +27,10 @@
 
 .article__tags {
   display: flex;
+  justify-content: end;
   gap: 1rem;
+
+  text-align: center;
 }
 
 /* tags */

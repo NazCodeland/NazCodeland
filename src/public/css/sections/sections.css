@@ -1,9 +1,5 @@
-/* home page */
-.introduction-section {
-  margin-inline: auto;
-}
-
 /* blog page */
 .blog-section {
+  inline-size: 60ch;
   margin-inline: auto;
 }

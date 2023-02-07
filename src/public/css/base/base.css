@@ -1,6 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Suez+One';
 
-/* TODO: make sure website is tabbableit is as of 2023-02-06 */
+/* TODO: make sure website is tabbable, it is as of 2023-02-06 */
 
 html {
   background-color: rgba(var(--html-color));
@@ -42,27 +42,6 @@ footer {
   margin-block-end: clamp(5.5rem, calc(4.64rem + 4.29vw), 8.5rem);
 }
 
-.skip {
-  position: absolute;
-  inset-inline-start: -10000px;
-  inset-block-start: -15px;
-
-  padding-inline: 1rem;
-  border-radius: var(--spacer-4);
-
-  color: rgba(var(--grey-900));
-  background-color: rgba(var(--primary-color));
-
-  /* for cases where user has 'absolute positioning' turned off */
-  overflow: hidden;
-
-  z-index: 10;
-}
-
-.skip:focus {
-  inset-inline-start: 0;
-}
-
 footer {
   display: flex;
   justify-content: end;
@@ -74,6 +53,13 @@ footer {
 }
 
 /* ------------------------------------- */
+
+h1,
+h2,
+h3 {
+  color: rgba(var(--text-color), var(--high-emphasis-text-dark, 1));
+}
+
 h1 {
   font-size: var(--fs-fluid-1);
 }
