@@ -74,9 +74,11 @@
 }
 
 .hamburger {
-  stroke: rgba(var(--hamburger-stroke-color));
+  stroke: currentColor;
   min-inline-size: 28px;
   min-block-size: 28px;
+  border: none;
+  background-color: transparent;
 }
 
 @media (width >= 53rem) {

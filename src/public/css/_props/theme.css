@@ -35,8 +35,6 @@
 [color-scheme='light'] {
   color-scheme: light;
 
-  --hamburger-stroke-color: var(--grey-900);
-
   --body-margin-top:  clamp(0.25rem, calc(-0.39rem + 3.21vw), 2rem);
 
   --main-background: 251,252,255;
@@ -69,7 +67,6 @@
 [color-scheme='dark'] {
   color-scheme: dark;
   
-  --hamburger-stroke-color: var(--grey-000);
   /* Light text opacity on dark backgrounds from material design guidelines */
   --high-emphasis-text-dark: 0.87;
   --medium-emphasis-text-dark: 0.60;
