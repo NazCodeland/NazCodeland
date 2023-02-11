@@ -6,9 +6,9 @@
 }
 
 /* block elements */
-div {
+/* div {
   outline-color: transparent;
-}
+} */
 
 ul {
   padding-inline-start: 0;
@@ -23,11 +23,22 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+
+  outline-width: 0.1rem;
+  outline-style: solid;
+  outline-color: transparent;
+  border-radius: var(--spacer-8);
 }
 
 button {
   cursor: pointer;
   padding: 0;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline-offset: 0;
+  outline-color: canvasText !important;
 }
 
 span {

@@ -3,6 +3,7 @@ const themeSwitcherBtn = document.querySelector('.theme-switcher');
 const root = document.querySelector(':root');
 
 function getCurrentTheme() {
+  console.dir(window.matchMedia('(prefers-color-scheme)').matches);
   let theme = window.matchMedia('(prefers-color-scheme: dark)').matches
     ? 'dark'
     : 'light';

@@ -46,6 +46,17 @@
   position: relative;
 }
 
+.menu__links a {
+  white-space: nowrap;
+  color: rgba(var(--nav-link-text-color));
+  outline: none;
+}
+
+.menu__links li a:is(:hover, :focus)::before {
+  inline-size: 100%;
+  inset-inline-start: 0;
+}
+
 .menu__links li a::before {
   content: '';
   position: absolute;
@@ -58,27 +69,25 @@
   transition: inline-size 0.3s, left 0.3s;
 }
 
-.menu__links a {
-  white-space: nowrap;
-  color: rgba(var(--nav-link-text-color));
-  outline: none;
-}
-
-.menu__links li a:is(:hover, :focus)::before {
-  inline-size: 100%;
-  inset-inline-start: 0;
-}
-
 .nested-menu {
   display: none;
 }
 
 .hamburger {
-  stroke: currentColor;
+  display: grid;
+  place-items: center;
+
+  stroke: canvasText;
   min-inline-size: 28px;
   min-block-size: 28px;
   border: none;
   background-color: transparent;
+}
+
+/* this setting is set in reset.css but in More Contrast in firefox this is needed again */
+.hamburger:focus-visible {
+  outline: 0.1rem solid canvasText;
+  border-radius: var(--spacer-4);
 }
 
 @media (width >= 53rem) {

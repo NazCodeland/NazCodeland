@@ -9,12 +9,8 @@
   font-size: var(--fs-logo-first-letter);
   line-height: clamp(48px, calc(31.36px + 5.22vw), 96px);
   cursor: pointer;
-
+  border-radius: var(--spacer-2);
   color: rgba(var(--primary-color));
-}
-
-.logo .first-letter:focus-visible {
-  outline-color: rgba(var(--text-color));
 }
 
 .logo * {
@@ -31,6 +27,9 @@
 
   color: rgba(var(--logo-remaining-letters-color));
 
+  outline-width: 0.1rem;
+  outline-style: solid;
+
   --logo-box-shadow: 0.8px 0.8px 0.8px 0.8px rgba(204, 219, 232, 1),
     -0.8px -0.8px 0.8px 0.8px rgba(255, 255, 255, 1);
   box-shadow: var(--logo-box-shadow);
@@ -41,13 +40,18 @@
   text-transform: uppercase;
   transform: translateY(-20px) scale(2) rotate(20deg);
 }
-
+.logo > span :nth-child(1) {
+  margin-inline-start: 0.1rem;
+}
 .logo > span,
 .logo > span:hover {
   all: unset;
 }
 
-[color-scheme='dark'] .logo * {
+[color-scheme='dark'] .logo :not([aria-hidden]) {
   --logo-box-shadow: none;
-  outline: 0.1rem solid rgba(255, 255, 255, 0.05);
+  outline-color: rgba(255, 255, 255, 0.05);
+}
+[color-scheme='dark'] .logo .first-letter:focus-visible {
+  outline-color: rgba(var(--text-color));
 }

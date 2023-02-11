@@ -1,6 +1,6 @@
-<header>
+<header class="site-wide-header">
   
-  <a href="#main" class="skip">Skip to main content</a>
+  <a href="#maincontent" class="skipToMain">Skip to main content</a>
   
   <div class="theme-switcher-and-logo">
     <button type="button" aria-label="site-wide theme switcher" class="theme-switcher">
@@ -73,32 +73,34 @@
       </div>
     </button>
   
-      <h1 class='logo'>NazCodeland</h1>  
+      <h1 class='logo' aria-labelledby="logo">NazCodeland</h1>  
 
   </div>
   
-<button tabindex="0" class="hamburger" aria-label="menu" type="button" >
-  <svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M3.75 6H20.25M3.75 12H20.25M3.75 18H20.25" currentColor stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
-</button>
+    <!-- TODO: the styles for this menu need to be adjusted -->
+    <!-- this needs to be done so that in mobile viewports, when the menu is minimized the navigation still shows up in landmarks -->
+    <button type="button" tabindex="0" class="hamburger" aria-label="menu">
+      <svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.75 6H20.25M3.75 12H20.25M3.75 18H20.25"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
 
   <nav class="menu">
-        <ul class="menu__links">
-          <li><a href='/' autofocus>Home</a></li>
-          <li><a href='/about'>About Me</a></li>
-          <li><a href='/portfolio'>Portfolio</a>
-          <li><a href='/viewResume'>Resume</a>
-            <ul class='nested-menu'>
-              <li><a href="/design">UX/UI Design</a></li>
-              <li><a href="/development">Web Development</a></li>
-            </ul></li>
-          <li><a href='/contact'>Contact</a></li>
-          <li><a href='/blog'>Blog</a></li>
-        </ul>
-    </nav>
-  
 
+
+    <ul class="menu__links">
+      <li><a href='/' autofocus>Home</a></li>
+      <li><a href='/about'>About Me</a></li>
+      <li><a href='/portfolio'>Portfolio</a>
+      <li><a href='/viewResume'>Resume</a>
+        <ul class='nested-menu'>
+          <li><a href="/design">UX/UI Design</a></li>
+          <li><a href="/development">Web Development</a></li>
+        </ul></li>
+      <li><a href='/contact'>Contact</a></li>
+      <li><a href='/blog'>Blog</a></li>
+    </ul>
+  </nav>
   
 </header>
 

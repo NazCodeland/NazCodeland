@@ -13,9 +13,7 @@ secondary turns into primary upon :hover
 
   --btn-bg-opacity: var(--opacity-04-dark);
   background-color: rgba(var(--grey-000), var(--btn-bg-opacity));
-  outline-color: rgba(var(--main-background));
-  outline-offset: 0px;
-  border-radius: var(--spacer-8);
+
   box-shadow: var(--box-shadow-rest);
   transition: ease-in-out transform 0.15s;
 }
@@ -42,7 +40,6 @@ secondary turns into primary upon :hover
 }
 
 .btn-outlined-primary {
-  background-color: rgba(var(--grey-000), var(--opacity-02-dark));
   outline-color: rgba(var(--primary-color));
 }
 

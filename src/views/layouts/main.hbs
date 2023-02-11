@@ -1,21 +1,32 @@
+<!DOCTYPE html>
 <html lang='en'>
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta name="description" content="Product Researcher, UX/UI Designer, Frontend Developer, Web Development">
     <link rel='stylesheet' href='/css/main.css' />
     <title>NazCodeland | {{tapTitle}}</title>
   </head>
-
-  {{> navigation }}
   
-  <body>
-      <main id="main">
+
+    <body>
+      <div class="body-background"></div>
+      
+      {{> navigation }}
+    
+      <main id="maincontent">
         {{{ body }}}
       </main>
+    
+      {{> footer }}
       
+
+
     <script src="/javascript/script.js" type="module"></script>
-  </body>
-  
-  {{> footer }}
+    
+    </body>
+
 
   </html>
+
+

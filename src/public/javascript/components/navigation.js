@@ -14,10 +14,3 @@ function handleClick(event) {
 }
 
 menuLinks.forEach((link) => link.addEventListener('click', handleClick));
-
-// while (window.innerWidth > 319) {
-//   if (window.innerWidth <= 847) {
-//     console.log(window.innerWidth);
-//     menuLinks.forEach((link) => link.removeAttribute('tabindex'));
-//   }
-// }

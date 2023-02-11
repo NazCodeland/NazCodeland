@@ -112,3 +112,103 @@
   --box-shadow-hover: none;
   --box-shadow-active: rgba(0, 0, 0, 1) 1px 1px 3px, rgba(0, 0, 0, 1) 1px 1px 2px;
 }
+
+/* TODO: implement passing contrast colors for people with different types of blindness */
+
+/* prefers-contrast: less */
+
+/* @media (prefers-contrast: less) {
+} */
+
+/* ------------------------------------------------------------- */
+/* forced-colors: active */
+/* ------------------------------------------------------------- */
+
+/* TODO: Low/High Contrast Implementation is done! */
+/* TODO: put all the selectors in one @media (forced-colors: active) */
+
+/* buttons / anchors */
+@media (forced-colors: active) {
+  .btn {
+    outline-color: canvas;
+  }
+}
+
+/* site-wide theme-switcher */
+@media (forced-colors: active) {
+  /* fallback for firefox */
+  .moon {
+    stroke: canvasText;
+  }
+
+  .star02,
+  .star06,
+  .star07,
+  .star08 {
+    stroke: rgba(var(--primary-color));
+  }
+
+  .theme-switcher {
+    forced-color-adjust: none;
+  }
+}
+
+/* logo */
+@media (forced-colors: active) {
+  .logo .first-letter:focus-visible {
+    outline-color: canvasText !important;
+  }
+
+  .logo *:not([aria-hidden], .first-letter) {
+    outline-color: grayText !important;
+  }
+}
+
+/* navigation links */
+@media (forced-colors: active) {
+  .menu__links li a::before {
+    background-color: linkText !important;
+  }
+}
+
+/* profile-card image border */
+@media (forced-colors: active) {
+  .profile-card__image {
+    border-color: HighlightText !important;
+  }
+}
+
+/* profile-card links  */
+@media (forced-colors: active) {
+  /* fallback for firefox */
+  .link::before {
+    background-color: linkText !important;
+  }
+  /* fallback for firefox */
+  .link:is(:hover, :focus) {
+    color: canvas !important;
+  }
+
+  .link {
+    forced-color-adjust: none;
+    color: canvasText;
+  }
+}
+
+/* profile-card buttons */
+@media (forced-colors: active) {
+  .btn-outlined-primary {
+    outline-color: GrayText !important;
+  }
+
+  .btn:focus-visible {
+    outline-color: canvasText !important;
+  }
+}
+
+/* skill-card */
+@media (forced-colors: active) {
+  .skill-card__copy {
+    color: canvasText;
+  }
+}

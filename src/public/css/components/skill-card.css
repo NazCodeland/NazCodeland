@@ -5,19 +5,13 @@
 }
 
 .skill-cards-container a {
-  /* all: unset; */
   flex: 1 1 30ch;
-}
-
-.skill-cards-container a:focus-visible {
-  outline-color: rgba(var(--text-color));
 }
 
 .skill-card {
   block-size: 100%;
 
   padding: var(--spacer-16);
-  border-radius: var(--spacer-8);
 
   --btn-bg-opacity: var(--opacity-04-dark);
   background-color: rgba(var(--grey-000), var(--btn-bg-opacity));

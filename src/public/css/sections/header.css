@@ -1,4 +1,15 @@
-.skip {
+.site-wide-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  /* doesn't grow based on root font-size set by the user, needed in 'px' for where it's being used */
+  gap: 16px;
+
+  margin-block-end: clamp(5.5rem, calc(4.64rem + 4.29vw), 8.25rem);
+}
+
+.skipToMain {
   position: absolute;
   inset-inline-start: -10000px;
   inset-block-start: -15px;
@@ -15,6 +26,6 @@
   z-index: 10;
 }
 
-.skip:focus {
+.skipToMain:focus-visible {
   inset-inline-start: 0;
 }
