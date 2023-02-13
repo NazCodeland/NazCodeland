@@ -1,3 +1,5 @@
+/* TODO: it is not aligned to the left side when in smaller viewports, it looks off comapred to the "WHAT I DO" Section */
+
 .profile-card {
   display: flex;
   flex-wrap: wrap;
