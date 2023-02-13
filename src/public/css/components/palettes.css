@@ -6,10 +6,14 @@
 
   position: absolute;
   inset-inline-end: var(--spacer-fluid-16-40);
-  inset-block-start: 9.8rem;
+  inset-block-start: 10rem;
   visibility: hidden;
+  background-color: none;
 }
 
+.palettes button {
+  border: none;
+}
 .show-palettes {
   visibility: visible;
 }
@@ -26,7 +30,12 @@
   outline: 1px solid canvasText;
 }
 
-.mainpalette {
+.palette:active {
+  outline-color: red;
+  /* --main-background: #2c3236; */
+}
+
+.mainPalette {
   background-color: rgba(var(--primary-color));
   outline: 1px solid canvasText;
 }
@@ -36,8 +45,10 @@
 .desert {
   background-color: #fffaeb;
 }
+
 .dusk {
-  background-color: #2c3236;
+  background-color: 44, 50, 54;
+  color: ;
 }
 .night {
   background-color: #000000;

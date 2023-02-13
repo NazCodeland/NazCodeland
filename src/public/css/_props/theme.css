@@ -226,3 +226,9 @@
     outline-color: linkText;
   }
 }
+
+/* manual contrast themes */
+
+[theme='dusk'] {
+  --main-background: 44, 50, 54;
+}
