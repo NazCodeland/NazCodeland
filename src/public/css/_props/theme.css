@@ -20,13 +20,13 @@
 
   --aquatic-contrast-theme-link-txt-clr: 117, 233, 252;
 
-  --aquatic-contrast-theme-inactive-txt-clr: 38, 59, 80;
+  --aquatic-contrast-theme-inactive-txt-clr: 166, 166, 166;
 
-  --aquatic-contrast-theme-selected-bg-clr: 38, 59, 80;
-  --aquatic-contrast-theme-selected-txt-clr: 142, 227, 240;
+  --aquatic-contrast-theme-selected-bg-clr: 142, 227, 240;
+  --aquatic-contrast-theme-selected-txt-clr: 38, 59, 80;
 
-  --aquatic-contrast-theme-button-bg-clr: 255, 255, 255;
-  --aquatic-contrast-theme-button-txt-clr: 32, 32, 32;
+  --aquatic-contrast-theme-button-bg-clr: 32, 32, 32;
+  --aquatic-contrast-theme-button-txt-clr: 255, 255, 255;
 
   /* desert contrast theme */
   --desert-contrast-theme-bg-clr: 255, 250, 239;
@@ -308,39 +308,95 @@
   forced-color-adjust: none;
 }
 
-[theme='aquatic'] {
-  --html-color: 70, 233, 255;
-  --main-background: var(--aquatic-contrast-theme-bg);
+/* logo first and remaining letters not taking on color */
+/* menu link items */
+/* profile title and subtitle */
+/* profile links not taking on the link color */
+/* primary button color */
+/* what-i-do color */
+/* skill-card titles */
 
-  /* linnkText */
+[theme='aquatic'] {
+  /* linkText */
   /* inactiveText */
 
   /* selectedText foreground*/
   /* selectedText background*/
   /* button foreground*/
   /* button background*/
-}
-[theme='aquatic'] .menu__links {
-  color: ;
-}
-[theme='aquatic'] .site-content {
-  color: red;
 
-  /* logo first and remaining letters not taking on color */
-  /* menu link items */
-  /* profile title and subtitle */
-  /* profile links not taking on the link color */
-  /* primary button color */
-  /* what-i-do color */
-  /* skill-card titles */
+  --html-color: 70, 233, 255;
+  --main-background: var(--aquatic-contrast-theme-bg-clr);
 }
 
-[theme='desert'] {
-  --main-background: var(--desert-contrast-theme-bg);
+[theme='aquatic'] .logo :not([aria-hidden]) {
+  outline: 1px solid canvas;
+}
+
+[theme='aquatic'] .logo .first-letter {
+  color: rgba(var(--aquatic-contrast-theme-link-txt-clr));
+  outline-color: rgba(var(--aquatic-contrast-theme-link-txt-clr));
+}
+
+[theme='aquatic'] .menu__links a {
+  --nav-link-text-color: var(--aquatic-contrast-theme-link-txt-clr);
+}
+
+[theme='aquatic'] .menu__links li a::before {
+  background-color: rgba(var(--aquatic-contrast-theme-link-txt-clr));
+}
+
+[theme='aquatic'] .profile-card__image {
+  border-color: rgba(var(--aquatic-contrast-theme-bg-clr));
+  outline: 0.1rem solid rgba(var(--aquatic-contrast-theme-link-txt-clr));
+}
+
+[theme='aquatic'],
+[theme='aquatic'] .hamburger,
+[theme='aquatic'] .logo :not(.first-letter),
+[theme='aquatic'] .profile-card__title,
+[theme='aquatic'] .profile-card__subtitle,
+[theme='aquatic'] .what-i-do,
+[theme='aquatic'] .skill-card__title {
+  color: rgba(var(--aquatic-contrast-theme-txt-clr));
+}
+
+[theme='aquatic'] .profile-card .link:is(:hover, :focus),
+[theme='aquatic'] .profile-card .btn-filled-primary {
+  color: markText;
+}
+[theme='aquatic'] .profile-card .link::before {
+  background-color: rgba(var(--aquatic-contrast-theme-link-txt-clr));
+}
+
+[theme='aquatic'] .profile-card .btn-filled-primary {
+  background-color: rgba(var(--aquatic-contrast-theme-link-txt-clr));
+  outline-color: rgba(var(--aquatic-contrast-theme-selected-txt-clr));
+}
+[theme='aquatic'] .profile-card .btn-outlined-primary {
+  outline-color: rgba(var(--aquatic-contrast-theme-link-txt-clr));
+}
+
+[theme='aquatic'] .what-i-do {
+  text-decoration-color: rgba(var(--aquatic-contrast-theme-link-txt-clr));
+}
+
+[theme='aquatic'] .skill-card {
+  outline: 1px solid rgba(var(--aquatic-contrast-theme-link-txt-clr));
+}
+
+[theme='aquatic'] .logo *,
+[theme='aquatic'] .btn,
+[theme='aquatic'] .skill-card {
+  box-shadow: none !important;
+}
+
+/* [theme='desert'] {
+  --main-background: var(--desert-contrast-theme-bg-clr);
 }
 [theme='dusk'] {
-  --main-background: var(--dusk-contrast-theme-bg);
+  --main-background: var(--dusk-contrast-theme-bg-clr);
 }
 [theme='night'] {
-  --main-background: var(--night-sky-contrast-theme-bg);
-}
+  --main-background: var(--night-sky-contrast-theme-bg-clr);
+} */
