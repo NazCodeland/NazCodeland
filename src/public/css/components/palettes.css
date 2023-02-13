@@ -1,0 +1,74 @@
+.palettes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacer-16);
+  align-items: end;
+
+  position: absolute;
+  inset-inline-end: var(--spacer-fluid-16-40);
+  inset-block-start: 9.8rem;
+  visibility: hidden;
+}
+
+.show-palettes {
+  visibility: visible;
+}
+
+.palettes-title {
+  font-weight: 900;
+}
+
+.palette {
+  display: inline-block;
+  inline-size: 30px;
+  block-size: 30px;
+  border-radius: var(--spacer-4);
+  outline: 1px solid canvasText;
+}
+
+.mainpalette {
+  background-color: rgba(var(--primary-color));
+  outline: 1px solid canvasText;
+}
+.aquatic {
+  background-color: #202020;
+}
+.desert {
+  background-color: #fffaeb;
+}
+.dusk {
+  background-color: #2c3236;
+}
+.night {
+  background-color: #000000;
+}
+
+/* 320 */
+/* 442 */
+/* 6.4px */
+/* 9.6px */
+
+@media (width >= 20rem) {
+  .palettes {
+    inset-block-start: clamp(9.81rem, calc(7.01rem + 14.02vw), 19.63rem);
+  }
+}
+
+@media (width >= 27.625rem) {
+  .palettes {
+    inset-block-start: clamp(8rem, calc(4.46rem + 12.83vw), 16rem);
+  }
+}
+
+@media (width >= 53rem) {
+  .palettes {
+    inset-block-start: 6rem;
+    visibility: visible;
+  }
+}
+
+@media (width >= 56.625rem) {
+  .palettes {
+    inset-block-start: clamp(6rem, calc(-4.18rem + 17.98vw), 10rem);
+  }
+}

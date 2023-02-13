@@ -128,6 +128,9 @@
 
 @media (forced-colors) {
   /* light & dark contrast palette tweaks*/
+  .swatches {
+    forced-color-adjust: none;
+  }
 
   .menu__links li a::before {
     background-color: linkText !important;

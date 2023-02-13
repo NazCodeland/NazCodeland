@@ -1,5 +1,5 @@
 /* blog page */
 .blog-section {
-  inline-size: 60ch;
+  /* inline-size: 60ch; */
   margin-inline: auto;
 }

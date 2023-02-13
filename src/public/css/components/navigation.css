@@ -5,6 +5,27 @@
   gap: var(--spacer-fluid-16-32-24x);
 }
 
+.menu-and-filter {
+  display: flex;
+  gap: var(--spacer-8);
+}
+
+.hamburger {
+  display: grid;
+  place-items: center;
+
+  min-inline-size: 28px;
+  min-block-size: 28px;
+  border: none;
+  background-color: transparent;
+}
+
+/* this setting is set in reset.css but in More Contrast in firefox this is needed again */
+.hamburger:focus-visible {
+  outline: 0.1rem solid canvasText;
+  border-radius: var(--spacer-4);
+}
+
 .menu {
   position: absolute;
   inset-inline: calc(clamp(1rem, calc(0.57rem + 2.14vw), 2.5rem) * -1);
@@ -70,23 +91,6 @@
 
 .nested-menu {
   display: none;
-}
-
-.hamburger {
-  display: grid;
-  place-items: center;
-
-  stroke: canvasText;
-  min-inline-size: 28px;
-  min-block-size: 28px;
-  border: none;
-  background-color: transparent;
-}
-
-/* this setting is set in reset.css but in More Contrast in firefox this is needed again */
-.hamburger:focus-visible {
-  outline: 0.1rem solid canvasText;
-  border-radius: var(--spacer-4);
 }
 
 @media (width >= 53rem) {

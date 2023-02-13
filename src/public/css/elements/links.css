@@ -6,7 +6,7 @@
 }
 
 .link:is(:hover, :focus) {
-  color: rgba(var(--primary-color-text));
+  color: rgba(var(--grey-900));
 }
 
 .link::before {

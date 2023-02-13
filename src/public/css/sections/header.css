@@ -4,7 +4,7 @@
   justify-content: space-between;
   position: relative;
   /* doesn't grow based on root font-size set by the user, needed in 'px' for where it's being used */
-  gap: 16px;
+  gap: var(--spacer-10);
 
   margin-block-end: clamp(5.5rem, calc(4.64rem + 4.29vw), 8.25rem);
 }

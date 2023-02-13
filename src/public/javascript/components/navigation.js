@@ -7,6 +7,7 @@ function openMenu(event) {
 }
 
 menuBtn.addEventListener('click', openMenu);
+// TODO: why doesn't key press work?
 menuBtn.addEventListener('keypress', openMenu);
 
 function handleClick(event) {

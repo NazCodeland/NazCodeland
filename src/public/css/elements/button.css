@@ -54,4 +54,6 @@ secondary turns into primary upon :hover
 }
 
 .btn-disabled {
+  background-color: rgba(var(--grey-200));
+  color: rgba(var(--grey-500));
 }
