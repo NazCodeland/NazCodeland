@@ -33,7 +33,7 @@ button {
 a:focus-visible,
 button:focus-visible {
   outline-offset: 0;
-  outline-color: canvasText !important;
+  outline-color: canvasText;
 }
 
 span {

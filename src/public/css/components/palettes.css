@@ -18,46 +18,41 @@
   visibility: visible;
 }
 
-.palettes-title {
-  font-weight: 900;
-}
-
 .palette {
   display: inline-block;
   inline-size: 30px;
   block-size: 30px;
   border-radius: var(--spacer-4);
-  outline: 1px solid canvasText;
+  outline: 1px solid canvas;
+}
+
+.palette:focus-visible {
+  outline-width: 2px;
+  outline-color: canvas;
 }
 
 .palette:active {
   outline-color: red;
-  /* --main-background: #2c3236; */
 }
 
 .mainPalette {
   background-color: rgba(var(--primary-color));
   outline: 1px solid canvasText;
 }
+
 .aquatic {
-  background-color: #202020;
+  background-color: rgba(var(--aquatic-contrast-theme-bg-clr));
 }
 .desert {
-  background-color: #fffaeb;
+  background-color: rgba(var(--desert-contrast-theme-bg-clr));
 }
 
 .dusk {
-  background-color: 44, 50, 54;
-  color: ;
+  background-color: rgba(var(--dusk-contrast-theme-bg-clr));
 }
 .night {
-  background-color: #000000;
+  background-color: rgba(var(--night-sky-contrast-theme-bg-clr));
 }
-
-/* 320 */
-/* 442 */
-/* 6.4px */
-/* 9.6px */
 
 @media (width >= 20rem) {
   .palettes {

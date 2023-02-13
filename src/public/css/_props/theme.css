@@ -13,8 +13,65 @@
   --primary-color: 100, 149, 237;
 
   --svg-transition-duration: 1.4s;
+
+  /* aquatic contrast theme */
+  --aquatic-contrast-theme-bg-clr: 32, 32, 32;
+  --aquatic-contrast-theme-txt-clr: 255, 255, 255;
+
+  --aquatic-contrast-theme-link-txt-clr: 117, 233, 252;
+
+  --aquatic-contrast-theme-inactive-txt-clr: 166, 166, 166;
+
+  --aquatic-contrast-theme-selected-bg-clr: 142, 227, 240;
+  --aquatic-contrast-theme-selected-txt-clr: 38, 59, 80;
+
+  --aquatic-contrast-theme-button-bg-clr: 32, 32, 32;
+  --aquatic-contrast-theme-button-txt-clr: 255, 255, 255;
+
+  /* desert contrast theme */
+  --desert-contrast-theme-bg-clr: 255, 250, 239;
+  --desert-contrast-theme-txt-clr: 61, 61, 61;
+
+  --desert-contrast-theme-link-txt-clr: 28, 94, 117;
+
+  --desert-contrast-theme-inactive-txt-clr: 103, 103, 103;
+
+  --desert-contrast-theme-selected-bg-clr: 144, 57, 9;
+  --desert-contrast-theme-selected-txt-clr: 255, 245, 227;
+
+  --desert-contrast-theme-button-bg-clr: 255, 250, 239;
+  --desert-contrast-theme-button-txt-clr: 32, 32, 32;
+
+  /* dusk contrast theme */
+  --dusk-contrast-theme-bg-clr: 45, 50, 54;
+  --dusk-contrast-theme-txt-clr: 255, 255, 255;
+
+  --dusk-contrast-theme-link-txt-clr: 112, 235, 222;
+
+  --dusk-contrast-theme-inactive-txt-clr: 166, 166, 166;
+
+  --dusk-contrast-theme-selected-bg-clr: 161, 191, 222;
+  --dusk-contrast-theme-selected-txt-clr: 33, 45, 59;
+
+  --dusk-contrast-theme-button-bg-clr: 45, 50, 54;
+  --dusk-contrast-theme-button-txt-clr: 182, 246, 240;
+
+  /* night-sky contrast theme */
+  --night-sky-contrast-theme-bg-clr: 0, 0, 0;
+  --night-sky-contrast-theme-txt-clr: 255, 255, 255;
+
+  --night-sky-contrast-theme-link-txt-clr: 128, 128, 255;
+
+  --night-sky-contrast-theme-inactive-txt-clr: 166, 166, 166;
+
+  --night-sky-contrast-theme-selected-bg-clr: 214, 180, 253;
+  --night-sky-contrast-theme-selected-txt-clr: 43, 43, 43;
+
+  --night-sky-contrast-theme-button-bg-clr: 0, 0, 0;
+  --night-sky-contrast-theme-button-txt-clr: 255, 238, 50;
 }
 
+/* #region lightAndDark media queries */
 /* prettier-ignore */
 @media (prefers-color-scheme: light) {
   :root{
@@ -31,6 +88,9 @@
   }
 }
 
+/* #endregion lightAndDark media queries */
+
+/* #region lightScheme */
 /* prettier-ignore */
 [color-scheme='light'] {
   color-scheme: light;
@@ -63,6 +123,9 @@
   
 }
 
+/* #endregion lightScheme */
+
+/* #region lightScheme */
 /* prettier-ignore */
 [color-scheme='dark'] {
   color-scheme: dark;
@@ -112,6 +175,7 @@
   --box-shadow-hover: none;
   --box-shadow-active: rgba(0, 0, 0, 1) 1px 1px 3px, rgba(0, 0, 0, 1) 1px 1px 2px;
 }
+/* #endregion darkScheme */
 
 /* TODO: implement passing contrast colors for people with different types of blindness */
 
@@ -127,6 +191,8 @@
 /* TODO: put all the selectors in one @media (forced-colors: active) */
 
 @media (forced-colors) {
+  /* #region light and dark mode */
+
   /* light & dark contrast palette tweaks*/
   .swatches {
     forced-color-adjust: none;
@@ -155,7 +221,12 @@
     text-decoration-color: activeText !important;
   }
 
+  /* #endregion light and dark mode */
+
   /* ---------------------------------------------------------- */
+
+  /* #region lightMode*/
+
   /* light contrast palette */
   [color-scheme='light'] .site-content-wrapper {
     background-color: activeText !important;
@@ -184,9 +255,13 @@
     color: markText !important;
     outline-color: linkText !important;
   }
+  /* #endregion lightMode */
 
   /* ---------------------------------------------------------- */
+
+  /* #region darkMode*/
   /* dark contrast palette */
+
   [color-scheme='dark'] .site-content-wrapper {
     background-color: activeText !important;
   }
@@ -225,10 +300,103 @@
   [color-scheme='dark'] .skill-cards-container a {
     outline-color: linkText;
   }
+  /* #endregion darkMode */
 }
 
 /* manual contrast themes */
-
-[theme='dusk'] {
-  --main-background: 44, 50, 54;
+.palettes {
+  forced-color-adjust: none;
 }
+
+/* logo first and remaining letters not taking on color */
+/* menu link items */
+/* profile title and subtitle */
+/* profile links not taking on the link color */
+/* primary button color */
+/* what-i-do color */
+/* skill-card titles */
+
+[theme='aquatic'] {
+  /* linkText */
+  /* inactiveText */
+
+  /* selectedText foreground*/
+  /* selectedText background*/
+  /* button foreground*/
+  /* button background*/
+
+  --html-color: 70, 233, 255;
+  --main-background: var(--aquatic-contrast-theme-bg-clr);
+}
+
+[theme='aquatic'] .logo :not([aria-hidden]) {
+  outline: 1px solid canvas;
+}
+
+[theme='aquatic'] .logo .first-letter {
+  color: rgba(var(--aquatic-contrast-theme-link-txt-clr));
+  outline-color: rgba(var(--aquatic-contrast-theme-link-txt-clr));
+}
+
+[theme='aquatic'] .menu__links a {
+  --nav-link-text-color: var(--aquatic-contrast-theme-link-txt-clr);
+}
+
+[theme='aquatic'] .menu__links li a::before {
+  background-color: rgba(var(--aquatic-contrast-theme-link-txt-clr));
+}
+
+[theme='aquatic'] .profile-card__image {
+  border-color: rgba(var(--aquatic-contrast-theme-bg-clr));
+  outline: 0.1rem solid rgba(var(--aquatic-contrast-theme-link-txt-clr));
+}
+
+[theme='aquatic'],
+[theme='aquatic'] .hamburger,
+[theme='aquatic'] .logo :not(.first-letter),
+[theme='aquatic'] .profile-card__title,
+[theme='aquatic'] .profile-card__subtitle,
+[theme='aquatic'] .what-i-do,
+[theme='aquatic'] .skill-card__title {
+  color: rgba(var(--aquatic-contrast-theme-txt-clr));
+}
+
+[theme='aquatic'] .profile-card .link:is(:hover, :focus),
+[theme='aquatic'] .profile-card .btn-filled-primary {
+  color: markText;
+}
+[theme='aquatic'] .profile-card .link::before {
+  background-color: rgba(var(--aquatic-contrast-theme-link-txt-clr));
+}
+
+[theme='aquatic'] .profile-card .btn-filled-primary {
+  background-color: rgba(var(--aquatic-contrast-theme-link-txt-clr));
+  outline-color: rgba(var(--aquatic-contrast-theme-selected-txt-clr));
+}
+[theme='aquatic'] .profile-card .btn-outlined-primary {
+  outline-color: rgba(var(--aquatic-contrast-theme-link-txt-clr));
+}
+
+[theme='aquatic'] .what-i-do {
+  text-decoration-color: rgba(var(--aquatic-contrast-theme-link-txt-clr));
+}
+
+[theme='aquatic'] .skill-card {
+  outline: 1px solid rgba(var(--aquatic-contrast-theme-link-txt-clr));
+}
+
+[theme='aquatic'] .logo *,
+[theme='aquatic'] .btn,
+[theme='aquatic'] .skill-card {
+  box-shadow: none !important;
+}
+
+/* [theme='desert'] {
+  --main-background: var(--desert-contrast-theme-bg-clr);
+}
+[theme='dusk'] {
+  --main-background: var(--dusk-contrast-theme-bg-clr);
+}
+[theme='night'] {
+  --main-background: var(--night-sky-contrast-theme-bg-clr);
+} */
