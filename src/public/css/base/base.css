@@ -2,11 +2,12 @@
 
 /* TODO: make sure website is tabbable, it is as of 2023-02-06 */
 
-html {
+.site-content-wrapper {
+  display: flex;
   background-color: rgba(var(--html-color));
 }
 
-body {
+.site-content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -25,21 +26,8 @@ body {
   transition: margin-block-start 1s;
 
   border-radius: var(--radius-16);
-
   background-color: rgba(var(--main-background));
 }
-
-/* .body-background {
-  position: absolute;
-  inset-inline-start: 0;
-  inset-block-start: 0;
-  inline-size: 100%;
-  block-size: 100%;
-
-  border-radius: var(--radius-16);
-  background-color: red;
-  z-index: -2;
-} */
 
 section {
   margin-block-end: clamp(5.5rem, calc(4.64rem + 4.29vw), 8.25rem);
@@ -75,7 +63,4 @@ h5 {
 
 h6 {
   font-size: var(--fs-fluid-6);
-}
-
-@media (prefers-contrast) {
 }

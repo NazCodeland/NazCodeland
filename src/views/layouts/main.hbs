@@ -10,20 +10,21 @@
   
 
     <body>
-      <div class="body-background"></div>
+        <div class="site-content-wrapper">
+          <div class="site-content">
+          
+              {{> navigation }}
+          
+              <main id="maincontent">
+                {{{ body }}}
+              </main>
+          
+              {{> footer }}
+          
+          </div>
+        </div>
       
-      {{> navigation }}
-    
-      <main id="maincontent">
-        {{{ body }}}
-      </main>
-    
-      {{> footer }}
-      
-
-
-    <script src="/javascript/script.js" type="module"></script>
-    
+      <script src="/javascript/script.js" type="module"></script>
     </body>
 
 

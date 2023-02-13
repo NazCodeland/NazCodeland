@@ -1,4 +1,5 @@
-.what-I-do {
-  text-decoration: 2px double underline rgba(var(--primary-color));
+.what-i-do {
+  text-decoration: 2px double underline;
+  text-decoration-color: rgba(var(--primary-color));
   margin-block-end: clamp(1.5rem, calc(0.93rem + 2.86vw), 2.5rem);
 }

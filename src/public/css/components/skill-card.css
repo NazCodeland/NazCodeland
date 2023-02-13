@@ -9,26 +9,24 @@
 }
 
 .skill-card {
-  block-size: 100%;
-
   padding: var(--spacer-16);
 
-  --btn-bg-opacity: var(--opacity-04-dark);
-  background-color: rgba(var(--grey-000), var(--btn-bg-opacity));
+  --bg-opacity: var(--opacity-06-dark);
+  background-color: rgba(var(--grey-000), var(--bg-opacity));
 
   box-shadow: var(--box-shadow-rest);
   transition: ease-in-out transform 0.15s;
 }
 
 .skill-card:is(:hover, :focus) {
-  --btn-bg-opacity: var(--opacity-20-dark);
+  --bg-opacity: var(--opacity-20-dark);
   cursor: pointer;
   box-shadow: var(--box-shadow-hover);
   transform: scale(1.01);
 }
 
 .skill-card:active {
-  --btn-bg-opacity: var(--opacity-09-dark);
+  --bg-opacity: var(--opacity-06-dark);
   box-shadow: var(--box-shadow-active);
   transform: var(--scale-active);
 }
