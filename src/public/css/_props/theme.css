@@ -303,10 +303,20 @@
   /* #endregion darkMode */
 }
 
+/* ------------------------------------------------ */
+
 /* manual contrast themes */
 .palettes {
   forced-color-adjust: none;
 }
+
+/* linkText */
+/* inactiveText */
+
+/* selectedText foreground*/
+/* selectedText background*/
+/* button foreground*/
+/* button background*/
 
 /* logo first and remaining letters not taking on color */
 /* menu link items */
@@ -316,16 +326,9 @@
 /* what-i-do color */
 /* skill-card titles */
 
+/* #region aquatic*/
 [theme='aquatic'] {
-  /* linkText */
-  /* inactiveText */
-
-  /* selectedText foreground*/
-  /* selectedText background*/
-  /* button foreground*/
-  /* button background*/
-
-  --html-color: 70, 233, 255;
+  --html-color: var(--aquatic-contrast-theme-link-txt-clr);
   --main-background: var(--aquatic-contrast-theme-bg-clr);
 }
 
@@ -351,8 +354,11 @@
   outline: 0.1rem solid rgba(var(--aquatic-contrast-theme-link-txt-clr));
 }
 
+[theme='aquatic'] .hamburger {
+  color: rgba(var(--aquatic-contrast-theme-button-txt-clr));
+}
+
 [theme='aquatic'],
-[theme='aquatic'] .hamburger,
 [theme='aquatic'] .logo :not(.first-letter),
 [theme='aquatic'] .profile-card__title,
 [theme='aquatic'] .profile-card__subtitle,
@@ -390,13 +396,228 @@
 [theme='aquatic'] .skill-card {
   box-shadow: none !important;
 }
+/* #endregion aquatic*/
 
-/* [theme='desert'] {
+/* ------------------------------------------------ */
+/* #region desert*/
+[theme='desert'] {
+  --html-color: var(--desert-contrast-theme-link-txt-clr);
   --main-background: var(--desert-contrast-theme-bg-clr);
 }
+
+[theme='desert'] .logo :not([aria-hidden]) {
+  outline: 1px solid canvas;
+}
+
+[theme='desert'] .logo .first-letter {
+  color: rgba(var(--desert-contrast-theme-link-txt-clr));
+  outline-color: rgba(var(--desert-contrast-theme-link-txt-clr));
+}
+
+[theme='desert'] .menu__links a {
+  --nav-link-text-color: var(--desert-contrast-theme-link-txt-clr);
+}
+
+[theme='desert'] .menu__links li a::before {
+  background-color: rgba(var(--desert-contrast-theme-link-txt-clr));
+}
+
+[theme='desert'] .profile-card__image {
+  border-color: rgba(var(--desert-contrast-theme-bg-clr));
+  outline: 0.1rem solid rgba(var(--desert-contrast-theme-link-txt-clr));
+}
+
+[theme='desert'] .hamburger {
+  color: rgba(var(--desert-contrast-theme-button-txt-clr));
+}
+
+[theme='desert'],
+[theme='desert'] .logo :not(.first-letter),
+[theme='desert'] .profile-card__title,
+[theme='desert'] .profile-card__subtitle,
+[theme='desert'] .what-i-do,
+[theme='desert'] .skill-card__title {
+  color: rgba(var(--desert-contrast-theme-txt-clr));
+}
+
+[theme='desert'] .profile-card .link:is(:hover, :focus),
+[theme='desert'] .profile-card .btn-filled-primary {
+  color: markText;
+}
+[theme='desert'] .profile-card .link::before {
+  background-color: rgba(var(--desert-contrast-theme-link-txt-clr));
+}
+
+[theme='desert'] .profile-card .btn-filled-primary {
+  background-color: rgba(var(--desert-contrast-theme-link-txt-clr));
+  outline-color: rgba(var(--desert-contrast-theme-selected-txt-clr));
+}
+[theme='desert'] .profile-card .btn-outlined-primary {
+  outline-color: rgba(var(--desert-contrast-theme-link-txt-clr));
+}
+
+[theme='desert'] .what-i-do {
+  text-decoration-color: rgba(var(--desert-contrast-theme-link-txt-clr));
+}
+
+[theme='desert'] .skill-card {
+  outline: 1px solid rgba(var(--desert-contrast-theme-link-txt-clr));
+}
+
+[theme='desert'] .logo *,
+[theme='desert'] .btn,
+[theme='desert'] .skill-card {
+  box-shadow: none !important;
+}
+
+/* #endregion desert */
+/* ------------------------------------------------ */
+
+/* ------------------------------------------------ */
+/* #region dusk*/
 [theme='dusk'] {
+  --html-color: var(--dusk-contrast-theme-link-txt-clr);
   --main-background: var(--dusk-contrast-theme-bg-clr);
 }
-[theme='night'] {
+
+[theme='dusk'] .logo :not([aria-hidden]) {
+  outline: 1px solid canvas;
+}
+
+[theme='dusk'] .logo .first-letter {
+  color: rgba(var(--dusk-contrast-theme-link-txt-clr));
+  outline-color: rgba(var(--dusk-contrast-theme-link-txt-clr));
+}
+
+[theme='dusk'] .menu__links a {
+  --nav-link-text-color: var(--dusk-contrast-theme-link-txt-clr);
+}
+
+[theme='dusk'] .menu__links li a::before {
+  background-color: rgba(var(--dusk-contrast-theme-link-txt-clr));
+}
+
+[theme='dusk'] .profile-card__image {
+  border-color: rgba(var(--dusk-contrast-theme-bg-clr));
+  outline: 0.1rem solid rgba(var(--dusk-contrast-theme-link-txt-clr));
+}
+
+[theme='dusk'] .hamburger {
+  color: rgba(var(--dusk-contrast-theme-button-txt-clr));
+}
+
+[theme='dusk'],
+[theme='dusk'] .logo :not(.first-letter),
+[theme='dusk'] .profile-card__title,
+[theme='dusk'] .profile-card__subtitle,
+[theme='dusk'] .what-i-do,
+[theme='dusk'] .skill-card__title {
+  color: rgba(var(--dusk-contrast-theme-txt-clr));
+}
+
+[theme='dusk'] .profile-card .link:is(:hover, :focus),
+[theme='dusk'] .profile-card .btn-filled-primary {
+  color: markText;
+}
+[theme='dusk'] .profile-card .link::before {
+  background-color: rgba(var(--dusk-contrast-theme-link-txt-clr));
+}
+
+[theme='dusk'] .profile-card .btn-filled-primary {
+  background-color: rgba(var(--dusk-contrast-theme-link-txt-clr));
+  outline-color: rgba(var(--dusk-contrast-theme-selected-txt-clr));
+}
+[theme='dusk'] .profile-card .btn-outlined-primary {
+  outline-color: rgba(var(--dusk-contrast-theme-link-txt-clr));
+}
+
+[theme='dusk'] .what-i-do {
+  text-decoration-color: rgba(var(--dusk-contrast-theme-link-txt-clr));
+}
+
+[theme='dusk'] .skill-card {
+  outline: 1px solid rgba(var(--dusk-contrast-theme-link-txt-clr));
+}
+
+[theme='dusk'] .logo *,
+[theme='dusk'] .btn,
+[theme='dusk'] .skill-card {
+  box-shadow: none !important;
+}
+
+/* #endregion dusk */
+
+/* ------------------------------------------------ */
+
+/* #region night-sky*/
+[theme='night-sky'] {
+  --html-color: var(--night-sky-contrast-theme-link-txt-clr);
   --main-background: var(--night-sky-contrast-theme-bg-clr);
-} */
+}
+
+[theme='night-sky'] .logo :not([aria-hidden]) {
+  outline: 1px solid canvas;
+}
+
+[theme='night-sky'] .logo .first-letter {
+  color: rgba(var(--night-sky-contrast-theme-link-txt-clr));
+  outline-color: rgba(var(--night-sky-contrast-theme-link-txt-clr));
+}
+
+[theme='night-sky'] .menu__links a {
+  --nav-link-text-color: var(--night-sky-contrast-theme-link-txt-clr);
+}
+
+[theme='night-sky'] .menu__links li a::before {
+  background-color: rgba(var(--night-sky-contrast-theme-link-txt-clr));
+}
+
+[theme='night-sky'] .profile-card__image {
+  border-color: rgba(var(--night-sky-contrast-theme-bg-clr));
+  outline: 0.1rem solid rgba(var(--night-sky-contrast-theme-link-txt-clr));
+}
+
+[theme='night-sky'] .hamburger {
+  color: rgba(var(--night-sky-contrast-theme-button-txt-clr));
+}
+
+[theme='night-sky'],
+[theme='night-sky'] .logo :not(.first-letter),
+[theme='night-sky'] .profile-card__title,
+[theme='night-sky'] .profile-card__subtitle,
+[theme='night-sky'] .what-i-do,
+[theme='night-sky'] .skill-card__title {
+  color: rgba(var(--night-sky-contrast-theme-txt-clr));
+}
+
+[theme='night-sky'] .profile-card .link:is(:hover, :focus),
+[theme='night-sky'] .profile-card .btn-filled-primary {
+  color: markText;
+}
+[theme='night-sky'] .profile-card .link::before {
+  background-color: rgba(var(--night-sky-contrast-theme-link-txt-clr));
+}
+
+[theme='night-sky'] .profile-card .btn-filled-primary {
+  background-color: rgba(var(--night-sky-contrast-theme-link-txt-clr));
+  outline-color: rgba(var(--night-sky-contrast-theme-selected-txt-clr));
+}
+[theme='night-sky'] .profile-card .btn-outlined-primary {
+  outline-color: rgba(var(--night-sky-contrast-theme-link-txt-clr));
+}
+
+[theme='night-sky'] .what-i-do {
+  text-decoration-color: rgba(var(--night-sky-contrast-theme-link-txt-clr));
+}
+
+[theme='night-sky'] .skill-card {
+  outline: 1px solid rgba(var(--night-sky-contrast-theme-link-txt-clr));
+}
+
+[theme='night-sky'] .logo *,
+[theme='night-sky'] .btn,
+[theme='night-sky'] .skill-card {
+  box-shadow: none !important;
+}
+
+/* #endregion night-sky */

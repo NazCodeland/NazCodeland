@@ -14,19 +14,13 @@
   visibility: visible;
 }
 
-<<<<<<< HEAD
-.palettes button {
-  border: none;
-}
-
-=======
->>>>>>> themes
 .palette {
   display: inline-block;
   inline-size: 30px;
   block-size: 30px;
   border-radius: var(--spacer-4);
-  outline: 1px solid canvas;
+  outline: 1px solid canvasText;
+  border: none;
 }
 
 .palette:focus-visible {
@@ -43,30 +37,16 @@
 }
 
 .aquatic {
-<<<<<<< HEAD
-  background-color: rgba(var(--aquatic-contrast-theme));
-}
-.desert {
-  background-color: rgba(var(--desert-contrast-theme));
-=======
   background-color: rgba(var(--aquatic-contrast-theme-bg-clr));
 }
 .desert {
   background-color: rgba(var(--desert-contrast-theme-bg-clr));
->>>>>>> themes
 }
 .dusk {
-<<<<<<< HEAD
-  background-color: rgba(var(--dusk-contrast-theme));
-}
-.night {
-  background-color: rgba(var(--night-sky-contrast-theme));
-=======
   background-color: rgba(var(--dusk-contrast-theme-bg-clr));
 }
 .night {
   background-color: rgba(var(--night-sky-contrast-theme-bg-clr));
->>>>>>> themes
 }
 
 @media (width >= 20rem) {
