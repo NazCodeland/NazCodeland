@@ -97,7 +97,7 @@
 
   --body-margin-top:  clamp(0.25rem, calc(-0.39rem + 3.21vw), 2rem);
 
-  --main-background: 251,252,255;
+  --main-background: 251, 252, 255;
 
   --logo-remaining-letters-color: var(--grey-900);
   --nav-link-text-color: var(--grey-500);
@@ -152,7 +152,7 @@
   
   --body-margin-top:  clamp(0.50rem, calc(-0.07rem + 2.86vw), 3rem);
 
-  --main-background: 18,18,18;
+  --main-background: 18, 18, 18;
 
 
   --logo-remaining-letters-color: var(--grey-025), var(--high-emphasis-text-dark);
@@ -204,7 +204,9 @@
 
   .profile-card__image {
     border-color: canvas !important;
-    outline: 0.1rem solid activeText;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: activeText;
   }
 
   .link::before {
@@ -326,19 +328,27 @@
 /* what-i-do color */
 /* skill-card titles */
 
+[theme='aquatic'] .theme-switcher,
+[theme='desert'] .theme-switcher,
+[theme='dusk'] .theme-switcher,
+[theme='night-sky'] .theme-switcher {
+  display: none;
+}
+
 /* #region aquatic*/
+
 [theme='aquatic'] {
   --html-color: var(--aquatic-contrast-theme-link-txt-clr);
   --main-background: var(--aquatic-contrast-theme-bg-clr);
 }
 
 [theme='aquatic'] .logo :not([aria-hidden]) {
-  outline: 1px solid canvas;
+  outline: 0.1px solid grayText;
 }
 
 [theme='aquatic'] .logo .first-letter {
   color: rgba(var(--aquatic-contrast-theme-link-txt-clr));
-  outline-color: rgba(var(--aquatic-contrast-theme-link-txt-clr));
+  outline-color: rgba(var(--aquatic-contrast-theme-link-txt-clr)) !important;
 }
 
 [theme='aquatic'] .menu__links a {
@@ -350,15 +360,15 @@
 }
 
 [theme='aquatic'] .profile-card__image {
-  border-color: rgba(var(--aquatic-contrast-theme-bg-clr));
-  outline: 0.1rem solid rgba(var(--aquatic-contrast-theme-link-txt-clr));
+  border-color: rgba(var(--aquatic-contrast-theme-bg-clr)) !important;
+  outline: 1px solid rgba(var(--aquatic-contrast-theme-link-txt-clr));
 }
 
 [theme='aquatic'] .hamburger {
   color: rgba(var(--aquatic-contrast-theme-button-txt-clr));
 }
 
-[theme='aquatic'],
+[theme='aquatic'] .site-content,
 [theme='aquatic'] .logo :not(.first-letter),
 [theme='aquatic'] .profile-card__title,
 [theme='aquatic'] .profile-card__subtitle,
@@ -396,6 +406,7 @@
 [theme='aquatic'] .skill-card {
   box-shadow: none !important;
 }
+
 /* #endregion aquatic*/
 
 /* ------------------------------------------------ */
@@ -406,7 +417,7 @@
 }
 
 [theme='desert'] .logo :not([aria-hidden]) {
-  outline: 1px solid canvas;
+  outline: 0.1px solid grayText;
 }
 
 [theme='desert'] .logo .first-letter {
@@ -424,14 +435,14 @@
 
 [theme='desert'] .profile-card__image {
   border-color: rgba(var(--desert-contrast-theme-bg-clr));
-  outline: 0.1rem solid rgba(var(--desert-contrast-theme-link-txt-clr));
+  outline: 1px solid rgba(var(--desert-contrast-theme-link-txt-clr));
 }
 
 [theme='desert'] .hamburger {
   color: rgba(var(--desert-contrast-theme-button-txt-clr));
 }
 
-[theme='desert'],
+[theme='desert'] .site-content,
 [theme='desert'] .logo :not(.first-letter),
 [theme='desert'] .profile-card__title,
 [theme='desert'] .profile-card__subtitle,
@@ -440,9 +451,8 @@
   color: rgba(var(--desert-contrast-theme-txt-clr));
 }
 
-[theme='desert'] .profile-card .link:is(:hover, :focus),
-[theme='desert'] .profile-card .btn-filled-primary {
-  color: markText;
+[theme='desert'] .profile-card .link:is(:hover, :focus) {
+  color: canvas;
 }
 [theme='desert'] .profile-card .link::before {
   background-color: rgba(var(--desert-contrast-theme-link-txt-clr));
@@ -451,6 +461,7 @@
 [theme='desert'] .profile-card .btn-filled-primary {
   background-color: rgba(var(--desert-contrast-theme-link-txt-clr));
   outline-color: rgba(var(--desert-contrast-theme-selected-txt-clr));
+  color: canvas;
 }
 [theme='desert'] .profile-card .btn-outlined-primary {
   outline-color: rgba(var(--desert-contrast-theme-link-txt-clr));
@@ -481,12 +492,12 @@
 }
 
 [theme='dusk'] .logo :not([aria-hidden]) {
-  outline: 1px solid canvas;
+  outline: 0.1px solid grayText;
 }
 
 [theme='dusk'] .logo .first-letter {
   color: rgba(var(--dusk-contrast-theme-link-txt-clr));
-  outline-color: rgba(var(--dusk-contrast-theme-link-txt-clr));
+  outline-color: rgba(var(--dusk-contrast-theme-link-txt-clr)) !important;
 }
 
 [theme='dusk'] .menu__links a {
@@ -498,15 +509,15 @@
 }
 
 [theme='dusk'] .profile-card__image {
-  border-color: rgba(var(--dusk-contrast-theme-bg-clr));
-  outline: 0.1rem solid rgba(var(--dusk-contrast-theme-link-txt-clr));
+  border-color: rgba(var(--dusk-contrast-theme-bg-clr)) !important;
+  outline: 1px solid rgba(var(--dusk-contrast-theme-link-txt-clr));
 }
 
 [theme='dusk'] .hamburger {
   color: rgba(var(--dusk-contrast-theme-button-txt-clr));
 }
 
-[theme='dusk'],
+[theme='dusk'] .site-content,
 [theme='dusk'] .logo :not(.first-letter),
 [theme='dusk'] .profile-card__title,
 [theme='dusk'] .profile-card__subtitle,
@@ -528,6 +539,7 @@
   outline-color: rgba(var(--dusk-contrast-theme-selected-txt-clr));
 }
 [theme='dusk'] .profile-card .btn-outlined-primary {
+  color: rgba(var(--dusk-contrast-theme-button-txt-clr));
   outline-color: rgba(var(--dusk-contrast-theme-link-txt-clr));
 }
 
@@ -556,12 +568,12 @@
 }
 
 [theme='night-sky'] .logo :not([aria-hidden]) {
-  outline: 1px solid canvas;
+  outline: 0.1px solid grayText;
 }
 
 [theme='night-sky'] .logo .first-letter {
   color: rgba(var(--night-sky-contrast-theme-link-txt-clr));
-  outline-color: rgba(var(--night-sky-contrast-theme-link-txt-clr));
+  outline-color: rgba(var(--night-sky-contrast-theme-link-txt-clr)) !important;
 }
 
 [theme='night-sky'] .menu__links a {
@@ -573,15 +585,15 @@
 }
 
 [theme='night-sky'] .profile-card__image {
-  border-color: rgba(var(--night-sky-contrast-theme-bg-clr));
-  outline: 0.1rem solid rgba(var(--night-sky-contrast-theme-link-txt-clr));
+  border-color: rgba(var(--night-sky-contrast-theme-bg-clr)) !important;
+  outline: 1px solid rgba(var(--night-sky-contrast-theme-link-txt-clr));
 }
 
 [theme='night-sky'] .hamburger {
   color: rgba(var(--night-sky-contrast-theme-button-txt-clr));
 }
 
-[theme='night-sky'],
+[theme='night-sky'] .site-content,
 [theme='night-sky'] .logo :not(.first-letter),
 [theme='night-sky'] .profile-card__title,
 [theme='night-sky'] .profile-card__subtitle,
@@ -604,6 +616,7 @@
 }
 [theme='night-sky'] .profile-card .btn-outlined-primary {
   outline-color: rgba(var(--night-sky-contrast-theme-link-txt-clr));
+  color: rgba(var(--night-sky-contrast-theme-button-txt-clr));
 }
 
 [theme='night-sky'] .what-i-do {

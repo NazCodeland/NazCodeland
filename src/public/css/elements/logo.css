@@ -27,7 +27,7 @@
 
   color: rgba(var(--logo-remaining-letters-color));
 
-  outline-width: 0.1rem;
+  outline-width: 0.1px;
   outline-style: solid;
 
   --logo-box-shadow: 0.8px 0.8px 0.8px 0.8px rgba(204, 219, 232, 1),
@@ -50,7 +50,7 @@
 
 [color-scheme='dark'] .logo :not([aria-hidden]) {
   --logo-box-shadow: none;
-  outline-color: rgba(255, 255, 255, 0.05);
+  outline-color: rgba(255, 255, 255, 0.2);
 }
 [color-scheme='dark'] .logo .first-letter:focus-visible {
   outline-color: rgba(var(--text-color));

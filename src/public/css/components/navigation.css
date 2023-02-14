@@ -22,6 +22,7 @@
 
 /* this setting is set in reset.css but in More Contrast in firefox this is needed again */
 .hamburger:focus-visible {
+  outline-offset: 0;
   outline: 0.1rem solid canvasText;
   border-radius: var(--spacer-4);
 }

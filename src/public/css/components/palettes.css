@@ -19,23 +19,20 @@
   inline-size: 30px;
   block-size: 30px;
   border-radius: var(--spacer-4);
-  outline: 1px solid canvasText;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: darkGray;
   border: none;
 }
 
 .palette:focus-visible {
   outline-width: 2px;
-  outline-color: canvas;
-}
-
-.palette:active {
-  outline-color: red;
+  outline-color: canvasText;
 }
 
 .mainPalette {
   background-color: rgba(var(--primary-color));
 }
-
 .aquatic {
   background-color: rgba(var(--aquatic-contrast-theme-bg-clr));
 }
@@ -45,7 +42,7 @@
 .dusk {
   background-color: rgba(var(--dusk-contrast-theme-bg-clr));
 }
-.night {
+.night-sky {
   background-color: rgba(var(--night-sky-contrast-theme-bg-clr));
 }
 
