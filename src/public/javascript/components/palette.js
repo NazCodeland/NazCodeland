@@ -1,9 +1,12 @@
+/* eslint-disable no-nested-ternary */
 /* eslint-disable no-unused-expressions */
 /* eslint-disable import/extensions */
 import {
   getCurrentTheme,
   setTheme,
   isClrWhiteOrBlack,
+  prefersContrastLess,
+  prefersContrastMore,
 } from '../utils/index.js';
 
 const root = document.querySelector(':root');
@@ -48,9 +51,6 @@ palettes.forEach((palette) =>
     const paletteBgClrRGB = paletteBgClr.split(',');
     const lightness = isClrWhiteOrBlack(paletteBgClrRGB);
 
-    console.log(previousTheme);
-    console.log(chosenPalette);
-
     lightness > 186
       ? root.setAttribute('color-scheme', 'light')
       : root.setAttribute('color-scheme', 'dark');
@@ -58,5 +58,9 @@ palettes.forEach((palette) =>
 );
 
 window.addEventListener('DOMContentLoaded', () => {
-  setPalette(getCurrentPalette());
+  if (prefersContrastLess()) {
+    setPalette('desert');
+    root.setAttribute('color-scheme', 'light');
+  } else if (prefersContrastMore()) setPalette('night-sky');
+  else setPalette(getCurrentPalette());
 });

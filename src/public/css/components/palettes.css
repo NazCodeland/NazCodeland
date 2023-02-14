@@ -23,6 +23,7 @@
   outline-style: solid;
   outline-color: darkGray;
   border: none;
+  forced-color-adjust: none;
 }
 
 .palette:focus-visible {
