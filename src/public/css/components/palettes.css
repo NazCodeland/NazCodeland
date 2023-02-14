@@ -33,9 +33,7 @@
 .mainPalette {
   background-color: rgba(var(--primary-color));
 }
-.aquatic {
-  background-color: rgba(var(--aquatic-contrast-theme-bg-clr));
-}
+
 .desert {
   background-color: rgba(var(--desert-contrast-theme-bg-clr));
 }
