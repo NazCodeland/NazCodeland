@@ -288,18 +288,69 @@
   .theme-switcher {
     display: none !important;
   }
-}
 
-/* [theme='desert'] .site-content,
-[theme='dusk'] .site-content,
-[theme='night-sky'] .site-content {
-  color: canvasText;
-} */
+  /* FIXME: if you add another 'light' contrast theme, then this will select both of those themes. */
+  [color-scheme='light'][theme='null'] .btn-filled-primary {
+    color: canvas !important;
+  }
+}
 
 [theme='desert'] .theme-switcher,
 [theme='dusk'] .theme-switcher,
 [theme='night-sky'] .theme-switcher {
   display: none;
+}
+
+[theme='desert'] .logo .first-letter:focus-visible,
+[theme='dusk'] .logo .first-letter:focus-visible,
+[theme='night-sky'] .logo .first-letter:focus-visible {
+  outline-width: 2px;
+  outline-color: canvasText !important;
+  outline-style: dashed;
+}
+
+[theme='desert'] .profile-card .btn-outlined-primary:is(:hover, :focus),
+[theme='dusk'] .profile-card .btn-outlined-primary:is(:hover, :focus),
+[theme='night-sky'] .profile-card .btn-outlined-primary:is(:hover, :focus) {
+  outline-color: canvasText;
+}
+
+[theme='desert'] .skill-card:is(:hover, :focus),
+[theme='dusk'] .skill-card:is(:hover, :focus),
+[theme='night-sky'] .skill-card:is(:hover, :focus) {
+  outline: 2px solid canvasText;
+}
+
+[theme='desert'] .skill-card:focus-visible,
+[theme='dusk'] .skill-card:focus-visible,
+[theme='night-sky'] .skill-card:focus-visible {
+  outline-style: dashed;
+}
+
+[theme='desert'] .site-content,
+[theme='desert'] .profile-card__subtitle,
+[theme='desert'] .what-i-do,
+[theme='dusk'] .site-content,
+[theme='dusk'] .profile-card__subtitle,
+[theme='dusk'] .what-i-do,
+[theme='night-sky'] .site-content,
+[theme='night-sky'] .profile-card__subtitle,
+[theme='night-sky'] .what-i-do {
+  color: canvasText;
+}
+
+/* TODO: people who prefer less contrast, do they mind elevation/box shadow?  */
+/* TODO: if not, remove 'desert' theme off this list and perhaps tweak the box-shadow color slightly */
+[theme='desert'] .logo *,
+[theme='desert'] .btn,
+[theme='desert'] .skill-card,
+[theme='dusk'] .logo *,
+[theme='dusk'] .btn,
+[theme='dusk'] .skill-card,
+[theme='night-sky'] .logo *,
+[theme='night-sky'] .btn,
+[theme='night-sky'] .skill-card {
+  box-shadow: none !important;
 }
 
 /* ------------------------------------------------ */
@@ -328,19 +379,11 @@
 
 [theme='desert'] .profile-card__image {
   outline: 1px solid rgba(var(--desert-contrast-theme-link-txt-clr));
+  border-color: rgba(var(--desert-contrast-theme-bg-clr)) !important;
 }
 
 [theme='desert'] .hamburger {
   color: rgba(var(--desert-contrast-theme-button-txt-clr));
-}
-
-[theme='desert'] .site-content,
-[theme='desert'] .logo :not(.first-letter),
-[theme='desert'] .profile-card__title,
-[theme='desert'] .profile-card__subtitle,
-[theme='desert'] .what-i-do,
-[theme='desert'] .skill-card__title {
-  color: rgba(var(--desert-contrast-theme-txt-clr));
 }
 
 [theme='desert'] .profile-card .link:is(:hover, :focus) {
@@ -352,13 +395,12 @@
 
 [theme='desert'] .profile-card .btn-filled-primary {
   background-color: rgba(var(--desert-contrast-theme-link-txt-clr));
-  outline-color: rgba(var(--desert-contrast-theme-selected-txt-clr));
   color: canvas;
 }
 
 [theme='desert'] .profile-card .btn-outlined-primary {
   color: rgba(var(--desert-contrast-theme-button-txt-clr));
-  outline-color: rgba(var(--desert-contrast-theme-button-txt-clr));
+  outline-color: rgba(var(--desert-contrast-theme-link-txt-clr));
 }
 
 [theme='desert'] .what-i-do {
@@ -366,13 +408,7 @@
 }
 
 [theme='desert'] .skill-card {
-  outline: 1px wavy rgba(var(--desert-contrast-theme-link-txt-clr));
-}
-
-[theme='desert'] .logo *,
-[theme='desert'] .btn,
-[theme='desert'] .skill-card {
-  box-shadow: none !important;
+  outline: 1px solid rgba(var(--desert-contrast-theme-link-txt-clr));
 }
 
 /* #endregion desert */
@@ -394,11 +430,6 @@
   outline-color: rgba(var(--dusk-contrast-theme-link-txt-clr)) !important;
 }
 
-[theme='dusk'] .logo .first-letter:is(:hover, :focus) {
-  outline-width: 2px;
-  outline-color: canvasText !important;
-}
-
 [theme='dusk'] .menu__links a {
   --nav-link-text-color: var(--dusk-contrast-theme-link-txt-clr);
 }
@@ -409,18 +440,11 @@
 
 [theme='dusk'] .profile-card__image {
   outline: 1px solid rgba(var(--dusk-contrast-theme-button-txt-clr));
+  border-color: rgba(var(--dusk-contrast-theme-bg-clr)) !important;
 }
 
 [theme='dusk'] .hamburger {
   color: rgba(var(--dusk-contrast-theme-button-txt-clr));
-}
-
-[theme='dusk'] .logo :not(.first-letter),
-[theme='dusk'] .profile-card__title,
-[theme='dusk'] .profile-card__subtitle,
-[theme='dusk'] .what-i-do,
-[theme='dusk'] .skill-card__title {
-  color: canvasText;
 }
 
 [theme='dusk'] .profile-card .link:is(:hover, :focus),
@@ -440,30 +464,12 @@
   outline-color: rgba(var(--dusk-contrast-theme-button-txt-clr));
 }
 
-[theme='dusk'] .profile-card .btn-outlined-primary:is(:hover, :focus) {
-  outline-color: canvasText;
-}
-
 [theme='dusk'] .what-i-do {
   text-decoration-color: rgba(var(--dusk-contrast-theme-link-txt-clr));
 }
 
 [theme='dusk'] .skill-card {
   outline: 1px solid rgba(var(--dusk-contrast-theme-link-txt-clr));
-}
-
-[theme='dusk'] .skill-card:is(:hover, :focus) {
-  outline: 2px solid canvasText;
-}
-
-[theme='dusk'] .skill-card:focus-visible {
-  outline-style: dashed;
-}
-
-[theme='dusk'] .logo *,
-[theme='dusk'] .btn,
-[theme='dusk'] .skill-card {
-  box-shadow: none !important;
 }
 
 /* #endregion dusk */
@@ -511,12 +517,6 @@ TODO: one of the other backgrounds, you can then style that specific btn-outline
   color: rgba(var(--night-sky-contrast-theme-button-txt-clr));
 }
 
-[theme='night-sky'] .site-content,
-[theme='night-sky'] .profile-card__subtitle,
-[theme='night-sky'] .what-i-do {
-  color: canvasText;
-}
-
 /* prettier-ignore */
 [theme='night-sky'] .profile-card .link:is(:hover, :focus){
   forced-color-adjust: none;
@@ -536,10 +536,10 @@ TODO: one of the other backgrounds, you can then style that specific btn-outline
   outline-color: rgba(var(--night-sky-contrast-theme-button-txt-clr));
 }
 
-[theme='night-sky'] .profile-card .btn-outlined-primary:is(:hover, :focus) {
-  outline-color: canvasText;
-}
-
 [theme='night-sky'] .what-i-do {
   text-decoration-color: rgba(var(--night-sky-contrast-theme-link-txt-clr));
+}
+
+[theme='night-sky'] .skill-card {
+  outline: 1px solid rgba(var(--night-sky-contrast-theme-link-txt-clr));
 }
