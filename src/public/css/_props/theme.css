@@ -301,7 +301,6 @@
   display: none;
 }
 
-[theme='desert'] .logo .first-letter:focus-visible,
 [theme='dusk'] .logo .first-letter:focus-visible,
 [theme='night-sky'] .logo .first-letter:focus-visible {
   outline-width: 2px;
@@ -366,6 +365,9 @@
 
 [theme='desert'] .logo .first-letter {
   color: rgba(var(--desert-contrast-theme-link-txt-clr));
+  outline-color: rgba(var(--desert-contrast-theme-link-txt-clr));
+}
+[theme='desert'] .logo .first-letter:is(:hover, :focus) {
   outline-color: rgba(var(--desert-contrast-theme-link-txt-clr));
 }
 
@@ -494,10 +496,6 @@ TODO: one of the other backgrounds, you can then style that specific btn-outline
 [theme='night-sky'] .logo .first-letter {
   color: rgba(var(--night-sky-contrast-theme-link-txt-clr));
   outline-color: rgba(var(--night-sky-contrast-theme-link-txt-clr)) !important;
-}
-
-[theme='night-sky'] .logo .first-letter:focus-visible {
-  outline-color: canvasText !important;
 }
 
 [theme='night-sky'] .menu__links a {

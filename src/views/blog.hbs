@@ -3,35 +3,22 @@
 <section class="blog-section">
   <h1 class="page-title">Articles</h1>
 
+  
   <div class="articles">
     <article class="article">
+      {{ #each blog }}
       <div class="article__header">
-        <h2 class="article__title">Article title</h2>
-        <p class="article__date">2023/02/03</p>
+        <h2 class="article__title">{{ this.title }}</h2>
+        <p class="article__date">{{ this.date }}</p>
       </div>
       <div class="article__content">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-          Facere voluptas id officia aliquam libero. Numquam cum magnam rerum tempora officiis.</p>
-      </div>
-      <div class="article__tags">
-        <a class="btn html tag" href="/">HTML</a>
-        <a class="btn btn-outlined-primary css tag" href="/">CSS</a>
-      </div>
-    </article>
-
-    <article class="article">
-      <div class="article__header">
-        <h2 class="article__title">Article title</h2>
-        <p class="article__date">2023/02/03</p>
-      </div>
-      <div class="article__content">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere voluptas id 
-          officia aliquam libero. Numquam cum magnam rerum tempora officiis.</p>
-      </div>
-      <div class="article__tags">
-        <a class="btn html tag" href="/">HTML</a>
-        <a class="btn btn-outlined-primary css tag" href="/">CSS</a>
-      </div>
+        <p>{{ this.copy }}</p>
+        </div>
+        <div class="article__tags">
+          <a class="btn html tag" href="/">{{ tags.one }}</a>
+          <a class="btn btn-outlined-primary css tag" href="/">{{ tags.two }}</a>
+        </div>
+        {{ /each }}
     </article>
   </div>
 </section>

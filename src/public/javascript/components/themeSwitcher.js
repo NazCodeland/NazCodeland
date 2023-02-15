@@ -1,5 +1,5 @@
 /* eslint-disable import/extensions */
-import { getCurrentTheme, setTheme } from './index.js';
+import { getCurrentTheme, setTheme } from '../utils/index.js';
 
 /* eslint-disable no-unused-expressions */
 const themeSwitcherBtn = document.querySelector('.theme-switcher');
