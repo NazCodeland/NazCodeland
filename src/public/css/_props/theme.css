@@ -394,6 +394,11 @@
   outline-color: rgba(var(--dusk-contrast-theme-link-txt-clr)) !important;
 }
 
+[theme='dusk'] .logo .first-letter:is(:hover, :focus) {
+  outline-width: 2px;
+  outline-color: canvasText !important;
+}
+
 [theme='dusk'] .menu__links a {
   --nav-link-text-color: var(--dusk-contrast-theme-link-txt-clr);
 }
@@ -428,12 +433,15 @@
 
 [theme='dusk'] .profile-card .btn-filled-primary {
   background-color: rgba(var(--dusk-contrast-theme-link-txt-clr));
-  outline-color: rgba(var(--dusk-contrast-theme-selected-txt-clr));
 }
 
 [theme='dusk'] .profile-card .btn-outlined-primary {
   color: rgba(var(--dusk-contrast-theme-button-txt-clr));
   outline-color: rgba(var(--dusk-contrast-theme-button-txt-clr));
+}
+
+[theme='dusk'] .profile-card .btn-outlined-primary:is(:hover, :focus) {
+  outline-color: canvasText;
 }
 
 [theme='dusk'] .what-i-do {
@@ -442,6 +450,14 @@
 
 [theme='dusk'] .skill-card {
   outline: 1px solid rgba(var(--dusk-contrast-theme-link-txt-clr));
+}
+
+[theme='dusk'] .skill-card:is(:hover, :focus) {
+  outline: 2px solid canvasText;
+}
+
+[theme='dusk'] .skill-card:focus-visible {
+  outline-style: dashed;
 }
 
 [theme='dusk'] .logo *,
@@ -527,5 +543,3 @@ TODO: one of the other backgrounds, you can then style that specific btn-outline
 [theme='night-sky'] .what-i-do {
   text-decoration-color: rgba(var(--night-sky-contrast-theme-link-txt-clr));
 }
-
-/* #endregion night-sky */
