@@ -3,7 +3,7 @@
 import { prefersColorSchemeDark } from './prefersColorScheme.js';
 
 export default function getCurrentTheme() {
-  let theme = prefersColorSchemeDark();
+  let theme = prefersColorSchemeDark() ? 'dark' : 'light';
 
   localStorage.getItem('NazCodeland.theme')
     ? (theme = localStorage.getItem('NazCodeland.theme'))

@@ -7,6 +7,7 @@ import {
   isClrWhiteOrBlack,
   prefersContrastLess,
   prefersContrastMore,
+  isForcedColorsActive,
 } from '../utils/index.js';
 
 const root = document.querySelector(':root');
@@ -58,12 +59,15 @@ palettes.forEach((palette) =>
 );
 
 window.addEventListener('DOMContentLoaded', () => {
-  if (prefersContrastLess()) {
+  //
+  if (!isForcedColorsActive() && prefersContrastLess()) {
     setPalette('desert');
+    root.setAttribute('color-scheme', 'light');
   }
   //
-  else if (prefersContrastMore()) {
+  else if (!isForcedColorsActive() && prefersContrastMore()) {
     setPalette('night-sky');
+    root.setAttribute('color-scheme', 'dark');
   }
   //
   else setPalette(getCurrentPalette());

@@ -273,10 +273,6 @@
     color: canvasText;
   }
 
-  [color-scheme='dark'] .btn-outlined-primary {
-    color: mark;
-    outline-color: mark !important;
-  }
   [color-scheme='dark'] .btn-outlined-primary:is(:hover, :focus) {
     outline-color: canvasText;
   }
@@ -293,6 +289,12 @@
     display: none !important;
   }
 }
+
+/* [theme='desert'] .site-content,
+[theme='dusk'] .site-content,
+[theme='night-sky'] .site-content {
+  color: canvasText;
+} */
 
 [theme='desert'] .theme-switcher,
 [theme='dusk'] .theme-switcher,
@@ -353,8 +355,10 @@
   outline-color: rgba(var(--desert-contrast-theme-selected-txt-clr));
   color: canvas;
 }
+
 [theme='desert'] .profile-card .btn-outlined-primary {
-  outline-color: rgba(var(--desert-contrast-theme-link-txt-clr));
+  color: rgba(var(--desert-contrast-theme-button-txt-clr));
+  outline-color: rgba(var(--desert-contrast-theme-button-txt-clr));
 }
 
 [theme='desert'] .what-i-do {
@@ -399,20 +403,19 @@
 }
 
 [theme='dusk'] .profile-card__image {
-  outline: 1px solid rgba(var(--dusk-contrast-theme-link-txt-clr));
+  outline: 1px solid rgba(var(--dusk-contrast-theme-button-txt-clr));
 }
 
 [theme='dusk'] .hamburger {
   color: rgba(var(--dusk-contrast-theme-button-txt-clr));
 }
 
-[theme='dusk'] .site-content,
 [theme='dusk'] .logo :not(.first-letter),
 [theme='dusk'] .profile-card__title,
 [theme='dusk'] .profile-card__subtitle,
 [theme='dusk'] .what-i-do,
 [theme='dusk'] .skill-card__title {
-  color: rgba(var(--dusk-contrast-theme-txt-clr));
+  color: canvasText;
 }
 
 [theme='dusk'] .profile-card .link:is(:hover, :focus),
@@ -427,9 +430,10 @@
   background-color: rgba(var(--dusk-contrast-theme-link-txt-clr));
   outline-color: rgba(var(--dusk-contrast-theme-selected-txt-clr));
 }
+
 [theme='dusk'] .profile-card .btn-outlined-primary {
   color: rgba(var(--dusk-contrast-theme-button-txt-clr));
-  outline-color: rgba(var(--dusk-contrast-theme-link-txt-clr));
+  outline-color: rgba(var(--dusk-contrast-theme-button-txt-clr));
 }
 
 [theme='dusk'] .what-i-do {
@@ -449,6 +453,11 @@
 /* #endregion dusk */
 
 /* ------------------------------------------------ */
+
+/* TODO: dark theme is implemented. It works great on edge and firefox */
+/* TODO: next: create a light theme and also figure out a way to handle the dark/light themes being added based on less/more contrast and that impacting windows user */
+/* TODO: one solution is to use js to get `colors-scheme` and `theme` that way if color-scheme = dark and theme = night-sky, get the --main background and if the RGB value matchs
+TODO: one of the other backgrounds, you can then style that specific btn-outlined-secondary button accordingly  /* */
 
 /* #region night-sky*/
 [theme='night-sky'] {
@@ -478,8 +487,8 @@
 }
 
 [theme='night-sky'] .profile-card__image {
-  outline: 1px solid grayText;
-  border-color: markText !important;
+  outline: 1px solid rgba(var(--night-sky-contrast-theme-link-txt-clr));
+  border-color: Canvas !important;
 }
 
 [theme='night-sky'] .hamburger {
@@ -487,12 +496,9 @@
 }
 
 [theme='night-sky'] .site-content,
-[theme='night-sky'] .logo :not(.first-letter),
-[theme='night-sky'] .profile-card__title,
 [theme='night-sky'] .profile-card__subtitle,
-[theme='night-sky'] .what-i-do,
-[theme='night-sky'] .skill-card__title {
-  color: rgba(var(--night-sky-contrast-theme-txt-clr));
+[theme='night-sky'] .what-i-do {
+  color: canvasText;
 }
 
 /* prettier-ignore */
@@ -510,8 +516,8 @@
 }
 
 [theme='night-sky'] .profile-card .btn-outlined-primary {
-  color: mark;
-  outline-color: mark;
+  color: rgba(var(--night-sky-contrast-theme-button-txt-clr));
+  outline-color: rgba(var(--night-sky-contrast-theme-button-txt-clr));
 }
 
 [theme='night-sky'] .profile-card .btn-outlined-primary:is(:hover, :focus) {
