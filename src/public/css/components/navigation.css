@@ -21,10 +21,17 @@
 }
 
 /* this setting is set in reset.css but in More Contrast in firefox this is needed again */
-.hamburger:focus-visible {
+.hamburger:is(:hover, :focus) {
   outline-offset: 0;
-  outline: 0.1rem solid canvasText;
+  outline-width: 0.1rem;
+  outline-style: solid;
+  outline-color: canvasText;
+
   border-radius: var(--spacer-4);
+}
+
+.hamburger:is(:focus-visible) {
+  outline-style: dashed;
 }
 
 .menu {

@@ -25,10 +25,6 @@ secondary turns into primary upon :hover
   transform: var(--scale-hover);
 }
 
-.btn:focus-visible {
-  outline-color: rgba(var(--text-color));
-}
-
 .btn:active {
   --btn-bg-opacity: var(--opacity-06-dark);
   box-shadow: var(--box-shadow-active);

@@ -1,9 +1,9 @@
+/* eslint-disable import/extensions */
 /* eslint-disable no-unused-expressions */
+import { prefersColorSchemeDark } from './prefersColorScheme.js';
 
 export default function getCurrentTheme() {
-  let theme = window.matchMedia('(prefers-color-scheme: dark)').matches
-    ? 'dark'
-    : 'light';
+  let theme = prefersColorSchemeDark();
 
   localStorage.getItem('NazCodeland.theme')
     ? (theme = localStorage.getItem('NazCodeland.theme'))

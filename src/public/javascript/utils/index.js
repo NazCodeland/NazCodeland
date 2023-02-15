@@ -3,7 +3,10 @@ import getCurrentTheme from './getCurrentTheme.js';
 import setTheme from './setTheme.js';
 import isClrWhiteOrBlack from './isClrWhiteOrBlack.js';
 import isForcedColorsActive from './isForcedColorsActive.js';
-import { prefersContrastLess, prefersContrastMore } from './PrefersContrast.js';
+import { prefersContrastLess, prefersContrastMore } from './prefersContrast.js';
+
+// prettier-ignore
+import { prefersColorSchemeLight, prefersColorSchemeDark } from './prefersColorScheme.js';
 
 export {
   getCurrentTheme,
@@ -12,4 +15,6 @@ export {
   isForcedColorsActive,
   prefersContrastLess,
   prefersContrastMore,
+  prefersColorSchemeLight,
+  prefersColorSchemeDark,
 };

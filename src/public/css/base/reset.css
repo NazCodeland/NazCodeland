@@ -16,24 +16,28 @@ li {
 /* inline elements */
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 
   outline-width: 0.1rem;
   outline-style: solid;
   outline-color: transparent;
+
   border-radius: var(--spacer-8);
+}
+
+a:is(:hover, :focus) {
+  outline-color: canvasText;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline-style: dashed;
 }
 
 button {
   cursor: pointer;
   padding: 0;
-}
-
-a:focus-visible,
-button:focus-visible {
-  outline-offset: 2px;
-  outline-color: canvasText;
 }
 
 span {

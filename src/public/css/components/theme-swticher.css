@@ -18,7 +18,7 @@ decide if you want to register the clicks and do another 360deg rotation or turn
 }
 
 /*  this setting is set in reset.css but in More Contrast in firefox this is needed again */
-.theme-switcher:focus-visible {
+.theme-switcher:is(:hover, :focus) {
   outline: 0.1rem solid canvasText;
 }
 

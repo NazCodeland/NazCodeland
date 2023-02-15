@@ -65,8 +65,9 @@
 }
 
 [color-scheme='dark'] .profile-card__image {
-  border: clamp(0.5rem, calc(0.43rem + 0.36vw), 0.75rem) solid
-    rgba(var(--grey-600));
+  border-width: clamp(0.5rem, calc(0.43rem + 0.36vw), 0.75rem);
+  border-style: solid;
+  border-color: rgba(var(--grey-600));
 }
 
 @media (width <= 19rem) {

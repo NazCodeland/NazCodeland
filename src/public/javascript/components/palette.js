@@ -60,7 +60,11 @@ palettes.forEach((palette) =>
 window.addEventListener('DOMContentLoaded', () => {
   if (prefersContrastLess()) {
     setPalette('desert');
-    root.setAttribute('color-scheme', 'light');
-  } else if (prefersContrastMore()) setPalette('night-sky');
+  }
+  //
+  else if (prefersContrastMore()) {
+    setPalette('night-sky');
+  }
+  //
   else setPalette(getCurrentPalette());
 });
