@@ -2,8 +2,7 @@
 /* eslint-disable no-unused-expressions */
 /* eslint-disable import/extensions */
 import {
-  getCurrentTheme,
-  setTheme,
+  getPrefersClrScheme,
   isClrWhiteOrBlack,
   prefersContrastLess,
   prefersContrastMore,
@@ -27,14 +26,15 @@ function getCurrentPalette(event) {
   return currentPalette;
 }
 
-function setPalette(chosenPalette) {
+function setPaletteInLocalStorage(chosenPalette) {
   root.setAttribute('theme', chosenPalette);
   localStorage.setItem('NazCodeland.palette', chosenPalette);
 }
 
-let previousTheme = (() => getCurrentTheme())();
+let OSTheme = (() => getPrefersClrScheme())();
+localStorage.setItem('NazCodeland.OSTheme', OSTheme);
 mainPalette.addEventListener('click', () => {
-  previousTheme = (() => getCurrentTheme())();
+  OSTheme = getPrefersClrScheme();
 });
 
 palettes.forEach((palette) =>
@@ -42,10 +42,10 @@ palettes.forEach((palette) =>
     const chosenPalette = event.target.name;
 
     chosenPalette === 'mainPalette'
-      ? setTheme(previousTheme)
-      : setTheme(getCurrentTheme());
+      ? root.setAttribute('color-scheme', OSTheme)
+      : root.setAttribute('color-scheme', getPrefersClrScheme());
 
-    setPalette(chosenPalette);
+    setPaletteInLocalStorage(chosenPalette);
 
     const rootStyles = getComputedStyle(root);
     const paletteBgClr = rootStyles.getPropertyValue('--main-background');
@@ -61,14 +61,14 @@ palettes.forEach((palette) =>
 window.addEventListener('DOMContentLoaded', () => {
   //
   if (!isForcedColorsActive() && prefersContrastLess()) {
-    setPalette('desert');
+    setPaletteInLocalStorage('desert');
     root.setAttribute('color-scheme', 'light');
   }
   //
   else if (!isForcedColorsActive() && prefersContrastMore()) {
-    setPalette('night-sky');
+    setPaletteInLocalStorage('night-sky');
     root.setAttribute('color-scheme', 'dark');
   }
   //
-  else setPalette(getCurrentPalette());
+  else setPaletteInLocalStorage(getCurrentPalette());
 });

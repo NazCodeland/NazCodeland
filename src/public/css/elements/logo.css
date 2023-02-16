@@ -13,7 +13,7 @@
   color: rgba(var(--primary-color));
 }
 
-.logo .first-letter:is(:hover, :focus) {
+.logo .first-letter:is(:hover) {
   outline-color: canvas;
 }
 

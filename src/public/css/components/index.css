@@ -1,7 +1,7 @@
 /* home page */
 @import 'navigation.css';
-@import 'theme-swticher.css';
-@import 'palettes.css';
+@import 'toggle-theme-swticher.css';
+@import 'palette-theme-switcher.css';
 @import 'profile-card.css';
 @import 'skill-card.css';
 

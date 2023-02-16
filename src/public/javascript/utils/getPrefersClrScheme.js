@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-expressions */
 import { prefersColorSchemeDark } from './prefersColorScheme.js';
 
-export default function getCurrentTheme() {
+export default function getPrefersClrScheme() {
   let theme = prefersColorSchemeDark() ? 'dark' : 'light';
 
   localStorage.getItem('NazCodeland.theme')
