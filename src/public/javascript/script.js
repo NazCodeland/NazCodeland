@@ -1,6 +1,5 @@
 /* eslint-disable import/extensions */
-import './components/toggleThemeSwitcher.js';
+import './components/themeSwitcher.js';
 import './elements/logo.js';
 import './components/navigation.js';
-import './components/paletteThemeSwitcher.js';
 import './components/skillCard.js';
