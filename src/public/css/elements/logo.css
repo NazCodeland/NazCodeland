@@ -13,10 +13,6 @@
   color: rgba(var(--primary-color));
 }
 
-.logo .first-letter:is(:hover) {
-  outline-color: canvas;
-}
-
 .logo * {
   display: inline-block;
 
@@ -44,6 +40,11 @@
   text-transform: uppercase;
   transform: translateY(-20px) scale(2) rotate(20deg);
 }
+
+.logo .first-letter:is(:focus-visible) {
+  outline-color: canvasText;
+}
+
 .logo > span :nth-child(1) {
   margin-inline-start: 0.1rem;
 }
@@ -57,5 +58,5 @@
   outline-color: rgba(255, 255, 255, 0.2);
 }
 [color-scheme='dark'] .logo .first-letter:focus-visible {
-  outline-color: rgba(var(--text-color));
+  outline-color: canvasText;
 }

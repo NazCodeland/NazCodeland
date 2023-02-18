@@ -28,6 +28,7 @@
   "dependencies": {
     "express": "^5.0.0-beta.1",
     "express-handlebars": "^6.0.6",
+    "mongoose": "^6.9.2",
     "morgan": "^1.10.0",
     "serve-favicon": "^2.5.0",
     "vitest": "^0.27.2",

@@ -21,7 +21,7 @@
 }
 
 /* this setting is set in reset.css but in More Contrast in firefox this is needed again */
-.hamburger:is(:hover, :focus) {
+.hamburger:focus {
   outline-offset: 0;
   outline-width: 0.1rem;
   outline-style: solid;

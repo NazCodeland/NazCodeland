@@ -27,7 +27,6 @@
 
 .article__tags {
   display: flex;
-  justify-content: end;
   gap: 1rem;
 
   text-align: center;
@@ -38,15 +37,25 @@
 .tag {
   padding: var(--spacer-2) var(--spacer-4);
   outline-color: transparent;
+
   /* color: ; */
+}
+
+.tag:empty {
+  display: none;
 }
 
 .html {
   --languageColor: #264de4;
-  background-color: var(--languageColor) !important;
+  background-color: var(--languageColor);
 }
 
 .css {
   --languageColor: #e34f26;
-  background-color: var(--languageColor) !important;
+  background-color: var(--languageColor);
+}
+
+.js {
+  --languageColor: #ffc600;
+  background-color: var(--languageColor);
 }

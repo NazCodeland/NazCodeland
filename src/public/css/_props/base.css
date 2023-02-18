@@ -1,8 +1,21 @@
 /* prettier-ignore */
 /* TODO: move all these props to /props/base */
+@import 'https://fonts.googleapis.com/css?family=Suez+One';
+
+/* waiting for respond to email to see if I have permission to use this */
+/* @font-face {
+  font-family: 'MongoDB Value Serif';
+  font-weight: 700;
+  src: url('../fonts/MongoDBValueSerif-Bold.woff2') format('woff2');
+} */
 
 :root {
   --ff-logo-first-letter: 'Suez one', Georgia, 'Times New Roman', Times, serif;
+  /* Shared Between Light & Dark Theme */
+  --ff-logo-excluding-first-letter: 'MongoDB Value Serif', Arial, sans-serif;
+  --ff: 'Times New Roman', Times, serif;
+
+  --fs-logo-first-letter: clamp(24px, calc(17.12px + 2.14vw), 3rem);
 
   /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1440,20,1.618,3,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 

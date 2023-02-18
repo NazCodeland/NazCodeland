@@ -6,19 +6,22 @@
   
   <div class="articles">
     <article class="article">
-      {{ #each blog }}
+      {{#each blogPost}}
       <div class="article__header">
-        <h2 class="article__title">{{ this.title }}</h2>
-        <p class="article__date">{{ this.date }}</p>
+        <h2 class="article__title">{{this.title}}</h2>
+        <p class="article__date">{{this.modified}}</p>
       </div>
       <div class="article__content">
-        <p>{{ this.copy }}</p>
+        <p>{{this.description}}</p>
         </div>
         <div class="article__tags">
-          <a class="btn html tag" href="/">{{ tags.one }}</a>
-          <a class="btn btn-outlined-primary css tag" href="/">{{ tags.two }}</a>
+          {{#each this.tags}}
+          <a class="btn html tag" href="/">{{this.html}}</a>
+          <a class="btn btn-outlined-primary css tag" href="/">{{this.css}}</a>
+          <a class="btn btn-outlined-primary js tag" href="/">{{this.js}}</a>
+          {{/each}}
         </div>
-        {{ /each }}
+        {{/each}}
     </article>
   </div>
 </section>
