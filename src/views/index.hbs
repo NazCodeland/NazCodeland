@@ -6,8 +6,11 @@
     <div class="profile-card__content">
 
       <header class="profile-card__header">
-        <h2 class="profile-card__title">Nazar K. I.</h2>
-        <div class="profile-card__subtitle" role="doc-subtitle" >Frontend Developer</div>
+        <h2 class="profile-card__title">Nazar K. I.
+          <br> <!-- using 'display: block' on the below small elements class, 
+                causes an undesirable pause in the NVDA screen reader. '<br> does not.'-->
+          <small class="profile-card__subtitle">Frontend Developer</small>
+        </h2>
       </header>
 
       <div class="profile-card__body">
@@ -20,6 +23,7 @@
       </footer>
       
     </div>
+    
   </article>
 </section>
 

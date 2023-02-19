@@ -329,6 +329,7 @@
 [theme='dusk'] .profile-card .btn-filled-primary:is(:hover, :focus),
 [theme='night-sky'] .profile-card .btn-filled-primary:is(:hover, :focus) {
   outline-color: canvasText;
+  background-color: var(--main-background);
 }
 
 [theme='desert'] .skill-card:is(:hover, :focus),

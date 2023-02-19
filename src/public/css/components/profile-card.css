@@ -39,6 +39,8 @@
 
 .profile-card__subtitle {
   color: rgba(var(--text-color), var(--low-emphasis-text-dark, 0.6));
+  font-size: var(--fs-fluid-4);
+  font-weight: 400;
 }
 
 .profile-card__copy {
