@@ -1,12 +1,9 @@
-
-
 <section class="blog-section">
   <h1 class="page-title">Articles</h1>
 
-  
   <div class="articles">
+    {{#each blogPost}}
     <article class="article">
-      {{#each blogPost}}
       <div class="article__header">
         <h2 class="article__title">{{this.title}}</h2>
         <p class="article__date">{{this.modified}}</p>
@@ -21,7 +18,7 @@
           <a class="btn btn-outlined-primary js tag" href="/">{{this.js}}</a>
           {{/each}}
         </div>
-        {{/each}}
-    </article>
+      </article>
+      {{/each}}
   </div>
 </section>

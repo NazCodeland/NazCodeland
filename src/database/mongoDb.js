@@ -1,8 +1,16 @@
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 
+dotenv.config({ path: './environment/.env.dev' });
+
+// prettier-ignore
 export default async function connectToDb() {
-  // prettier-ignore
-  await mongoose
-    .set('strictQuery', false)
-    .connect('mongodb+srv://nazcodeland:Rit1O5TLMZz3nAec@nazcodeland.v9cfkup.mongodb.net/blog')
+  return new Promise((resolve) => {
+    resolve(mongoose
+      .set('strictQuery', false)
+      .connect(process.env.DB_HOST))
+      .catch((error) => {
+        throw new Error('Unable to connect to MongoDB')
+      });
+  });
 }
