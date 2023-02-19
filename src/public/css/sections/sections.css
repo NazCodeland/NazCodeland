@@ -1,3 +1,10 @@
+/* homepage */
+
+.introduction-section,
+.skills-section {
+  margin-block-end: clamp(5.5rem, calc(4.64rem + 4.29vw), 8.25rem);
+}
+
 /* blog page */
 .blog-section {
   /* inline-size: 60ch; */

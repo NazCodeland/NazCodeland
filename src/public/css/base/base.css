@@ -29,10 +29,6 @@
   overflow: hidden;
 }
 
-section {
-  margin-block-end: clamp(5.5rem, calc(4.64rem + 4.29vw), 8.25rem);
-}
-
 /* ------------------------------------- */
 
 h1,
