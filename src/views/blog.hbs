@@ -2,22 +2,22 @@
   <h1 class="page-title">Articles</h1>
 
   <div class="articles">
-    {{#each blogPost}}
+    {{#each blogPosts}}
     <article class="article">
       <div class="article__header">
         <h2 class="article__title">{{this.title}}</h2>
-        <p class="article__date">{{this.modified}}</p>
+        <p class="article__date">{{this.date}}</p>
       </div>
       <div class="article__content">
-        <p>{{this.description}}</p>
+        <p>{{this.body}}</p>
         </div>
+        {{#each this.tags}}
         <div class="article__tags">
-          {{#each this.tags}}
           <a class="btn html tag" href="/">{{this.html}}</a>
           <a class="btn btn-outlined-primary css tag" href="/">{{this.css}}</a>
           <a class="btn btn-outlined-primary js tag" href="/">{{this.js}}</a>
-          {{/each}}
         </div>
+        {{/each}}
       </article>
       {{/each}}
   </div>
