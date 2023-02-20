@@ -1,23 +1,23 @@
 
 <article>
 
-  <div class="article__header">
-    <h2 class="article-title">{{blogPost.title}}</h2>
-    <span class="article__date">{{blogPost.publishedDate}}</span>
-    <span class="article__date">{{blogPost.views}}</span>
+  <div class="blogPost__header">
+    <h2 class="blogPost-title">{{blogPost.title}}</h2>
+    <span class="blogPost__date">{{myToDateString blogPost.createdAt}}</span>
+    <span class="blogPost__view">{{blogPost.views}}</span>
   </div>
 
-  <div class="article__content">
+  <div class="blogPost__content">
     <p>{{{blogPost.body}}}</p>
   </div>
 
-  <div class="article__footer">
+  <div class="blogPost__footer">
       {{#each blogPost.tags}}
       <a class="btn html tag" href="/">{{this}}</a>
       {{/each}}
     </div>
 
-</article class="article">
+</article class="blogPost">
 
 
 

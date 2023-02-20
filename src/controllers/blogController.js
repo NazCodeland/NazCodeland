@@ -23,12 +23,12 @@ async function createBlogPost_post(req, res) {
   const blogPost = await BlogPost.create({
     title: req.body.title,
     description: req.body.description,
-    date: Date.now(),
     body: req.body.body,
     tags: [...req.body.tags.split(',')],
-  }).then((doc) => doc.toObject());
+  });
 
-  res.render('blog/create', { tapTitle: 'New blog post', blogPost });
+  const { slug } = blogPost;
+  res.redirect(`${slug}`);
 }
 
 export default {

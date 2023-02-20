@@ -5,21 +5,26 @@ import express from 'express';
 import { engine } from 'express-handlebars';
 
 // -----------------------------------------------------
-// route imports
-// -----------------------------------------------------
-
-// -----------------------------------------------------
 // middleware imports
 // -----------------------------------------------------
-
 import livereload from 'livereload';
 import connectLiveReload from 'connect-livereload';
 import favicon from 'serve-favicon';
+
+// -----------------------------------------------------
+// route imports
+// -----------------------------------------------------
 import homePageRoute from './src/routes/homePageRoute.js';
 import aboutMeRoute from './src/routes/aboutMeRoute.js';
 // import portfolioRoutes from './src/routes/portfolioRoutes.js';
 import contactRoute from './src/routes/contactRoute.js';
 import blogRoute from './src/routes/blogRoute.js';
+
+// -----------------------------------------------------
+// handlebar helper imports
+// -----------------------------------------------------
+import myToDateString from './src/utils/handlebarsHelpers/index.js';
+
 // -----------------------------------------------------
 // hot module reload for browser
 // -----------------------------------------------------
@@ -45,7 +50,7 @@ app.listen(3000, () => {
   console.log(`App URL: http://www.localhost:3000`);
 });
 
-app.engine('.hbs', engine({ extname: '.hbs', helpers: {} }));
+app.engine('.hbs', engine({ extname: '.hbs', helpers: { myToDateString } }));
 app.set('view engine', '.hbs');
 app.set('views', 'src/views');
 

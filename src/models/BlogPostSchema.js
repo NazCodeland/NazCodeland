@@ -14,7 +14,6 @@ const blogPostSchema = new MySchema(
   {
     title: { type: String, required: [true, 'please enter a blog post title'], unique: true},
     description: {type: String, required: [true, 'please enter a brief blog post description']},
-    publishedDate: { type: Date, default: Date.now },
     body: { type: String, required: [true, 'please enter a blog post body'] },
 
     tags: {
