@@ -11,8 +11,8 @@ async function blog_get(req, res) {
 }
 
 async function blogPost_get(req, res) {
-  const blogPost = await BlogPost.find({ slug: req.params.slug }).lean();
-  res.render('blog/blogPost', { tapTitle: 'Blog Post', blogPost: blogPost[0] });
+  const blogPost = await BlogPost.findOne({ slug: req.params.slug }).lean();
+  res.render('blog/blogPost', { tapTitle: 'Blog Post', blogPost });
 }
 
 async function createBlogPost_get(req, res) {

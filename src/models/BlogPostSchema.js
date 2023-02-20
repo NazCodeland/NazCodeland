@@ -1,5 +1,8 @@
+/* eslint-disable no-invalid-this */
 /* eslint-disable import/extensions */
 import mongoose from 'mongoose';
+import { marked } from 'marked';
+import DOMPurify from 'isomorphic-dompurify';
 
 // without extending the mongoose Schema class,
 // intellisense doesn't provide property names
@@ -29,9 +32,12 @@ const blogPostSchema = new MySchema(
 );
 
 blogPostSchema.pre('validate', function createSlug(next) {
-  // eslint-disable-next-line no-invalid-this
   this.slug = this.title.toLowerCase().replaceAll(' ', '-');
 
+  this.title = DOMPurify.sanitize(this.title);
+  this.description = DOMPurify.sanitize(this.description);
+  this.body = DOMPurify.sanitize(marked(this.body));
+  this.tags = DOMPurify.sanitize(this.tags);
   next();
 });
 

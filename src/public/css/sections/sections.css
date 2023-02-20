@@ -6,7 +6,7 @@
 }
 
 /* blog page */
-.blog-section {
-  /* inline-size: 60ch; */
-  margin-inline: auto;
+.blogPosts-section {
+  display: flex;
+  justify-content: center;
 }

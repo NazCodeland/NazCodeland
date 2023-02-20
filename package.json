@@ -29,6 +29,7 @@
     "dotenv": "^16.0.3",
     "express": "^5.0.0-beta.1",
     "express-handlebars": "^6.0.6",
+    "isomorphic-dompurify": "^1.0.0",
     "marked": "^4.2.12",
     "mongoose": "^6.9.2",
     "morgan": "^1.10.0",

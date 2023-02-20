@@ -1,22 +1,25 @@
-<section class="blog-section">
-  <h1 class="page-title">Articles</h1>
-
-  <div class="articles">
-    {{#each blogPosts}}
-      <article class="article">
-        <div class="article__header">
-          <a href="/blog/{{this.slug}}"><h2 class="article__title">{{this.title}}</h2></a>
-          <p class="article__date">{{this.publishedDate}}</p>
-        </div>
-        <div class="article__content">
-          <p>{{this.description}}</p>
-        </div>
-        <div class="article__footer">
-          {{#each this.tags}}
-          <a class="btn tag" href="/">{{this}}</a>
-          {{/each}}
-        </div>
-      </article>
-    {{/each}}
+<section class="blogPosts-section">
+  <div class="blogPosts-wrapper">
+    <h2 class="page-title">Blog Posts</h2>
+    <div class="blogPosts">
+      {{#each blogPosts}}
+        <article class="blogPost">
+          <div class="blogPost__header">
+            <a href="/blog/{{this.slug}}"><h3 class="blogPost__title">{{this.title}}</h3></a>
+            <p class="blogPost__date">{{this.publishedDate}}</p>
+          </div>
+          <div class="blogPost__content">
+            <p>{{this.description}}</p>
+          </div>
+          <div class="blogPost__footer">
+            {{#each this.tags}}
+            <a class="btn tag" href="/">{{this}}</a>
+            {{/each}}
+          </div>
+        </article>
+      {{/each}}
+    </div>
   </div>
 </section>
+
+

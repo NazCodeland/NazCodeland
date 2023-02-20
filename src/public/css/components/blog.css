@@ -3,31 +3,33 @@
 .page-title {
   margin-block-end: 6rem;
   color: rgba(var(--text-color), var(--high-emphasis-text-dark));
+  align-self: flex-start;
+  font-size: var(--fs-fluid-1);
 }
 
-.articles {
+.blogPosts {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
 
-.article {
+.blogPost {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.article__header {
+.blogPost__header {
   display: flex;
   flex-direction: column;
   gap: var(--spacer-4);
 }
 
-.article__content {
-  max-inline-size: 61ch;
+.blogPost__content {
+  max-inline-size: 70ch;
 }
 
-.article__footer {
+.blogPost__footer {
   display: flex;
   gap: 1rem;
 
