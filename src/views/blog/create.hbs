@@ -1,0 +1,24 @@
+
+<form action="" method="POST" class="new-blogpost">
+  <h2>Creating New Blog Post</h2>
+  
+  <label for="title">Title:
+    <input name="title" type="text" id="title" value="{{blogPost.title}}" required>
+  </label>
+
+  <label for="description">Description
+    <textarea name="description" id="description" cols="30" rows="5" required>{{blogPost.description}}</textarea>
+  </label>
+  
+  <label for="body">Body
+    <textarea name="body" id="body" cols="30" rows="10" required>{{blogPost.body}}</textarea>
+  </label>
+  
+  <label for="tags">Language Tag Keywords
+    <input name="tags" type="text" value="{{blogPost.tags}}" required>
+  </label>
+  
+  <button type="submit" class="btn">Create</button>
+</form>
+
+

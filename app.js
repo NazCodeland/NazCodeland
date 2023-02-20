@@ -57,6 +57,9 @@ app.use(connectLiveReload());
 
 app.use(express.static('src/public', { extensions: ['.js'] }));
 
+// for incoming form data
+app.use(express.urlencoded({ extended: true }));
+
 app.use(favicon('src/public/images/favicon.png'));
 
 app.use(homePageRoute);

@@ -1,0 +1,23 @@
+
+<article>
+
+  <div class="article__header">
+    <h2 class="article-title">{{blogPost.title}}</h2>
+    <span class="article__date">{{blogPost.publishedDate}}</span>
+    <span class="article__date">{{blogPost.views}}</span>
+  </div>
+
+  <div class="article__content">
+    <p>{{blogPost.body}}</p>
+  </div>
+
+  <div class="article__footer">
+      {{#each blogPost.tags}}
+      <a class="btn html tag" href="/">{{this}}</a>
+      {{/each}}
+    </div>
+
+</article class="article">
+
+
+
