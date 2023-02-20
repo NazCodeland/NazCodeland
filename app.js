@@ -23,7 +23,7 @@ import blogRoute from './src/routes/blogRoute.js';
 // -----------------------------------------------------
 // handlebar helper imports
 // -----------------------------------------------------
-import myToDateString from './src/utils/handlebarsHelpers/index.js';
+import { myToDateString } from './src/utils/handlebarsHelpers/index.js';
 
 // -----------------------------------------------------
 // hot module reload for browser

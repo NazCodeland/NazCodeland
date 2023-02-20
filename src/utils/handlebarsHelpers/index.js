@@ -1,4 +1,5 @@
 /* eslint-disable import/extensions */
 import myToDateString from './myToDateString.js';
 
-export default { myToDateString };
+// eslint-disable-next-line import/prefer-default-export
+export { myToDateString };
