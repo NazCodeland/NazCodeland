@@ -4,7 +4,7 @@
   gap: var(--spacer-16);
   align-items: end;
 
-  position: absolute;
+  position: sticky;
   inset-inline-end: var(--spacer-fluid-16-40);
   inset-block-start: 10rem;
   visibility: hidden;

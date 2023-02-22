@@ -1,23 +1,31 @@
+<div class="blogPost-wrapper">
 
-<article>
+  <article class="blogPost">
 
-  <div class="blogPost__header">
-    <h2 class="blogPost-title">{{blogPost.title}}</h2>
-    <span class="blogPost__date">{{myToDateString blogPost.createdAt}}</span>
-    <span class="blogPost__view">{{blogPost.views}}</span>
-  </div>
-
-  <div class="blogPost__content">
-    <p>{{{blogPost.body}}}</p>
-  </div>
-
-  <div class="blogPost__footer">
-      {{#each blogPost.tags}}
-      <a class="btn html tag" href="/">{{this}}</a>
-      {{/each}}
+    <div class="blogPost__header">
+      <h2 class="blogPost__title"> {{blogPost.title}}</h2>
+      
+      <div class="blogPost__meta">
+        <span>
+          <span class="blogPost__date"> {{myToDateString blogPost.createdAt}}</span>
+          <span class="blogPost__views"> {{blogPost.views}} 12 likes!</span>
+        </span>
+        <span class="blogPost__tags">
+          {{#each blogPost.tags}}
+          <a class="btn tag" href="/">{{this}}</a>
+          {{/each}}
+        </span>
+      </div>
+      
     </div>
-
-</article class="blogPost">
+  
+    <div class="blogPost__content">
+      <p>{{{blogPost.body}}}</p>
+    </div>
+  
+    
+  </article>
+</div>
 
 
 

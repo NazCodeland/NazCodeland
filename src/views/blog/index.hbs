@@ -4,18 +4,28 @@
     <div class="blogPosts">
       {{#each blogPosts}}
         <article class="blogPost">
+
           <div class="blogPost__header">
             <a href="/blog/{{this.slug}}"><h3 class="blogPost__title">{{this.title}}</h3></a>
-            <p class="blogPost__date">{{myToDateString this.createdAt}}</p>
+            
+            <div class="blogPost__meta">
+              <span>
+                <span class="blogPost__date"> {{myToDateString this.createdAt}}</span>
+                <span class="blogPost__views"> {{this.views}}12 likes!</span>
+              </span>
+              <span class="blogPost__tags">
+                {{#each this.tags}}
+                <a class="btn tag" href="/">{{this}}</a>
+                {{/each}}
+              </span>
+            </div>
+
           </div>
+
           <div class="blogPost__content">
             <p>{{this.description}}</p>
           </div>
-          <div class="blogPost__footer">
-            {{#each this.tags}}
-            <a class="btn tag" href="/">{{this}}</a>
-            {{/each}}
-          </div>
+          
         </article>
       {{/each}}
     </div>

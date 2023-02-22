@@ -3,6 +3,7 @@
 .site-content-wrapper {
   display: flex;
   background-color: rgba(var(--html-color));
+  min-block-size: 100vh;
 }
 
 .site-content {
@@ -26,7 +27,6 @@
 
   border-radius: var(--radius-16);
   background-color: rgba(var(--main-background));
-  overflow: hidden;
 }
 
 /* ------------------------------------- */

@@ -39,10 +39,15 @@
   inset-inline: calc(clamp(1rem, calc(0.57rem + 2.14vw), 2.5rem) * -1);
   inset-block-start: clamp(3rem, calc(1.96rem + 6vw), 6rem);
 
+  padding-block-start: var(--spacer-8);
+
   border-block-end: 1px solid;
   border-color: rgba(var(--primary-color));
 
+  background-color: rgba(var(--main-background));
   overflow: hidden;
+
+  z-index: -1;
 }
 
 .menu__links {

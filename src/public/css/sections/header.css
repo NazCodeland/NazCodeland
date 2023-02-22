@@ -2,17 +2,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
   /* doesn't grow based on root font-size set by the user, needed in 'px' for where it's being used */
-  gap: var(--spacer-10);
+  gap: var(--spacer-8);
 
   margin-block-end: clamp(5.5rem, calc(4.64rem + 4.29vw), 8.25rem);
+  padding-block: var(--spacer-8);
+
+  position: sticky;
+  inset-block-start: -1px;
+  background-color: rgba(var(--main-background));
+  z-index: 10;
 }
 
 .skipToMain {
   position: absolute;
   inset-inline-start: -10000px;
-  inset-block-start: -15px;
+  inset-block-start: -13px;
 
   padding-inline: 1rem;
   border-radius: var(--spacer-4);
@@ -27,5 +32,5 @@
 }
 
 .skipToMain:focus-visible {
-  inset-inline-start: 0;
+  inset-inline-start: 2px;
 }

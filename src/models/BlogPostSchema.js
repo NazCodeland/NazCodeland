@@ -36,7 +36,7 @@ blogPostSchema.pre('validate', function createSlug(next) {
   this.title = DOMPurify.sanitize(this.title);
   this.description = DOMPurify.sanitize(this.description);
   this.body = DOMPurify.sanitize(marked(this.body));
-  this.tags = DOMPurify.sanitize(this.tags);
+  this.tags = DOMPurify.sanitize(this.tags).toUpperCase();
   next();
 });
 

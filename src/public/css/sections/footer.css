@@ -1,8 +1,12 @@
 .site-wide-footer {
   display: flex;
   justify-content: end;
-  border-block-start: 1px solid rgba(var(--primary-color));
+
+  margin-block-start: clamp(5.5rem, calc(4.64rem + 4.29vw), 8.25rem);
   margin-block-end: 0;
+  padding-block-start: 1rem;
+  border-block-start: 1px solid rgba(var(--primary-color));
+
   font-size: --fs;
 
   opacity: var(--high-emphasis-text-dark);
