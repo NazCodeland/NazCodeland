@@ -41,7 +41,7 @@ decide if you want to register the clicks and do another 360deg rotation or turn
 .common-svg-styles {
   position: absolute;
   transform-origin: 50% 100px;
-  transition-duration: var(--svg-transition-duration);
+  transition-duration: 1.4s;
 }
 
 .svg-day {

@@ -1,6 +1,6 @@
 .site-content-wrapper {
   display: flex;
-  background-color: rgba(var(--html-color));
+  background-color: rgba(var(--html-bg-color));
   min-block-size: 100vh;
 }
 

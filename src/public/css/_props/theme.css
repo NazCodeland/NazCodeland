@@ -2,11 +2,9 @@
 
 :root {
   /*  */
-  --html-color: var(--primary-color);
+  --html-bg-color: var(--primary-color);
 
   --primary-color: 100, 149, 237;
-
-  --svg-transition-duration: 1.4s;
 
   /* desert contrast theme */
   --desert-contrast-theme-bg-clr: 255, 250, 239;
@@ -373,7 +371,7 @@
 /* ------------------------------------------------ */
 /* #region desert*/
 [theme='desert'] {
-  --html-color: var(--desert-contrast-theme-link-txt-clr);
+  --html-bg-color: var(--desert-contrast-theme-link-txt-clr);
   --main-background: var(--desert-contrast-theme-bg-clr);
 }
 
@@ -437,7 +435,7 @@
 /* ------------------------------------------------ */
 /* #region dusk*/
 [theme='dusk'] {
-  --html-color: var(--dusk-contrast-theme-link-txt-clr);
+  --html-bg-color: var(--dusk-contrast-theme-link-txt-clr);
   --main-background: var(--dusk-contrast-theme-bg-clr);
 }
 
@@ -503,7 +501,7 @@ TODO: one of the other backgrounds, you can then style that specific btn-outline
 
 /* #region night-sky*/
 [theme='night-sky'] {
-  --html-color: var(--night-sky-contrast-theme-link-txt-clr);
+  --html-bg-color: var(--night-sky-contrast-theme-link-txt-clr);
   --main-background: var(--night-sky-contrast-theme-bg-clr);
 }
 
