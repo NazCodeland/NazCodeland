@@ -176,7 +176,7 @@
 
 /* #region light and dark mode */
 /* light & dark contrast palette tweaks*/
-@media (forced-colors) {
+@media (forced-colors: active) {
   /* if user is using their own OS contrast theme, hide the sites contrast themes */
   .palettes {
     display: none !important;

@@ -1,4 +1,5 @@
 /* eslint-disable import/extensions */
+
 import getPreferredClrScheme from './getPreferredClrScheme.js';
 import isClrWhiteOrBlack from './isClrWhiteOrBlack.js';
 import isForcedColorsActive from './isForcedColorsActive.js';

@@ -154,9 +154,12 @@ window.addEventListener('DOMContentLoaded', () => {
   // the themeSwitcher toggle btn to change the site them to white. If they now refresh the website,
   // white theme doesn't persist because when the page is refreshed it re-triggers the media query. So,
   // this overrides that media query if the user uses the themeSwitcher toggle btn.
+
+  // if color-scheme is already set don't getPreferredClrScheme
+
   const theme = localStorage.getItem('NazCodeland.theme')
     ? localStorage.getItem('NazCodeland.theme')
-    : getPreferredClrScheme();
+    : getBodyBgClr();
 
   root.setAttribute('color-scheme', theme);
 });
