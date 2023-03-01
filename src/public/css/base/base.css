@@ -1,7 +1,9 @@
 .site-content-wrapper {
-  display: flex;
   background-color: rgba(var(--html-bg-color));
   min-block-size: 100vh;
+  padding: var(--body-padding-top) var(--spacer-fluid-4-32)
+    var(--spacer-fluid-4-32) var(--spacer-fluid-4-32);
+  transition: padding-block-start 1s;
 }
 
 .site-content {
@@ -10,9 +12,6 @@
   flex-direction: column;
   flex-grow: 1;
 
-  margin: var(--body-margin-top) var(--spacer-fluid-4-32)
-    var(--spacer-fluid-4-32) var(--spacer-fluid-4-32);
-
   padding: var(--spacer-fluid-16-40);
 
   font-family: var(--ff);
@@ -20,8 +19,6 @@
   line-height: clamp(1.5rem, calc(1.36rem + 0.71vw), 2rem);
 
   color: rgba(var(--grey-000), var(--medium-emphasis-text-dark));
-
-  transition: margin-block-start 1s;
 
   border-radius: var(--radius-16);
   background-color: rgba(var(--main-background));
