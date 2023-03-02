@@ -17,10 +17,9 @@ const palettes = document.querySelectorAll('.palette');
 
 // toggle-theme-switcher
 themeSwitcherBtn.addEventListener('click', () => {
-  let theme;
-  localStorage.getItem('NazCodeland.theme')
-    ? (theme = localStorage.getItem('NazCodeland.theme'))
-    : (theme = getPreferredClrScheme());
+  let theme = localStorage.getItem('NazCodeland.theme')
+    ? localStorage.getItem('NazCodeland.theme')
+    : getPreferredClrScheme();
 
   theme === 'dark' ? (theme = 'light') : (theme = 'dark');
   localStorage.setItem('NazCodeland.theme', `${theme}`);
@@ -155,7 +154,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // white theme doesn't persist because when the page is refreshed it re-triggers the media query. So,
   // this overrides that media query if the user uses the themeSwitcher toggle btn.
 
-  // if color-scheme is already set don't getPreferredClrScheme
+  // if color-scheme is already set don't getBodyBgClr
 
   const theme = localStorage.getItem('NazCodeland.theme')
     ? localStorage.getItem('NazCodeland.theme')
