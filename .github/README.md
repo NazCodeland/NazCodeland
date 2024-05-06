@@ -4,8 +4,6 @@
 I am a software developer with a natural affinity for solving puzzles and riddles — the passion behind my love for programming. However, I also like to make things look aesthetically pleasing, and that is the reason why I also have some experience in UI/UX design, primarily through Figma and partially Miro. Check out my [PawFood app deliverables](https://www.figma.com/file/3RS9n9i1alb0VKcLTzUOvo/PawFood?type=design&node-id=2%3A3929&mode=design&t=DsSyZsMX6Yr4tcnE-1) - my project from the Google UI/UX course.
 
 
-
-
 <br/>
 
 ## 👩🏽‍💻 More About Me
@@ -70,13 +68,14 @@ I am a software developer with a natural affinity for solving puzzles and riddle
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) <br/>
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white)
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) 
 
+<!-- ![](https://github-readme-stats.vercel.app/api/top-langs/?username=ericchase&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact) -->
 <br/>
 
 ## Learning Goals
-- Gain a deeperer understanding of software design patterns
-  
+- Gain a deeperer understanding of software design patterns 
+
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
   ![SolidJS](https://img.shields.io/badge/SolidJS-2c4f7c?style=for-the-badge&logo=solid&logoColor=c8c9cb)
   ![Tauri](https://img.shields.io/badge/tauri-%2324C8DB.svg?style=for-the-badge&logo=tauri&logoColor=%23FFFFFF)
@@ -115,8 +114,8 @@ I am a software developer with a natural affinity for solving puzzles and riddle
 - **[NazCodeland.dev](https://nazcodeland.dev/projects)**
 - **[NazCodeland Repository](https://github.com/NazCodeland/NazCodeland-V2)**
 
-
-  - (Add description here)
+  - This is my personal website and it is also my first professional project. The current version is the second iteration, the [first iteration](https://github.com/NazCodeland/NazCodeland) was built using the MVC (Model View Controller) Architecture using ExpressJS for the backend and Handlebars for the View layer. The current iteration employs the same MVC Architecture but it uses Svelte for the View layer, and the Model and Controller are handled by SvelteKit, which is written in TypeScript.
+      
   - ![Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white) ![SvelteKit](https://img.shields.io/badge/SvelteKit-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
 
@@ -132,9 +131,6 @@ I am a software developer with a natural affinity for solving puzzles and riddle
 
 <br/>
 
-
- ## Language Stats
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=ericchase&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
 
 
