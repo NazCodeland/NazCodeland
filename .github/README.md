@@ -109,6 +109,20 @@ I am a software developer with a natural affinity for solving puzzles and riddle
   - ![Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white) ![SvelteKit](https://img.shields.io/badge/SvelteKit-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
 
+<!--
+<br/>
+
+- **[Barbercate.vercel.app](https://barbercate.vercel.app/)**
+- **[Barbercate Figma Deliverables](https://github.com/NazCodeland/NazCodeland-V2)**
+- **[Barbercate Repository](https://github.com/NazCodeland/NazCodeland-V2)**
+
+  - description
+      
+  - ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Miro](https://img.shields.io/badge/Miro-F4B728?style=for-the-badge&logo=Miro&logoColor=white)
+
+-->
+
+
 <br/>
 
 - **[NazCodeland.dev](https://nazcodeland.dev/projects)**
@@ -121,6 +135,18 @@ I am a software developer with a natural affinity for solving puzzles and riddle
 
 
 <br/>
+
+- **[PawFood Figma Deliverables](https://github.com/NazCodeland/NazCodeland-V2)**
+- **[PawFood Miro Deliverables](https://github.com/NazCodeland/NazCodeland-V2)**
+
+  - description [PawFood Article](https://nazcodeland.dev/projects/pawfood)
+      
+  - ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Miro](https://img.shields.io/badge/Miro-F4B728?style=for-the-badge&logo=Miro&logoColor=white)
+
+
+
+<br/>
+
 
 
 ## Blog Posts
