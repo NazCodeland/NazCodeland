@@ -33,6 +33,15 @@ I am a software developer with a natural affinity for solving puzzles and riddle
 ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)
  <br/>
 
+> In addition to the skills listed above, I also have experience with the following libraries/technologies:
+>   - tRPC
+>   - Zod
+>   - Neon DB
+>   - Kysely
+>   - Cloudflare
+>   - Vercel
+>   - Google Cloud
+
 <br/>
 
 ## Learning Goals
