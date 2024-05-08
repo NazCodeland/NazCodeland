@@ -28,9 +28,7 @@ I am a software developer with a natural affinity for solving puzzles and riddle
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 ![Miro](https://img.shields.io/badge/Miro-F4B728?style=for-the-badge&logo=Miro&logoColor=white)
 ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white) <br/>
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) <br/>
-![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
  <br/>
 
 > In addition to the skills listed above, I also have experience with the following libraries/technologies:
@@ -38,6 +36,7 @@ I am a software developer with a natural affinity for solving puzzles and riddle
 >   - Zod
 >   - Neon DB
 >   - Kysely
+>   - Pandas
 >   - Cloudflare
 >   - Vercel
 >   - Google Cloud
