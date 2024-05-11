@@ -2,7 +2,7 @@
 
 
 # Hey there, I'm Nazar <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="32" height="32">
-I am a software developer with a natural affinity for solving puzzles and riddles — the passion behind my love for programming. However, I also like to make things look aesthetically pleasing, and that is the reason why I also have some experience in UI/UX design, primarily through Figma and partially Miro. Check out my [PawFood app deliverables](https://www.figma.com/file/3RS9n9i1alb0VKcLTzUOvo/PawFood?type=design&node-id=2%3A3929&mode=design&t=DsSyZsMX6Yr4tcnE-1) - my project from the Google UI/UX course.
+I am a software developer with a natural affinity for solving puzzles and riddles — the passion behind my love for programming. I also like to make things look aesthetically pleasing, and that is the reason why I also have some experience in UI/UX design, primarily through Figma and partially Miro. Check out my [PawFood app deliverables](https://www.figma.com/file/3RS9n9i1alb0VKcLTzUOvo/PawFood?type=design&node-id=2%3A3929&mode=design&t=DsSyZsMX6Yr4tcnE-1) - my project from the Google UI/UX course.
 
 
 <br/>
