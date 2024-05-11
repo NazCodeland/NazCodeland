@@ -7,7 +7,7 @@ I am a software developer with a natural affinity for solving puzzles and riddle
 
 <br/>
 
-##  👨🏽‍💻 More About Me
+## 👨🏽‍💻 More About Me
 - 🌱 Checkout [Saigon](https://saigonottawa.com) & [Lashology]() my latest freelance projects for two amazing clients
 - 🚀 [Worldflare](https://github.com/NazCodeland/worldflare) is an upcoming websockets application for connecting users around the world
 - 👯 Looking for Paid and/or Intern opportunities by end of 2024
