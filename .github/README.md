@@ -45,7 +45,8 @@ I am a software developer with an affinity for solving puzzles and riddles — t
 
 ## Learning Goals
 - Gain a deeperer understanding of software design patterns 
-
+- Learn Data Structures & Algorithms
+  
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
   ![SolidJS](https://img.shields.io/badge/SolidJS-2c4f7c?style=for-the-badge&logo=solid&logoColor=c8c9cb)
   ![Tauri](https://img.shields.io/badge/tauri-%2324C8DB.svg?style=for-the-badge&logo=tauri&logoColor=%23FFFFFF)
