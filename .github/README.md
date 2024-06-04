@@ -109,8 +109,8 @@ I am a software developer with an affinity for solving puzzles and riddles — t
 
 <br/>
 
-- **[PawFood Figma Deliverables](https://github.com/NazCodeland/NazCodeland-V2)**
-- **[PawFood Miro Deliverables](https://github.com/NazCodeland/NazCodeland-V2)**
+- **[PawFood Figma Deliverables](https://www.figma.com/design/XrgvnlKjimABXsyksoHdKs/PawFood?node-id=2-3929)**
+- **[PawFood Miro Deliverables](https://miro.com/app/board/uXjVK_gLI1k=/?share_link_id=597701246107)**
 
   - description [PawFood Article](https://nazcodeland.dev/projects/pawfood)
       
