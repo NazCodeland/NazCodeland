@@ -116,8 +116,6 @@ I am a software developer with an affinity for solving puzzles and riddles — t
     Following the Design Thinking Framework, I conducted the research and design for PawFood.
     This was my first UX/UI project, and the course taught me a tremendous amount about the UX/UI design process.
     I had a lot of fun!"
-    
-  - description [PawFood Article](https://nazcodeland.dev/projects/pawfood)
       
   - ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Miro](https://img.shields.io/badge/Miro-F4B728?style=for-the-badge&logo=Miro&logoColor=white)
 
