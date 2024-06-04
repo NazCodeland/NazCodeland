@@ -111,10 +111,10 @@ I am a software developer with an affinity for solving puzzles and riddles — t
 
 - **[PawFood Figma Deliverables](https://www.figma.com/design/XrgvnlKjimABXsyksoHdKs/PawFood?node-id=2-3929)**
 - **[PawFood Miro Deliverables](https://miro.com/app/board/uXjVK_gLI1k=/?share_link_id=597701246107)**
-  PawFood is a design concept for a mobile app that I created during the Google UX Design Course.
-		Following the Design Thinking Framework, I conducted the research and design for PawFood.
-		This was my first UX/UI project, and the course taught me a tremendous amount about the UX/UI design process. 
-		I had a lot of fun!"
+- PawFood is a design concept for a mobile app that I created during the Google UX Design Course.
+  Following the Design Thinking Framework, I conducted the research and design for PawFood.
+  This was my first UX/UI project, and the course taught me a tremendous amount about the UX/UI design process.
+  I had a lot of fun!"
   - description [PawFood Article](https://nazcodeland.dev/projects/pawfood)
       
   - ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Miro](https://img.shields.io/badge/Miro-F4B728?style=for-the-badge&logo=Miro&logoColor=white)
