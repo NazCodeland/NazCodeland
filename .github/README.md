@@ -2,7 +2,7 @@
 
 
 # Hey there, I'm Nazar <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="32" height="32">
-I am a software developer with an affinity for solving puzzles and riddles — the passion behind my love for programming. I also like to make things look aesthetically pleasing, and that is the reason why I also have some experience in UI/UX design.
+I am a software developer with an affinity for solving puzzles and riddles — the passion behind my love for programming. I also like to make things look aesthetically pleasing, which has led me to gain experience in UX/UI design - check out my [PawFood App](https://www.figma.com/design/XrgvnlKjimABXsyksoHdKs/PawFood?node-id=2-3929).
 
 
 <br/>
@@ -101,7 +101,7 @@ I am a software developer with an affinity for solving puzzles and riddles — t
 - **[NazCodeland.dev](https://nazcodeland.dev/projects)**
 - **[NazCodeland Repository](https://github.com/NazCodeland/NazCodeland-V2)**
 
-  - This is my personal website and it is also my first professional project. The current version is the second iteration, the [first iteration](https://github.com/NazCodeland/NazCodeland) was built using the MVC (Model View Controller) Architecture using ExpressJS for the backend and Handlebars for the View layer. The current iteration employs the same MVC Architecture but it uses Svelte for the View layer, and the Model and Controller are handled by SvelteKit, which is written in TypeScript.
+  - This is my personal website and it is also my first professional project. The current version is the second iteration, the [first iteration](https://github.com/NazCodeland/NazCodeland) was built using the MVC (Model View Controller) Architecture using ExpressJS for the backend and Handlebars for the View layer. The current iteration employs the same MVC Architecture but it uses Svelte for the View layer, and the Model and Controller are handled by SvelteKit.
       
   - ![Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white) ![SvelteKit](https://img.shields.io/badge/SvelteKit-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
