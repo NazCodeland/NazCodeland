@@ -98,7 +98,7 @@ I am a software developer with an affinity for solving puzzles and riddles — t
 -->
 <br/>
 
-- **[NazCodeland.dev](https://nazcodeland.dev/projects)**
+- **[NazCodeland Website](https://nazcodeland.dev/projects)**
 - **[NazCodeland Repository](https://github.com/NazCodeland/NazCodeland-V2)**
 
   - This is my personal website and it is also my first professional project. The current version is the second iteration, the [first iteration](https://github.com/NazCodeland/NazCodeland) was built using the MVC (Model View Controller) Architecture using ExpressJS for the backend and Handlebars for the View layer. The current iteration employs the same MVC Architecture but it uses Svelte for the View layer, and the Model and Controller are handled by SvelteKit.
