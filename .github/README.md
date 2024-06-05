@@ -75,7 +75,7 @@ I am a software developer with an affinity for solving puzzles and riddles — t
 
 <br/>
 
-- **[Saigon.com](https://saigonottawa.com)**
+- **[Saigon Website](https://saigonottawa.com)**
 - **[Saigon Repository](https://github.com/NazCodeland/Saigon)**
   
   - This is a static website designed for Saigon Restaurant, it provides a straightforward navigation for customers to explore the menu, make reservations, contact the restaurant, and order online.
