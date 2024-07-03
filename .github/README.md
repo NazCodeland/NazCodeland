@@ -2,7 +2,7 @@
 
 
 # Hey there, I'm Nazar <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="32" height="32">
-I am a software developer with an affinity for solving puzzles and riddles — the passion behind my love for programming. I also like to make things look aesthetically pleasing, which has led me to gain experience in UX/UI design - check out my [PawFood App](https://www.figma.com/design/XrgvnlKjimABXsyksoHdKs/PawFood?node-id=2-3929).
+I am a software developer and I also like to make things look aesthetically pleasing, which has led me to gain experience in UX/UI design - check out my [PawFood App](https://www.figma.com/design/XrgvnlKjimABXsyksoHdKs/PawFood?node-id=2-3929).
 
 
 <br/>
