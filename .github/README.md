@@ -44,10 +44,10 @@ I am a software developer and I also like to make things look aesthetically plea
 <br/>
 
 ## Currently Learning
-- Data Structures & Algorithms
+- Gain a deeperer understanding of software design patterns 
   
 ## Learning Goals
-- Gain a deeperer understanding of software design patterns 
+- Data Structures & Algorithms
   
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
   ![SolidJS](https://img.shields.io/badge/SolidJS-2c4f7c?style=for-the-badge&logo=solid&logoColor=c8c9cb)
