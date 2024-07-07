@@ -44,7 +44,7 @@ I am a software developer and I also like to make things look aesthetically plea
 <br/>
 
 ## Currently Learning
-- Gain a deeperer understanding of software design patterns 
+- Creational, Structural and Behavioral design patterns 
   
 ## Learning Goals
 - Data Structures & Algorithms
