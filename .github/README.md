@@ -126,6 +126,6 @@ I am a software developer and I also like to make things look aesthetically plea
 
 
 ## Blog Posts
-- [Title 1](nazcodeland.dev/blog)
-- [Title 2](nazcodeland.dev/blog)
-- [Title 3](nazcodeland.dev/blog)
+- [Constructor Design Pattern]([nazcodeland.dev/blog](https://nazcodeland.dev/blog/patterns/creational/constructor)
+- [Module Design Pattern]([nazcodeland.dev/blog](https://nazcodeland.dev/blog/patterns/creational/module)
+- [Singleton Design Pattern]([nazcodeland.dev/blog](https://nazcodeland.dev/blog/patterns/creational/singleton)
