@@ -11,7 +11,7 @@ I am a software developer and I also like to make things look aesthetically plea
 - 🌱 Checkout [Saigon](https://saigonottawa.com) & [Lashology]() my latest freelance projects for two amazing clients
 - 🚀 [Worldflare](https://github.com/NazCodeland/worldflare) is an upcoming websockets application for connecting users around the world
 - 👯 Looking for Paid and/or Intern opportunities by end of 2024
-- ✨ Find my projects on [NazCodeland.dev](https://nazcodeland.dev/projects)
+- ✨ Find my projects on [NazCodeland.dev](https://nazcodeland.dev/portfolio)
 - 📫 Reach me at nazcodeland@gmail.com
 
 <br/>
