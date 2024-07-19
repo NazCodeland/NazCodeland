@@ -129,3 +129,4 @@ I am a software developer and I also like to make things look aesthetically plea
 - [Constructor Design Pattern](https://nazcodeland.dev/blog/patterns/creational/constructor)
 - [Module Design Pattern](https://nazcodeland.dev/blog/patterns/creational/module)
 - [Singleton Design Pattern](https://nazcodeland.dev/blog/patterns/creational/singleton)
+- [Prototype Design Pattern](http://localhost:5174/blog/patterns/creational/prototype)
