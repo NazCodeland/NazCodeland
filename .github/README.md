@@ -126,6 +126,7 @@ I am a software developer and I also like to make things look aesthetically plea
 
 
 ## Blog Posts
+- [Builder Design Pattern](https://nazcodeland.dev/blog/patterns/creational/builder)
 - [Abstract Factory Design Pattern](https://nazcodeland.dev/blog/patterns/creational/abstract-factory)
 - [Factory Design Pattern](https://nazcodeland.dev/blog/patterns/creational/factory)
 - [Prototype Design Pattern](https://nazcodeland.dev/blog/patterns/creational/prototype)
