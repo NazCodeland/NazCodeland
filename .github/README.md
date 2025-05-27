@@ -10,6 +10,7 @@ I am a software developer and I also like to make things look aesthetically plea
 ## 👨🏽‍💻 More About Me
 - 🌱 Checkout [Saigon](https://saigonottawa.com) & [Lashology]() my latest freelance projects for two amazing clients
 - 🚀 [Worldflare](https://github.com/NazCodeland/worldflare) is an upcoming websockets application for connecting users around the world
+- 👯 Seeking entry-level positions and internship opportunities.
 - ✨ Find my projects on [NazCodeland.dev](https://nazcodeland.dev/portfolio)
 - 📫 Reach me at nazcodeland@gmail.com
 
@@ -48,9 +49,6 @@ I am a software developer and I also like to make things look aesthetically plea
 - Data Structures & Algorithms
   
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-  ![SolidJS](https://img.shields.io/badge/SolidJS-2c4f7c?style=for-the-badge&logo=solid&logoColor=c8c9cb)
-  ![Tauri](https://img.shields.io/badge/tauri-%2324C8DB.svg?style=for-the-badge&logo=tauri&logoColor=%23FFFFFF)
-
 
 <br/>
 
