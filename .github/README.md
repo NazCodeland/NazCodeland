@@ -9,7 +9,7 @@ I am a software developer and I also like to make things look aesthetically plea
 
 ## 👨🏽‍💻 More About Me
 - 🌱 Checkout [Saigon](https://saigonottawa.com) & [Lashology]() my latest freelance projects for two amazing clients
-- 🚀 [Worldflare](https://github.com/NazCodeland/worldflare) is an upcoming websockets application for connecting users around the world
+- 🚀 [Worldshare](https://github.com/NazCodeland/worldshare) is an upcoming websockets application for connecting users around the world
 - 👯 Seeking entry-level positions and internship opportunities.
 - ✨ Find my projects on [NazCodeland.dev](https://nazcodeland.dev/portfolio)
 - 📫 Reach me at nazcodeland@gmail.com
@@ -54,8 +54,8 @@ I am a software developer and I also like to make things look aesthetically plea
 
 ## Main Projects
 
-- **Worldflare**
-  - Worldflare is an upcoming websockets application for connecting users around the world. The [server-side websocket](https://github.com/NazCodeland/ws--worldflare-websocket) code is open sourced and the intention is to make the main Worldflare repository open source too! More details to come.
+- **Worldshare**
+  - Worldshare is an upcoming websockets application for connecting users around the world. The [server-side websocket](https://github.com/NazCodeland/ws--worldflare-websocket) code is open sourced and the intention is to make the main Worldflare repository open source too! More details to come.
     
   - ![Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white) ![SvelteKit](https://img.shields.io/badge/SvelteKit-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
